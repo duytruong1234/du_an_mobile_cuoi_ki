@@ -1,0 +1,1115 @@
+{
+    "timestamp": "2025-10-31 13:55:17",
+    "all_get_params": []
+}
+================================================================================
+
+{
+    "hashData_raw": "",
+    "vnp_SecureHash_from_vnpay": "",
+    "secureHash_calculated": "83f133f0a5c136d824f8bcf13035870f0967f7bc801a110fd02dbaa156239fc044c429c2f5b535c7f3c555f8676833f9a0b800ce7ab8fafd0be3e219983870b0",
+    "hash_match": false
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-10-31 13:58:55",
+    "all_get_params": []
+}
+================================================================================
+
+{
+    "hashData_raw": "",
+    "vnp_SecureHash_from_vnpay": "",
+    "secureHash_calculated": "83f133f0a5c136d824f8bcf13035870f0967f7bc801a110fd02dbaa156239fc044c429c2f5b535c7f3c555f8676833f9a0b800ce7ab8fafd0be3e219983870b0",
+    "hash_match": false
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-10-31 14:04:18",
+    "all_get_params": []
+}
+================================================================================
+
+{
+    "hashData_raw": "",
+    "vnp_SecureHash_from_vnpay": "",
+    "secureHash_calculated": "83f133f0a5c136d824f8bcf13035870f0967f7bc801a110fd02dbaa156239fc044c429c2f5b535c7f3c555f8676833f9a0b800ce7ab8fafd0be3e219983870b0",
+    "hash_match": false
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-10-31 14:04:56",
+    "all_get_params": []
+}
+================================================================================
+
+{
+    "hashData_raw": "",
+    "vnp_SecureHash_from_vnpay": "",
+    "secureHash_calculated": "83f133f0a5c136d824f8bcf13035870f0967f7bc801a110fd02dbaa156239fc044c429c2f5b535c7f3c555f8676833f9a0b800ce7ab8fafd0be3e219983870b0",
+    "hash_match": false
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-10-31 14:05:42",
+    "all_get_params": []
+}
+================================================================================
+
+{
+    "hashData_raw": "",
+    "vnp_SecureHash_from_vnpay": "",
+    "secureHash_calculated": "83f133f0a5c136d824f8bcf13035870f0967f7bc801a110fd02dbaa156239fc044c429c2f5b535c7f3c555f8676833f9a0b800ce7ab8fafd0be3e219983870b0",
+    "hash_match": false
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-10-31 14:06:47",
+    "all_get_params": []
+}
+================================================================================
+
+{
+    "hashData_raw": "",
+    "vnp_SecureHash_from_vnpay": "",
+    "secureHash_calculated": "83f133f0a5c136d824f8bcf13035870f0967f7bc801a110fd02dbaa156239fc044c429c2f5b535c7f3c555f8676833f9a0b800ce7ab8fafd0be3e219983870b0",
+    "hash_match": false
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-10-31 14:06:48",
+    "all_get_params": []
+}
+================================================================================
+
+{
+    "hashData_raw": "",
+    "vnp_SecureHash_from_vnpay": "",
+    "secureHash_calculated": "83f133f0a5c136d824f8bcf13035870f0967f7bc801a110fd02dbaa156239fc044c429c2f5b535c7f3c555f8676833f9a0b800ce7ab8fafd0be3e219983870b0",
+    "hash_match": false
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-10-31 14:06:54",
+    "all_get_params": []
+}
+================================================================================
+
+{
+    "hashData_raw": "",
+    "vnp_SecureHash_from_vnpay": "",
+    "secureHash_calculated": "83f133f0a5c136d824f8bcf13035870f0967f7bc801a110fd02dbaa156239fc044c429c2f5b535c7f3c555f8676833f9a0b800ce7ab8fafd0be3e219983870b0",
+    "hash_match": false
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-10-31 14:13:29",
+    "all_get_params": []
+}
+================================================================================
+
+{
+    "hashData_raw": "",
+    "vnp_SecureHash_from_vnpay": "",
+    "secureHash_calculated": "83f133f0a5c136d824f8bcf13035870f0967f7bc801a110fd02dbaa156239fc044c429c2f5b535c7f3c555f8676833f9a0b800ce7ab8fafd0be3e219983870b0",
+    "hash_match": false
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-10-31 14:13:39",
+    "all_get_params": []
+}
+================================================================================
+
+{
+    "hashData_raw": "",
+    "vnp_SecureHash_from_vnpay": "",
+    "secureHash_calculated": "83f133f0a5c136d824f8bcf13035870f0967f7bc801a110fd02dbaa156239fc044c429c2f5b535c7f3c555f8676833f9a0b800ce7ab8fafd0be3e219983870b0",
+    "hash_match": false
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-10-31 14:26:04",
+    "all_get_params": []
+}
+================================================================================
+
+{
+    "hashData_raw": "",
+    "vnp_SecureHash_from_vnpay": "",
+    "secureHash_calculated": "83f133f0a5c136d824f8bcf13035870f0967f7bc801a110fd02dbaa156239fc044c429c2f5b535c7f3c555f8676833f9a0b800ce7ab8fafd0be3e219983870b0",
+    "hash_match": false
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-10-31 14:32:42",
+    "all_get_params": []
+}
+================================================================================
+
+{
+    "hashData_raw": "",
+    "vnp_SecureHash_from_vnpay": "",
+    "secureHash_calculated": "83f133f0a5c136d824f8bcf13035870f0967f7bc801a110fd02dbaa156239fc044c429c2f5b535c7f3c555f8676833f9a0b800ce7ab8fafd0be3e219983870b0",
+    "hash_match": false
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-10-31 14:32:45",
+    "all_get_params": []
+}
+================================================================================
+
+{
+    "hashData_raw": "",
+    "vnp_SecureHash_from_vnpay": "",
+    "secureHash_calculated": "83f133f0a5c136d824f8bcf13035870f0967f7bc801a110fd02dbaa156239fc044c429c2f5b535c7f3c555f8676833f9a0b800ce7ab8fafd0be3e219983870b0",
+    "hash_match": false
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-10-31 14:32:46",
+    "all_get_params": []
+}
+================================================================================
+
+{
+    "hashData_raw": "",
+    "vnp_SecureHash_from_vnpay": "",
+    "secureHash_calculated": "83f133f0a5c136d824f8bcf13035870f0967f7bc801a110fd02dbaa156239fc044c429c2f5b535c7f3c555f8676833f9a0b800ce7ab8fafd0be3e219983870b0",
+    "hash_match": false
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-10-31 14:33:03",
+    "all_get_params": []
+}
+================================================================================
+
+{
+    "hashData_raw": "",
+    "vnp_SecureHash_from_vnpay": "",
+    "secureHash_calculated": "83f133f0a5c136d824f8bcf13035870f0967f7bc801a110fd02dbaa156239fc044c429c2f5b535c7f3c555f8676833f9a0b800ce7ab8fafd0be3e219983870b0",
+    "hash_match": false
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-01 22:13:08",
+    "all_get_params": []
+}
+================================================================================
+
+{
+    "hashData_raw": "",
+    "vnp_SecureHash_from_vnpay": "",
+    "secureHash_calculated": "d2d5dc97e846ea9a9cc4dde6d9db551960ae415a79b58a46bd053f17103badeb9a8150ee264a3002468cbefc731f1afa0097c46682a1f2cc938de4250571cab6",
+    "hash_match": false
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-01 22:15:02",
+    "all_get_params": {
+        "vnp_Amount": "259000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15232108",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251101221418839",
+        "vnp_PayDate": "20251101221456",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15232108",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251101221418839",
+        "vnp_SecureHash": "5e67971279c5642e8ac3d6aaf040d7b35a17c03c128f245a04db399493d0e659c07bc396825e17067dff37836029a69ea8850c1d2f3f57791868a9eae51b5e83"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=259000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15232108&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251101221418839&vnp_PayDate=20251101221456&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15232108&vnp_TransactionStatus=00&vnp_TxnRef=DH20251101221418839",
+    "vnp_SecureHash_from_vnpay": "5e67971279c5642e8ac3d6aaf040d7b35a17c03c128f245a04db399493d0e659c07bc396825e17067dff37836029a69ea8850c1d2f3f57791868a9eae51b5e83",
+    "secureHash_calculated": "5e67971279c5642e8ac3d6aaf040d7b35a17c03c128f245a04db399493d0e659c07bc396825e17067dff37836029a69ea8850c1d2f3f57791868a9eae51b5e83",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-01 22:15:05",
+    "all_get_params": {
+        "vnp_Amount": "259000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15232108",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251101221418839",
+        "vnp_PayDate": "20251101221456",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15232108",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251101221418839",
+        "vnp_SecureHash": "5e67971279c5642e8ac3d6aaf040d7b35a17c03c128f245a04db399493d0e659c07bc396825e17067dff37836029a69ea8850c1d2f3f57791868a9eae51b5e83"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=259000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15232108&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251101221418839&vnp_PayDate=20251101221456&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15232108&vnp_TransactionStatus=00&vnp_TxnRef=DH20251101221418839",
+    "vnp_SecureHash_from_vnpay": "5e67971279c5642e8ac3d6aaf040d7b35a17c03c128f245a04db399493d0e659c07bc396825e17067dff37836029a69ea8850c1d2f3f57791868a9eae51b5e83",
+    "secureHash_calculated": "5e67971279c5642e8ac3d6aaf040d7b35a17c03c128f245a04db399493d0e659c07bc396825e17067dff37836029a69ea8850c1d2f3f57791868a9eae51b5e83",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-01 23:06:30",
+    "all_get_params": {
+        "vnp_Amount": "100000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15232194",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251101230549544",
+        "vnp_PayDate": "20251101230625",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15232194",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251101230549544",
+        "vnp_SecureHash": "f3116f5f3c6ac4e2980aecae7b9d97e7b9cd8c3481d8a982c3fade6447ef4242f57d69709302958acc20352ba04b7791147a047b3960498a3ef070a473c347b2"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=100000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15232194&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251101230549544&vnp_PayDate=20251101230625&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15232194&vnp_TransactionStatus=00&vnp_TxnRef=DH20251101230549544",
+    "vnp_SecureHash_from_vnpay": "f3116f5f3c6ac4e2980aecae7b9d97e7b9cd8c3481d8a982c3fade6447ef4242f57d69709302958acc20352ba04b7791147a047b3960498a3ef070a473c347b2",
+    "secureHash_calculated": "f3116f5f3c6ac4e2980aecae7b9d97e7b9cd8c3481d8a982c3fade6447ef4242f57d69709302958acc20352ba04b7791147a047b3960498a3ef070a473c347b2",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-01 23:13:12",
+    "all_get_params": {
+        "vnp_Amount": "1990000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15232199",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251101231243585",
+        "vnp_PayDate": "20251101231305",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15232199",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251101231243585",
+        "vnp_SecureHash": "053c15010ce8b55734bfc0b404b45514f126d3c79dab3a399dfa669fe09b406b9cb5e3bcdcacd846181273b270fa8031823f01955369aa7ac84ceaf7d27728fa"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=1990000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15232199&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251101231243585&vnp_PayDate=20251101231305&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15232199&vnp_TransactionStatus=00&vnp_TxnRef=DH20251101231243585",
+    "vnp_SecureHash_from_vnpay": "053c15010ce8b55734bfc0b404b45514f126d3c79dab3a399dfa669fe09b406b9cb5e3bcdcacd846181273b270fa8031823f01955369aa7ac84ceaf7d27728fa",
+    "secureHash_calculated": "053c15010ce8b55734bfc0b404b45514f126d3c79dab3a399dfa669fe09b406b9cb5e3bcdcacd846181273b270fa8031823f01955369aa7ac84ceaf7d27728fa",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-02 10:00:53",
+    "all_get_params": {
+        "vnp_Amount": "830000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15232643",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251102100010955",
+        "vnp_PayDate": "20251102100038",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15232643",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251102100010955",
+        "vnp_SecureHash": "2949b98154fe8998fdc9cfc146c5f761b7379739ed8f4aa33911f4c00bcffbe70574950bf90c4123b3223d7f2c134837471e494c1790a654b91f056efa561b6d"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=830000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15232643&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251102100010955&vnp_PayDate=20251102100038&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15232643&vnp_TransactionStatus=00&vnp_TxnRef=DH20251102100010955",
+    "vnp_SecureHash_from_vnpay": "2949b98154fe8998fdc9cfc146c5f761b7379739ed8f4aa33911f4c00bcffbe70574950bf90c4123b3223d7f2c134837471e494c1790a654b91f056efa561b6d",
+    "secureHash_calculated": "2949b98154fe8998fdc9cfc146c5f761b7379739ed8f4aa33911f4c00bcffbe70574950bf90c4123b3223d7f2c134837471e494c1790a654b91f056efa561b6d",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-02 13:32:49",
+    "all_get_params": {
+        "vnp_Amount": "199000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15232814",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251102133210960",
+        "vnp_PayDate": "20251102133237",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15232814",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251102133210960",
+        "vnp_SecureHash": "ae5c1632fdf6b558e6664c6e92a5e3f4d05410c7d0a895f76a7f462a9ea966e83fd8d2d325527a180de5dfdb6a9b5e0ad4dc5406f71a61c56d45eb3b2dc27ad5"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=199000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15232814&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251102133210960&vnp_PayDate=20251102133237&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15232814&vnp_TransactionStatus=00&vnp_TxnRef=DH20251102133210960",
+    "vnp_SecureHash_from_vnpay": "ae5c1632fdf6b558e6664c6e92a5e3f4d05410c7d0a895f76a7f462a9ea966e83fd8d2d325527a180de5dfdb6a9b5e0ad4dc5406f71a61c56d45eb3b2dc27ad5",
+    "secureHash_calculated": "ae5c1632fdf6b558e6664c6e92a5e3f4d05410c7d0a895f76a7f462a9ea966e83fd8d2d325527a180de5dfdb6a9b5e0ad4dc5406f71a61c56d45eb3b2dc27ad5",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-02 20:26:10",
+    "all_get_params": {
+        "vnp_Amount": "935000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15233257",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251102202537223",
+        "vnp_PayDate": "20251102202601",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15233257",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251102202537223",
+        "vnp_SecureHash": "d04342a8c97b67d2a658c372ffc20a01e6156b99142e17915da4791b8c6f3bb4d7d469c16def0044d9cbbf551ee17bf1b0c038769863a9e688d2850b12cae615"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=935000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15233257&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251102202537223&vnp_PayDate=20251102202601&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15233257&vnp_TransactionStatus=00&vnp_TxnRef=DH20251102202537223",
+    "vnp_SecureHash_from_vnpay": "d04342a8c97b67d2a658c372ffc20a01e6156b99142e17915da4791b8c6f3bb4d7d469c16def0044d9cbbf551ee17bf1b0c038769863a9e688d2850b12cae615",
+    "secureHash_calculated": "d04342a8c97b67d2a658c372ffc20a01e6156b99142e17915da4791b8c6f3bb4d7d469c16def0044d9cbbf551ee17bf1b0c038769863a9e688d2850b12cae615",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-03 11:34:54",
+    "all_get_params": {
+        "vnp_Amount": "790000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15234418",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251103113420651",
+        "vnp_PayDate": "20251103113439",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15234418",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251103113420651",
+        "vnp_SecureHash": "aedbb6f1d848c8a3b89b1e02911058dabeefa250ea3fa797e7257135c354af46612cd7cdeffcd06dc213138102e2159dd1b007d3b38a64e851550269a7788fb5"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=790000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15234418&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251103113420651&vnp_PayDate=20251103113439&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15234418&vnp_TransactionStatus=00&vnp_TxnRef=DH20251103113420651",
+    "vnp_SecureHash_from_vnpay": "aedbb6f1d848c8a3b89b1e02911058dabeefa250ea3fa797e7257135c354af46612cd7cdeffcd06dc213138102e2159dd1b007d3b38a64e851550269a7788fb5",
+    "secureHash_calculated": "aedbb6f1d848c8a3b89b1e02911058dabeefa250ea3fa797e7257135c354af46612cd7cdeffcd06dc213138102e2159dd1b007d3b38a64e851550269a7788fb5",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-03 14:51:14",
+    "all_get_params": {
+        "vnp_Amount": "815000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15234887",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251103145039115",
+        "vnp_PayDate": "20251103145105",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15234887",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251103145039115",
+        "vnp_SecureHash": "bf45e8042567c5095ae71a4876c4d4014783b6aceef296a3e771a96f1133e6e9b46023ed05423bfbae1abf8f5ea7d80acbe699f5815968feb0f9c9353ba82fb3"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=815000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15234887&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251103145039115&vnp_PayDate=20251103145105&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15234887&vnp_TransactionStatus=00&vnp_TxnRef=DH20251103145039115",
+    "vnp_SecureHash_from_vnpay": "bf45e8042567c5095ae71a4876c4d4014783b6aceef296a3e771a96f1133e6e9b46023ed05423bfbae1abf8f5ea7d80acbe699f5815968feb0f9c9353ba82fb3",
+    "secureHash_calculated": "bf45e8042567c5095ae71a4876c4d4014783b6aceef296a3e771a96f1133e6e9b46023ed05423bfbae1abf8f5ea7d80acbe699f5815968feb0f9c9353ba82fb3",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-03 15:33:21",
+    "all_get_params": {
+        "vnp_Amount": "875000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15235010",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251103153251374",
+        "vnp_PayDate": "20251103153314",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15235010",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251103153251374",
+        "vnp_SecureHash": "b4d0876e1de1d691a6161a27bf767374a53557d360564f1186503ce1e93c518894d86ad9c5871c04c95ccb9924ed89c9817e686383e07b42ea965e4d6c087f23"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=875000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15235010&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251103153251374&vnp_PayDate=20251103153314&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15235010&vnp_TransactionStatus=00&vnp_TxnRef=DH20251103153251374",
+    "vnp_SecureHash_from_vnpay": "b4d0876e1de1d691a6161a27bf767374a53557d360564f1186503ce1e93c518894d86ad9c5871c04c95ccb9924ed89c9817e686383e07b42ea965e4d6c087f23",
+    "secureHash_calculated": "b4d0876e1de1d691a6161a27bf767374a53557d360564f1186503ce1e93c518894d86ad9c5871c04c95ccb9924ed89c9817e686383e07b42ea965e4d6c087f23",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-03 23:13:31",
+    "all_get_params": {
+        "vnp_Amount": "875000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15235840",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251103231257752",
+        "vnp_PayDate": "20251103231324",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15235840",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251103231257752",
+        "vnp_SecureHash": "febd2c814c4588b39539341c6dcd4eef0f1a216bd0f004d0eb80075dc6b9b5ed52335c40ecad269261d34417535ed91a9cc4703b6dec9356b6ab2d30b757baad"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=875000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15235840&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251103231257752&vnp_PayDate=20251103231324&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15235840&vnp_TransactionStatus=00&vnp_TxnRef=DH20251103231257752",
+    "vnp_SecureHash_from_vnpay": "febd2c814c4588b39539341c6dcd4eef0f1a216bd0f004d0eb80075dc6b9b5ed52335c40ecad269261d34417535ed91a9cc4703b6dec9356b6ab2d30b757baad",
+    "secureHash_calculated": "febd2c814c4588b39539341c6dcd4eef0f1a216bd0f004d0eb80075dc6b9b5ed52335c40ecad269261d34417535ed91a9cc4703b6dec9356b6ab2d30b757baad",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-04 07:25:22",
+    "all_get_params": {
+        "vnp_Amount": "987000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15236255",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251104072449966",
+        "vnp_PayDate": "20251104072512",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15236255",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251104072449966",
+        "vnp_SecureHash": "d5c2ea6f2e9e9cec81225ab579a1eafb20aa83f7f1237945aaeda9704fc346f9c4a345c6f6a28cf86c7f08d55525b3b52c97db8eaea9f35668130043500458cd"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=987000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15236255&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251104072449966&vnp_PayDate=20251104072512&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15236255&vnp_TransactionStatus=00&vnp_TxnRef=DH20251104072449966",
+    "vnp_SecureHash_from_vnpay": "d5c2ea6f2e9e9cec81225ab579a1eafb20aa83f7f1237945aaeda9704fc346f9c4a345c6f6a28cf86c7f08d55525b3b52c97db8eaea9f35668130043500458cd",
+    "secureHash_calculated": "d5c2ea6f2e9e9cec81225ab579a1eafb20aa83f7f1237945aaeda9704fc346f9c4a345c6f6a28cf86c7f08d55525b3b52c97db8eaea9f35668130043500458cd",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-04 07:41:50",
+    "all_get_params": {
+        "vnp_Amount": "987000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15236255",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251104072449966",
+        "vnp_PayDate": "20251104072512",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15236255",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251104072449966",
+        "vnp_SecureHash": "d5c2ea6f2e9e9cec81225ab579a1eafb20aa83f7f1237945aaeda9704fc346f9c4a345c6f6a28cf86c7f08d55525b3b52c97db8eaea9f35668130043500458cd"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=987000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15236255&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251104072449966&vnp_PayDate=20251104072512&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15236255&vnp_TransactionStatus=00&vnp_TxnRef=DH20251104072449966",
+    "vnp_SecureHash_from_vnpay": "d5c2ea6f2e9e9cec81225ab579a1eafb20aa83f7f1237945aaeda9704fc346f9c4a345c6f6a28cf86c7f08d55525b3b52c97db8eaea9f35668130043500458cd",
+    "secureHash_calculated": "d5c2ea6f2e9e9cec81225ab579a1eafb20aa83f7f1237945aaeda9704fc346f9c4a345c6f6a28cf86c7f08d55525b3b52c97db8eaea9f35668130043500458cd",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-04 09:05:26",
+    "all_get_params": {
+        "vnp_Amount": "390000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15236314",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251104090437575",
+        "vnp_PayDate": "20251104090517",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15236314",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251104090437575",
+        "vnp_SecureHash": "9371db71e70c1e6cdab83b62ac02fec3efb80f1085d84a876b13d93e4b397cb9e9ed0527d3fee3e0304ba208888d4b5f1b5001208ff29521856f80a00622970c"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=390000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15236314&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251104090437575&vnp_PayDate=20251104090517&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15236314&vnp_TransactionStatus=00&vnp_TxnRef=DH20251104090437575",
+    "vnp_SecureHash_from_vnpay": "9371db71e70c1e6cdab83b62ac02fec3efb80f1085d84a876b13d93e4b397cb9e9ed0527d3fee3e0304ba208888d4b5f1b5001208ff29521856f80a00622970c",
+    "secureHash_calculated": "9371db71e70c1e6cdab83b62ac02fec3efb80f1085d84a876b13d93e4b397cb9e9ed0527d3fee3e0304ba208888d4b5f1b5001208ff29521856f80a00622970c",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-04 10:47:21",
+    "all_get_params": {
+        "vnp_Amount": "194000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15236609",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251104104634757",
+        "vnp_PayDate": "20251104104703",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15236609",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251104104634757",
+        "vnp_SecureHash": "b23e01384efe18fb979b62671799c9ebb3f6dba5759373430aa76b6f52415db16926f71646851db86a8b69f318147855fa9620d69acf9860d26bedd814f2e8e5"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=194000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15236609&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251104104634757&vnp_PayDate=20251104104703&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15236609&vnp_TransactionStatus=00&vnp_TxnRef=DH20251104104634757",
+    "vnp_SecureHash_from_vnpay": "b23e01384efe18fb979b62671799c9ebb3f6dba5759373430aa76b6f52415db16926f71646851db86a8b69f318147855fa9620d69acf9860d26bedd814f2e8e5",
+    "secureHash_calculated": "b23e01384efe18fb979b62671799c9ebb3f6dba5759373430aa76b6f52415db16926f71646851db86a8b69f318147855fa9620d69acf9860d26bedd814f2e8e5",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-04 12:45:16",
+    "all_get_params": {
+        "vnp_Amount": "390000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15236821",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251104124419780",
+        "vnp_PayDate": "20251104124459",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15236821",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251104124419780",
+        "vnp_SecureHash": "4a01e2822e2ea74eca11c9f7cc1c70d029296ffed884545607f05e5ff78f61de8b0133b689870df28e3ead8a394927d18d3abab2b4b9c75f27ce228da71c4da7"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=390000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15236821&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251104124419780&vnp_PayDate=20251104124459&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15236821&vnp_TransactionStatus=00&vnp_TxnRef=DH20251104124419780",
+    "vnp_SecureHash_from_vnpay": "4a01e2822e2ea74eca11c9f7cc1c70d029296ffed884545607f05e5ff78f61de8b0133b689870df28e3ead8a394927d18d3abab2b4b9c75f27ce228da71c4da7",
+    "secureHash_calculated": "4a01e2822e2ea74eca11c9f7cc1c70d029296ffed884545607f05e5ff78f61de8b0133b689870df28e3ead8a394927d18d3abab2b4b9c75f27ce228da71c4da7",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-10 13:39:36",
+    "all_get_params": {
+        "vnp_Amount": "803000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15249822",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251110133850642",
+        "vnp_PayDate": "20251110133919",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15249822",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251110133850642",
+        "vnp_SecureHash": "ad57a10b9d85c66e96f7e9a19d4bcff7b433d271f2ec69ffc306eef1eb94814271ba27c5e3e80c3a8c5b67bd66f48fa496e591f75f1bea4eab156bae49796234"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=803000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15249822&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251110133850642&vnp_PayDate=20251110133919&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15249822&vnp_TransactionStatus=00&vnp_TxnRef=DH20251110133850642",
+    "vnp_SecureHash_from_vnpay": "ad57a10b9d85c66e96f7e9a19d4bcff7b433d271f2ec69ffc306eef1eb94814271ba27c5e3e80c3a8c5b67bd66f48fa496e591f75f1bea4eab156bae49796234",
+    "secureHash_calculated": "ad57a10b9d85c66e96f7e9a19d4bcff7b433d271f2ec69ffc306eef1eb94814271ba27c5e3e80c3a8c5b67bd66f48fa496e591f75f1bea4eab156bae49796234",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-10 13:47:14",
+    "all_get_params": {
+        "vnp_Amount": "405000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15249852",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251110134620621",
+        "vnp_PayDate": "20251110134703",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15249852",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251110134620621",
+        "vnp_SecureHash": "fb8136cce9dcf2a3032a4bfdb1fc1ee02159e12cf5084b9d0788cf982a79eead9fd8e3aa50df56ec3b030b07b6b052674e13393c4687d72a149027913eda128c"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=405000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15249852&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251110134620621&vnp_PayDate=20251110134703&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15249852&vnp_TransactionStatus=00&vnp_TxnRef=DH20251110134620621",
+    "vnp_SecureHash_from_vnpay": "fb8136cce9dcf2a3032a4bfdb1fc1ee02159e12cf5084b9d0788cf982a79eead9fd8e3aa50df56ec3b030b07b6b052674e13393c4687d72a149027913eda128c",
+    "secureHash_calculated": "fb8136cce9dcf2a3032a4bfdb1fc1ee02159e12cf5084b9d0788cf982a79eead9fd8e3aa50df56ec3b030b07b6b052674e13393c4687d72a149027913eda128c",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-10 14:03:16",
+    "all_get_params": {
+        "vnp_Amount": "184000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15249912",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251110140246639",
+        "vnp_PayDate": "20251110140305",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15249912",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251110140246639",
+        "vnp_SecureHash": "371c2b92c31ccec69ca5f5d27bf2b0a0475c9b6ce3f5d48cb5fadc2feca3d5bb0773e92d224f38e70cbac1083acf5a758ceede37dbafa04b1bf502404fd91b6a"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=184000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15249912&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251110140246639&vnp_PayDate=20251110140305&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15249912&vnp_TransactionStatus=00&vnp_TxnRef=DH20251110140246639",
+    "vnp_SecureHash_from_vnpay": "371c2b92c31ccec69ca5f5d27bf2b0a0475c9b6ce3f5d48cb5fadc2feca3d5bb0773e92d224f38e70cbac1083acf5a758ceede37dbafa04b1bf502404fd91b6a",
+    "secureHash_calculated": "371c2b92c31ccec69ca5f5d27bf2b0a0475c9b6ce3f5d48cb5fadc2feca3d5bb0773e92d224f38e70cbac1083acf5a758ceede37dbafa04b1bf502404fd91b6a",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-10 14:10:41",
+    "all_get_params": {
+        "vnp_Amount": "189000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15249931",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251110141010888",
+        "vnp_PayDate": "20251110141027",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15249931",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251110141010888",
+        "vnp_SecureHash": "41b6e47e54a233f588f3b118130d7b202461b801517f0a75135c681796dd5fd25f7fd1f6510453e12dad19a6a8fa3392f991f8d801138873351f0d74d7af167b"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=189000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15249931&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251110141010888&vnp_PayDate=20251110141027&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15249931&vnp_TransactionStatus=00&vnp_TxnRef=DH20251110141010888",
+    "vnp_SecureHash_from_vnpay": "41b6e47e54a233f588f3b118130d7b202461b801517f0a75135c681796dd5fd25f7fd1f6510453e12dad19a6a8fa3392f991f8d801138873351f0d74d7af167b",
+    "secureHash_calculated": "41b6e47e54a233f588f3b118130d7b202461b801517f0a75135c681796dd5fd25f7fd1f6510453e12dad19a6a8fa3392f991f8d801138873351f0d74d7af167b",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-10 14:20:12",
+    "all_get_params": {
+        "vnp_Amount": "189000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15249975",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251110141938684",
+        "vnp_PayDate": "20251110141959",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15249975",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251110141938684",
+        "vnp_SecureHash": "6d4db721c005094d0535b03810add5bf0cca41289a8e83d38ef8e261dfb556cea66ea13360508c101a41efb757ceffb6c38376b2ad8f55e9b63e01578a3af0e4"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=189000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15249975&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251110141938684&vnp_PayDate=20251110141959&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15249975&vnp_TransactionStatus=00&vnp_TxnRef=DH20251110141938684",
+    "vnp_SecureHash_from_vnpay": "6d4db721c005094d0535b03810add5bf0cca41289a8e83d38ef8e261dfb556cea66ea13360508c101a41efb757ceffb6c38376b2ad8f55e9b63e01578a3af0e4",
+    "secureHash_calculated": "6d4db721c005094d0535b03810add5bf0cca41289a8e83d38ef8e261dfb556cea66ea13360508c101a41efb757ceffb6c38376b2ad8f55e9b63e01578a3af0e4",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-11 07:35:42",
+    "all_get_params": {
+        "vnp_Amount": "199000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15251766",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251111073452880",
+        "vnp_PayDate": "20251111073531",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15251766",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251111073452880",
+        "vnp_SecureHash": "d76cb15d7e5937058c788492c682d1c241438bebf8299c4d5aa8a24cc827327e84b8d93bd9e84d9ecc2d98cd66a195026e536d648bc5027c78288ca7e17bfe18"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=199000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15251766&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251111073452880&vnp_PayDate=20251111073531&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15251766&vnp_TransactionStatus=00&vnp_TxnRef=DH20251111073452880",
+    "vnp_SecureHash_from_vnpay": "d76cb15d7e5937058c788492c682d1c241438bebf8299c4d5aa8a24cc827327e84b8d93bd9e84d9ecc2d98cd66a195026e536d648bc5027c78288ca7e17bfe18",
+    "secureHash_calculated": "d76cb15d7e5937058c788492c682d1c241438bebf8299c4d5aa8a24cc827327e84b8d93bd9e84d9ecc2d98cd66a195026e536d648bc5027c78288ca7e17bfe18",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-11 07:40:25",
+    "all_get_params": {
+        "vnp_Amount": "189000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15251771",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251111073842123",
+        "vnp_PayDate": "20251111074014",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15251771",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251111073842123",
+        "vnp_SecureHash": "bd168984bd706beb832e92614447634c3718597b1e9b43900ce431d9adedea7143c427265cb5d80160c91a1a7a6b5109a97bd6ecdb79d63c0022d1980aab49a9"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=189000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15251771&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251111073842123&vnp_PayDate=20251111074014&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15251771&vnp_TransactionStatus=00&vnp_TxnRef=DH20251111073842123",
+    "vnp_SecureHash_from_vnpay": "bd168984bd706beb832e92614447634c3718597b1e9b43900ce431d9adedea7143c427265cb5d80160c91a1a7a6b5109a97bd6ecdb79d63c0022d1980aab49a9",
+    "secureHash_calculated": "bd168984bd706beb832e92614447634c3718597b1e9b43900ce431d9adedea7143c427265cb5d80160c91a1a7a6b5109a97bd6ecdb79d63c0022d1980aab49a9",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-11 08:09:21",
+    "all_get_params": {
+        "vnp_Amount": "813000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15251797",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251111080806265",
+        "vnp_PayDate": "20251111080912",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15251797",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251111080806265",
+        "vnp_SecureHash": "ce392bd1a75fa4c5bee21c5cdf5cc1971157b3d966e4cc7fb68cd13e250e60993855da0b80437c09ba52655bcb2e39d083d81723218fd17d9a68921c7405b6dc"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=813000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15251797&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251111080806265&vnp_PayDate=20251111080912&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15251797&vnp_TransactionStatus=00&vnp_TxnRef=DH20251111080806265",
+    "vnp_SecureHash_from_vnpay": "ce392bd1a75fa4c5bee21c5cdf5cc1971157b3d966e4cc7fb68cd13e250e60993855da0b80437c09ba52655bcb2e39d083d81723218fd17d9a68921c7405b6dc",
+    "secureHash_calculated": "ce392bd1a75fa4c5bee21c5cdf5cc1971157b3d966e4cc7fb68cd13e250e60993855da0b80437c09ba52655bcb2e39d083d81723218fd17d9a68921c7405b6dc",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-11 09:58:23",
+    "all_get_params": {
+        "vnp_Amount": "194000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15252053",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251111095733356",
+        "vnp_PayDate": "20251111095806",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15252053",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251111095733356",
+        "vnp_SecureHash": "52f0c558235c96499282e1a0df0e2de66c4e0d253c3bb000f840b95774d29dd7d33d99293cb825c3c0c67588d28a7ea2f0fdbfdd51fbcd41aa638f6388a6447b"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=194000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15252053&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251111095733356&vnp_PayDate=20251111095806&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15252053&vnp_TransactionStatus=00&vnp_TxnRef=DH20251111095733356",
+    "vnp_SecureHash_from_vnpay": "52f0c558235c96499282e1a0df0e2de66c4e0d253c3bb000f840b95774d29dd7d33d99293cb825c3c0c67588d28a7ea2f0fdbfdd51fbcd41aa638f6388a6447b",
+    "secureHash_calculated": "52f0c558235c96499282e1a0df0e2de66c4e0d253c3bb000f840b95774d29dd7d33d99293cb825c3c0c67588d28a7ea2f0fdbfdd51fbcd41aa638f6388a6447b",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-11 10:02:06",
+    "all_get_params": {
+        "vnp_Amount": "194000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15252065",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251111100123848",
+        "vnp_PayDate": "20251111100156",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15252065",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251111100123848",
+        "vnp_SecureHash": "64fcf8b67b8da76e2347f7696eafdac22cd36473d892736b4d4860c7e67f80e3f3ef4e4f35d88badb9a62f206bec003ccdb85c4f5d7f14ae11ae0a54ece98b94"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=194000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15252065&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251111100123848&vnp_PayDate=20251111100156&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15252065&vnp_TransactionStatus=00&vnp_TxnRef=DH20251111100123848",
+    "vnp_SecureHash_from_vnpay": "64fcf8b67b8da76e2347f7696eafdac22cd36473d892736b4d4860c7e67f80e3f3ef4e4f35d88badb9a62f206bec003ccdb85c4f5d7f14ae11ae0a54ece98b94",
+    "secureHash_calculated": "64fcf8b67b8da76e2347f7696eafdac22cd36473d892736b4d4860c7e67f80e3f3ef4e4f35d88badb9a62f206bec003ccdb85c4f5d7f14ae11ae0a54ece98b94",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-11 10:04:31",
+    "all_get_params": {
+        "vnp_Amount": "189000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15252071",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251111100400272",
+        "vnp_PayDate": "20251111100422",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15252071",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251111100400272",
+        "vnp_SecureHash": "aaeb9e15fe66493a52e8cae7e881d8b89afad75626be01b3625ce0f6910d1f6e2cfeb8bb424e12355f1ccf0d00afa8f6a4c5b2d070c68e02cba33c5978a559c3"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=189000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15252071&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251111100400272&vnp_PayDate=20251111100422&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15252071&vnp_TransactionStatus=00&vnp_TxnRef=DH20251111100400272",
+    "vnp_SecureHash_from_vnpay": "aaeb9e15fe66493a52e8cae7e881d8b89afad75626be01b3625ce0f6910d1f6e2cfeb8bb424e12355f1ccf0d00afa8f6a4c5b2d070c68e02cba33c5978a559c3",
+    "secureHash_calculated": "aaeb9e15fe66493a52e8cae7e881d8b89afad75626be01b3625ce0f6910d1f6e2cfeb8bb424e12355f1ccf0d00afa8f6a4c5b2d070c68e02cba33c5978a559c3",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-11 12:29:34",
+    "all_get_params": {
+        "vnp_Amount": "118000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15252472",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251111122856529",
+        "vnp_PayDate": "20251111122924",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15252472",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251111122856529",
+        "vnp_SecureHash": "53fdf3d0347e1e0210d3cffd182cad59b12aaa3cbf79d2b07090eb7d884d9d65bacbd6f2de694419a97099bb037f347d09d49f683f2ff990e2ffa80ec9ef2b09"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=118000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15252472&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251111122856529&vnp_PayDate=20251111122924&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15252472&vnp_TransactionStatus=00&vnp_TxnRef=DH20251111122856529",
+    "vnp_SecureHash_from_vnpay": "53fdf3d0347e1e0210d3cffd182cad59b12aaa3cbf79d2b07090eb7d884d9d65bacbd6f2de694419a97099bb037f347d09d49f683f2ff990e2ffa80ec9ef2b09",
+    "secureHash_calculated": "53fdf3d0347e1e0210d3cffd182cad59b12aaa3cbf79d2b07090eb7d884d9d65bacbd6f2de694419a97099bb037f347d09d49f683f2ff990e2ffa80ec9ef2b09",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-11 12:39:24",
+    "all_get_params": {
+        "vnp_Amount": "2314000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15252498",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251111123853424",
+        "vnp_PayDate": "20251111123915",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15252498",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251111123853424",
+        "vnp_SecureHash": "a9502e9a97a050a0d90130adb4f275746f0e7cf1580298c5dc5aaee2968735c6791c575a1c8456216d553a6cba2ca891d82935809530fa9c9ec69f5efc7cc048"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=2314000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15252498&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251111123853424&vnp_PayDate=20251111123915&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15252498&vnp_TransactionStatus=00&vnp_TxnRef=DH20251111123853424",
+    "vnp_SecureHash_from_vnpay": "a9502e9a97a050a0d90130adb4f275746f0e7cf1580298c5dc5aaee2968735c6791c575a1c8456216d553a6cba2ca891d82935809530fa9c9ec69f5efc7cc048",
+    "secureHash_calculated": "a9502e9a97a050a0d90130adb4f275746f0e7cf1580298c5dc5aaee2968735c6791c575a1c8456216d553a6cba2ca891d82935809530fa9c9ec69f5efc7cc048",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-11 12:42:15",
+    "all_get_params": {
+        "vnp_Amount": "194000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15252505",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251111124141101",
+        "vnp_PayDate": "20251111124206",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15252505",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251111124141101",
+        "vnp_SecureHash": "102d1ef5b090b9e7ca089f8d364f33c71d405c0941d17da62bd9a07700427f8eff645bd5a47bf4b517dcdab802091d1d6b63e4edf71c19f3748f762db01a19a6"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=194000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15252505&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251111124141101&vnp_PayDate=20251111124206&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15252505&vnp_TransactionStatus=00&vnp_TxnRef=DH20251111124141101",
+    "vnp_SecureHash_from_vnpay": "102d1ef5b090b9e7ca089f8d364f33c71d405c0941d17da62bd9a07700427f8eff645bd5a47bf4b517dcdab802091d1d6b63e4edf71c19f3748f762db01a19a6",
+    "secureHash_calculated": "102d1ef5b090b9e7ca089f8d364f33c71d405c0941d17da62bd9a07700427f8eff645bd5a47bf4b517dcdab802091d1d6b63e4edf71c19f3748f762db01a19a6",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-18 10:40:16",
+    "all_get_params": {
+        "vnp_Amount": "194000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15267911",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251118103930537",
+        "vnp_PayDate": "20251118104004",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15267911",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251118103930537",
+        "vnp_SecureHash": "31dda504e6ac6eb59d036b142a4cdc90bfbe22a45820af80ba4d653334a856e18965631d5a5ed78b53b41966ae637b839e29b12128fc356483bd112d856b00b0"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=194000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15267911&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251118103930537&vnp_PayDate=20251118104004&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15267911&vnp_TransactionStatus=00&vnp_TxnRef=DH20251118103930537",
+    "vnp_SecureHash_from_vnpay": "31dda504e6ac6eb59d036b142a4cdc90bfbe22a45820af80ba4d653334a856e18965631d5a5ed78b53b41966ae637b839e29b12128fc356483bd112d856b00b0",
+    "secureHash_calculated": "31dda504e6ac6eb59d036b142a4cdc90bfbe22a45820af80ba4d653334a856e18965631d5a5ed78b53b41966ae637b839e29b12128fc356483bd112d856b00b0",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-18 12:45:42",
+    "all_get_params": {
+        "vnp_Amount": "343000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15268127",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251118124447916",
+        "vnp_PayDate": "20251118124534",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15268127",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251118124447916",
+        "vnp_SecureHash": "da10adbd6349ce5d42a5a77bbeef196b84a565a767cd0672ae52b80f5588fd05fcf491e575cdede481e24e297ab6c348fb8c6e38bace62cf63d386b091232128"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=343000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15268127&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251118124447916&vnp_PayDate=20251118124534&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15268127&vnp_TransactionStatus=00&vnp_TxnRef=DH20251118124447916",
+    "vnp_SecureHash_from_vnpay": "da10adbd6349ce5d42a5a77bbeef196b84a565a767cd0672ae52b80f5588fd05fcf491e575cdede481e24e297ab6c348fb8c6e38bace62cf63d386b091232128",
+    "secureHash_calculated": "da10adbd6349ce5d42a5a77bbeef196b84a565a767cd0672ae52b80f5588fd05fcf491e575cdede481e24e297ab6c348fb8c6e38bace62cf63d386b091232128",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-18 14:14:17",
+    "all_get_params": {
+        "vnp_Amount": "189000000",
+        "vnp_BankCode": "NCB",
+        "vnp_BankTranNo": "VNP15268295",
+        "vnp_CardType": "ATM",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251118141340156",
+        "vnp_PayDate": "20251118141410",
+        "vnp_ResponseCode": "00",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TransactionNo": "15268295",
+        "vnp_TransactionStatus": "00",
+        "vnp_TxnRef": "DH20251118141340156",
+        "vnp_SecureHash": "6d2dda6b412e51f41e1888b48e62f914d126b0c5d03302ad02289aa4472700b32711d434b5a6201cca5ed0dc9f4ddbdd51444f6f8d3469a3caa7707b1b73a83c"
+    }
+}
+================================================================================
+
+{
+    "hashData_raw": "vnp_Amount=189000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP15268295&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251118141340156&vnp_PayDate=20251118141410&vnp_ResponseCode=00&vnp_TmnCode=1C93XWXU&vnp_TransactionNo=15268295&vnp_TransactionStatus=00&vnp_TxnRef=DH20251118141340156",
+    "vnp_SecureHash_from_vnpay": "6d2dda6b412e51f41e1888b48e62f914d126b0c5d03302ad02289aa4472700b32711d434b5a6201cca5ed0dc9f4ddbdd51444f6f8d3469a3caa7707b1b73a83c",
+    "secureHash_calculated": "6d2dda6b412e51f41e1888b48e62f914d126b0c5d03302ad02289aa4472700b32711d434b5a6201cca5ed0dc9f4ddbdd51444f6f8d3469a3caa7707b1b73a83c",
+    "hash_match": true
+}
+--------------------------------------------------------------------------------
+

@@ -1,0 +1,1786 @@
+{
+    "timestamp": "2025-10-30 08:33:38",
+    "madonhang": "DH20251030083338214",
+    "VNPAY_TMN_CODE": "KEHMJT5M",
+    "VNPAY_HASH_SECRET": "OF62CO7OUM...",
+    "vnp_Amount": "120000000",
+    "hashdata_raw": "vnp_Amount=120000000&vnp_Command=pay&vnp_CreateDate=20251030083338&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251030083338214&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=KEHMJT5M&vnp_TxnRef=DH20251030083338214&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "120000000",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251030083338",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251030083338214",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "KEHMJT5M",
+        "vnp_TxnRef": "DH20251030083338214",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=120000000&vnp_Command=pay&vnp_CreateDate=20251030083338&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+h...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-10-30 08:48:25",
+    "madonhang": "DH20251030084825152",
+    "VNPAY_TMN_CODE": "YVTLPCTJ",
+    "VNPAY_HASH_SECRET": "ONFNTGGTMX...",
+    "vnp_Amount": "120000000",
+    "hashdata_raw": "vnp_Amount=120000000&vnp_Command=pay&vnp_CreateDate=20251030084825&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251030084825152&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=YVTLPCTJ&vnp_TxnRef=DH20251030084825152&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "120000000",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251030084825",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251030084825152",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "YVTLPCTJ",
+        "vnp_TxnRef": "DH20251030084825152",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=120000000&vnp_Command=pay&vnp_CreateDate=20251030084825&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+h...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-10-30 08:53:00",
+    "madonhang": "DH20251030085300829",
+    "VNPAY_TMN_CODE": "YVTLPCTJ",
+    "VNPAY_HASH_SECRET": "ONFNTGGTMX...",
+    "vnp_Amount": "100000000",
+    "hashdata_raw": "vnp_Amount=100000000&vnp_Command=pay&vnp_CreateDate=20251030085300&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251030085300829&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fduytruong.loca.lt%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=YVTLPCTJ&vnp_TxnRef=DH20251030085300829&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "100000000",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251030085300",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251030085300829",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/duytruong.loca.lt\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "YVTLPCTJ",
+        "vnp_TxnRef": "DH20251030085300829",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=100000000&vnp_Command=pay&vnp_CreateDate=20251030085300&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+h...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-10-31 13:23:43",
+    "madonhang": "DH20251031132343352",
+    "VNPAY_TMN_CODE": "YVTLPCTJ",
+    "VNPAY_HASH_SECRET": "ONFNTGGTMX...",
+    "vnp_Amount": "120000000",
+    "hashdata_raw": "vnp_Amount=120000000&vnp_Command=pay&vnp_CreateDate=20251031132343&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251031132343352&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fduytruong.loca.lt%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=YVTLPCTJ&vnp_TxnRef=DH20251031132343352&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "120000000",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251031132343",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251031132343352",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/duytruong.loca.lt\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "YVTLPCTJ",
+        "vnp_TxnRef": "DH20251031132343352",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=120000000&vnp_Command=pay&vnp_CreateDate=20251031132343&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+h...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-10-31 13:27:29",
+    "madonhang": "DH20251031132729225",
+    "VNPAY_TMN_CODE": "YVTLPCTJ",
+    "VNPAY_HASH_SECRET": "ONFNTGGTMX...",
+    "vnp_Amount": "120000000",
+    "hashdata_raw": "vnp_Amount=120000000&vnp_Command=pay&vnp_CreateDate=20251031132729&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251031132729225&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fduytruong.loca.lt%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=YVTLPCTJ&vnp_TxnRef=DH20251031132729225&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "120000000",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251031132729",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251031132729225",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/duytruong.loca.lt\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "YVTLPCTJ",
+        "vnp_TxnRef": "DH20251031132729225",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=120000000&vnp_Command=pay&vnp_CreateDate=20251031132729&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+h...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-10-31 13:31:23",
+    "madonhang": "DH20251031133123701",
+    "VNPAY_TMN_CODE": "YVTLPCTJ",
+    "VNPAY_HASH_SECRET": "ONFNTGGTMX...",
+    "vnp_Amount": "120000000",
+    "hashdata_raw": "vnp_Amount=120000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251031133123&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251031133123701&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fduytruong.loca.lt%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=YVTLPCTJ&vnp_TxnRef=DH20251031133123701&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "120000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251031133123",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251031133123701",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/duytruong.loca.lt\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "YVTLPCTJ",
+        "vnp_TxnRef": "DH20251031133123701",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=120000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251031133123&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-10-31 13:33:22",
+    "madonhang": "DH20251031133322566",
+    "VNPAY_TMN_CODE": "YVTLPCTJ",
+    "VNPAY_HASH_SECRET": "ONFNTGGTMX...",
+    "vnp_Amount": "120000000",
+    "hashdata_raw": "vnp_Amount=120000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251031133322&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251031133322566&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fduytruong.loca.lt%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=YVTLPCTJ&vnp_TxnRef=DH20251031133322566&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "120000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251031133322",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251031133322566",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/duytruong.loca.lt\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "YVTLPCTJ",
+        "vnp_TxnRef": "DH20251031133322566",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=120000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251031133322&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-10-31 13:37:53",
+    "madonhang": "DH20251031133753598",
+    "VNPAY_TMN_CODE": "CGWSHOPM",
+    "VNPAY_HASH_SECRET": "HQVSCPAXen...",
+    "vnp_Amount": "120000000",
+    "hashdata_raw": "vnp_Amount=120000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251031133753&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251031133753598&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fduytruong.loca.lt%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=CGWSHOPM&vnp_TxnRef=DH20251031133753598&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "120000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251031133753",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251031133753598",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/duytruong.loca.lt\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "CGWSHOPM",
+        "vnp_TxnRef": "DH20251031133753598",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=120000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251031133753&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-10-31 13:43:46",
+    "madonhang": "DH20251031134346836",
+    "VNPAY_TMN_CODE": "CGWSHOPM",
+    "VNPAY_HASH_SECRET": "HQVSCPAXen...",
+    "vnp_Amount": "777000000",
+    "hashdata_raw": "vnp_Amount=777000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251031134346&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251031134346836&vnp_OrderType=billpayment&vnp_ReturnUrl=http%3A%2F%2F10.0.2.2%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=CGWSHOPM&vnp_TxnRef=DH20251031134346836&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "777000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251031134346",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251031134346836",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "http:\/\/10.0.2.2\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "CGWSHOPM",
+        "vnp_TxnRef": "DH20251031134346836",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=777000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251031134346&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-10-31 13:59:28",
+    "madonhang": "DH20251031135928721",
+    "VNPAY_TMN_CODE": "CGWSHOPM",
+    "VNPAY_HASH_SECRET": "HQVSCPAXen...",
+    "vnp_Amount": "240000000",
+    "hashdata_raw": "vnp_Amount=240000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251031135928&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251031135928721&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fduytruong2.loca.lt%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=CGWSHOPM&vnp_TxnRef=DH20251031135928721&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "240000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251031135928",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251031135928721",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/duytruong2.loca.lt\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "CGWSHOPM",
+        "vnp_TxnRef": "DH20251031135928721",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=240000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251031135928&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-10-31 14:08:23",
+    "madonhang": "DH20251031140823775",
+    "VNPAY_TMN_CODE": "CGWSHOPM",
+    "VNPAY_HASH_SECRET": "HQVSCPAXen...",
+    "vnp_Amount": "100000000",
+    "hashdata_raw": "vnp_Amount=100000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251031140823&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251031140823775&vnp_OrderType=billpayment&vnp_ReturnUrl=http%3A%2F%2Flocalhost%2Fapi_payment%2Fvnpay_return.php&vnp_TmnCode=CGWSHOPM&vnp_TxnRef=DH20251031140823775&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "100000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251031140823",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251031140823775",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "http:\/\/localhost\/api_payment\/vnpay_return.php",
+        "vnp_TmnCode": "CGWSHOPM",
+        "vnp_TxnRef": "DH20251031140823775",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=100000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251031140823&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-10-31 14:11:58",
+    "madonhang": "DH20251031141158379",
+    "VNPAY_TMN_CODE": "CGWSHOPM",
+    "VNPAY_HASH_SECRET": "HQVSCPAXen...",
+    "vnp_Amount": "120000000",
+    "hashdata_raw": "vnp_Amount=120000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251031141158&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251031141158379&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=CGWSHOPM&vnp_TxnRef=DH20251031141158379&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "120000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251031141158",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251031141158379",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "CGWSHOPM",
+        "vnp_TxnRef": "DH20251031141158379",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=120000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251031141158&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-10-31 14:15:37",
+    "madonhang": "DH20251031141537361",
+    "VNPAY_TMN_CODE": "CGWSHOPM",
+    "VNPAY_HASH_SECRET": "HQVSCPAXen...",
+    "vnp_Amount": "240000000",
+    "hashdata_raw": "vnp_Amount=240000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251031141537&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251031141537361&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=CGWSHOPM&vnp_TxnRef=DH20251031141537361&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "240000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251031141537",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251031141537361",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "CGWSHOPM",
+        "vnp_TxnRef": "DH20251031141537361",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=240000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251031141537&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-10-31 14:20:37",
+    "madonhang": "DH20251031142037456",
+    "return_url": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+    "payment_url": "https:\/\/sandbox.vnpayment.vn\/paymentv2\/vpcpay.html?vnp_Amount=100000000&vnp_Command=pay&vnp_CreateDate=20251031142037&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251031142037456&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=CGWSHOPM&vnp_TxnRef=DH20251031142037456&vnp_Version=2.1.0&vnp_SecureHash=0545852a0392f732348e1bb56ab81380533ae025845c418e0205c24ae3acb116511566beb17e04efc242b121b15d283e694049e4b185d382ae2fe37249389891",
+    "hashdata_raw": "vnp_Amount=100000000&vnp_Command=pay&vnp_CreateDate=20251031142037&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh toan don hang - DH20251031142037456&vnp_OrderType=billpayment&vnp_ReturnUrl=https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php&vnp_TmnCode=CGWSHOPM&vnp_TxnRef=DH20251031142037456&vnp_Version=2.1.0",
+    "vnp_SecureHash": "0545852a0392f732348e1bb56ab81380533ae025845c418e0205c24ae3acb116511566beb17e04efc242b121b15d283e694049e4b185d382ae2fe37249389891"
+}
+------------------------------
+{
+    "timestamp": "2025-10-31 14:24:44",
+    "madonhang": "DH20251031142444500",
+    "return_url": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+    "payment_url": "https:\/\/sandbox.vnpayment.vn\/paymentv2\/vpcpay.html?vnp_Amount=120000000&vnp_Command=pay&vnp_CreateDate=20251031142444&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251031142444500&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=CGWSHOPM&vnp_TxnRef=DH20251031142444500&vnp_Version=2.1.0&vnp_SecureHash=df5c6a4120f0dfed552e18f77c3292f72e536ee3f161df135dbc242964d0c26126d29358a103caf8adfe3a704f10ac8872bec520883b9d87bf09760efeca71fe",
+    "hashdata_raw": "vnp_Amount=120000000&vnp_Command=pay&vnp_CreateDate=20251031142444&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh toan don hang - DH20251031142444500&vnp_OrderType=billpayment&vnp_ReturnUrl=https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php&vnp_TmnCode=CGWSHOPM&vnp_TxnRef=DH20251031142444500&vnp_Version=2.1.0",
+    "vnp_SecureHash": "df5c6a4120f0dfed552e18f77c3292f72e536ee3f161df135dbc242964d0c26126d29358a103caf8adfe3a704f10ac8872bec520883b9d87bf09760efeca71fe"
+}
+------------------------------
+{
+    "timestamp": "2025-10-31 14:30:52",
+    "madonhang": "DH20251031143052494",
+    "return_url": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+    "payment_url": "https:\/\/sandbox.vnpayment.vn\/paymentv2\/vpcpay.html?vnp_Amount=100000000&vnp_Command=pay&vnp_CreateDate=20251031143052&vnp_CurrCode=VND&vnp_IpAddr=192.168.1.6&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251031143052494&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=CGWSHOPM&vnp_TxnRef=DH20251031143052494&vnp_Version=2.1.0&vnp_SecureHash=d0ba7059cc50343e5fb86b59f87d887c668c7b02bb6f2240ca0b70a6765ba6b38f1a31f038eb2ec93690922742aa1c9d74494946e2023b44bd6e65ff428cab47",
+    "hashdata_raw": "vnp_Amount=100000000&vnp_Command=pay&vnp_CreateDate=20251031143052&vnp_CurrCode=VND&vnp_IpAddr=192.168.1.6&vnp_Locale=vn&vnp_OrderInfo=Thanh toan don hang - DH20251031143052494&vnp_OrderType=billpayment&vnp_ReturnUrl=https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php&vnp_TmnCode=CGWSHOPM&vnp_TxnRef=DH20251031143052494&vnp_Version=2.1.0",
+    "vnp_SecureHash": "d0ba7059cc50343e5fb86b59f87d887c668c7b02bb6f2240ca0b70a6765ba6b38f1a31f038eb2ec93690922742aa1c9d74494946e2023b44bd6e65ff428cab47"
+}
+------------------------------
+{
+    "timestamp": "2025-10-31 14:35:22",
+    "madonhang": "DH20251031143522413",
+    "return_url": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+    "payment_url": "https:\/\/sandbox.vnpayment.vn\/paymentv2\/vpcpay.html?vnp_Amount=240000000&vnp_Command=pay&vnp_CreateDate=20251031143522&vnp_CurrCode=VND&vnp_IpAddr=192.168.1.6&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251031143522413&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=CGWSHOPM&vnp_TxnRef=DH20251031143522413&vnp_Version=2.1.0&vnp_SecureHash=d103d206d2535e45aea4d42c1dc57fe30a40a52479f27afc35c8369490ab9eeafb398abe9295a758bae7e7eb5b8f5c96f87c298d17f251ef58bce795d867dc8b",
+    "hashdata_raw": "vnp_Amount=240000000&vnp_Command=pay&vnp_CreateDate=20251031143522&vnp_CurrCode=VND&vnp_IpAddr=192.168.1.6&vnp_Locale=vn&vnp_OrderInfo=Thanh toan don hang - DH20251031143522413&vnp_OrderType=billpayment&vnp_ReturnUrl=https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php&vnp_TmnCode=CGWSHOPM&vnp_TxnRef=DH20251031143522413&vnp_Version=2.1.0",
+    "vnp_SecureHash": "d103d206d2535e45aea4d42c1dc57fe30a40a52479f27afc35c8369490ab9eeafb398abe9295a758bae7e7eb5b8f5c96f87c298d17f251ef58bce795d867dc8b"
+}
+------------------------------
+{
+    "timestamp": "2025-10-31 14:41:11",
+    "madonhang": "DH20251031144111196",
+    "return_url": "https:\/\/duytruong.loca.lt\/appbandienthoai\/vnpay_return.php",
+    "payment_url": "https:\/\/sandbox.vnpayment.vn\/paymentv2\/vpcpay.html?vnp_Amount=120000000&vnp_Command=pay&vnp_CreateDate=20251031144111&vnp_CurrCode=VND&vnp_IpAddr=192.168.1.6&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251031144111196&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fduytruong.loca.lt%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=CGWSHOPM&vnp_TxnRef=DH20251031144111196&vnp_Version=2.1.0&vnp_SecureHash=2a9fd858feb74a64c5a8ab3e38e59a1a9ad0eada0fcd3112c27aaf4feaaa62bbf4e1873a458c262d3980bb868c0ee738aa0ef8a6ff85bb64de8a286f627ac5e7",
+    "hashdata_raw": "vnp_Amount=120000000&vnp_Command=pay&vnp_CreateDate=20251031144111&vnp_CurrCode=VND&vnp_IpAddr=192.168.1.6&vnp_Locale=vn&vnp_OrderInfo=Thanh toan don hang - DH20251031144111196&vnp_OrderType=billpayment&vnp_ReturnUrl=https:\/\/duytruong.loca.lt\/appbandienthoai\/vnpay_return.php&vnp_TmnCode=CGWSHOPM&vnp_TxnRef=DH20251031144111196&vnp_Version=2.1.0",
+    "vnp_SecureHash": "2a9fd858feb74a64c5a8ab3e38e59a1a9ad0eada0fcd3112c27aaf4feaaa62bbf4e1873a458c262d3980bb868c0ee738aa0ef8a6ff85bb64de8a286f627ac5e7"
+}
+------------------------------
+{
+    "timestamp": "2025-10-31 14:45:11",
+    "madonhang": "DH20251031144511572",
+    "return_url": "https:\/\/duytruong.loca.lt\/appbandienthoai\/vnpay_return.php",
+    "payment_url": "https:\/\/sandbox.vnpayment.vn\/paymentv2\/vpcpay.html?vnp_Amount=100000000&vnp_Command=pay&vnp_CreateDate=20251031144511&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251031144511572&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fduytruong.loca.lt%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=CGWSHOPM&vnp_TxnRef=DH20251031144511572&vnp_Version=2.1.0&vnp_SecureHash=53f869f15dcb34d890316379f0cbc40f26c40ea439385732c5b38b594b881723c586ae85d3abe9df82e792f8acdd53bc6ca737d820a0247deb6de76b3652e097",
+    "hashdata_raw": "vnp_Amount=100000000&vnp_Command=pay&vnp_CreateDate=20251031144511&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh toan don hang - DH20251031144511572&vnp_OrderType=billpayment&vnp_ReturnUrl=https:\/\/duytruong.loca.lt\/appbandienthoai\/vnpay_return.php&vnp_TmnCode=CGWSHOPM&vnp_TxnRef=DH20251031144511572&vnp_Version=2.1.0",
+    "vnp_SecureHash": "53f869f15dcb34d890316379f0cbc40f26c40ea439385732c5b38b594b881723c586ae85d3abe9df82e792f8acdd53bc6ca737d820a0247deb6de76b3652e097"
+}
+------------------------------
+{
+    "timestamp": "2025-10-31 14:54:24",
+    "madonhang": "DH20251031145424601",
+    "return_url": "https:\/\/duytruong.loca.lt\/appbandienthoai\/vnpay_return.php",
+    "payment_url": "https:\/\/sandbox.vnpayment.vn\/paymentv2\/vpcpay.html?vnp_Amount=100000000&vnp_Command=pay&vnp_CreateDate=20251031145424&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251031145424601&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fduytruong.loca.lt%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251031145424601&vnp_Version=2.1.0&vnp_SecureHash=d73266aa3feb6d292ea51b75e544da5a694e659f72e58979342a575f2ee03d4c296cf2279a9d84f6fdb373ab646197ac9bcd3daf2403659de67bec34e39fdc77",
+    "hashdata_raw": "vnp_Amount=100000000&vnp_Command=pay&vnp_CreateDate=20251031145424&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh toan don hang - DH20251031145424601&vnp_OrderType=billpayment&vnp_ReturnUrl=https:\/\/duytruong.loca.lt\/appbandienthoai\/vnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251031145424601&vnp_Version=2.1.0",
+    "vnp_SecureHash": "d73266aa3feb6d292ea51b75e544da5a694e659f72e58979342a575f2ee03d4c296cf2279a9d84f6fdb373ab646197ac9bcd3daf2403659de67bec34e39fdc77"
+}
+------------------------------
+{
+    "timestamp": "2025-10-31 14:59:19",
+    "madonhang": "DH20251031145919536",
+    "return_url": "https:\/\/duytruong.loca.lt\/appbandienthoai\/vnpay_return.php",
+    "payment_url": "https:\/\/sandbox.vnpayment.vn\/paymentv2\/vpcpay.html?vnp_Amount=120000000&vnp_Command=pay&vnp_CreateDate=20251031145919&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251031145919536&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fduytruong.loca.lt%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251031145919536&vnp_Version=2.1.0&vnp_SecureHash=f24f6fb9d65226624307ec922cf02acd9b5c933263635608387f6e36fbc33b2450fac09c67cf9aceb3866b4510a6fd85a1533d5b15f0a9d159eee762ac1d7257",
+    "hashdata_raw": "vnp_Amount=120000000&vnp_Command=pay&vnp_CreateDate=20251031145919&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh toan don hang - DH20251031145919536&vnp_OrderType=billpayment&vnp_ReturnUrl=https:\/\/duytruong.loca.lt\/appbandienthoai\/vnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251031145919536&vnp_Version=2.1.0",
+    "vnp_SecureHash": "f24f6fb9d65226624307ec922cf02acd9b5c933263635608387f6e36fbc33b2450fac09c67cf9aceb3866b4510a6fd85a1533d5b15f0a9d159eee762ac1d7257"
+}
+------------------------------
+{
+    "timestamp": "2025-11-01 21:48:28",
+    "madonhang": "DH20251101214828379",
+    "return_url": "https:\/\/duytruong.loca.lt\/appbandienthoai\/vnpay_return.php",
+    "payment_url": "https:\/\/sandbox.vnpayment.vn\/paymentv2\/vpcpay.html?vnp_Amount=120000000&vnp_Command=pay&vnp_CreateDate=20251101214828&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251101214828379&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fduytruong.loca.lt%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251101214828379&vnp_Version=2.1.0&vnp_SecureHash=6020a11a8d9b05b8a44df85d0f5d1b4f5284d85ae96afdb61284e76d918c431e27dc49a163bedac2471e677fbc8091467fe7c51ef801342fa72ffe3241913f5b",
+    "hashdata_raw": "vnp_Amount=120000000&vnp_Command=pay&vnp_CreateDate=20251101214828&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh toan don hang - DH20251101214828379&vnp_OrderType=billpayment&vnp_ReturnUrl=https:\/\/duytruong.loca.lt\/appbandienthoai\/vnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251101214828379&vnp_Version=2.1.0",
+    "vnp_SecureHash": "6020a11a8d9b05b8a44df85d0f5d1b4f5284d85ae96afdb61284e76d918c431e27dc49a163bedac2471e677fbc8091467fe7c51ef801342fa72ffe3241913f5b"
+}
+------------------------------
+{
+    "timestamp": "2025-11-01 21:56:22",
+    "madonhang": "DH20251101215622443",
+    "return_url": "https:\/\/duytruong.loca.lt\/appbandienthoai\/vnpay_return.php",
+    "payment_url": "https:\/\/sandbox.vnpayment.vn\/paymentv2\/vpcpay.html?vnp_Amount=120000000&vnp_Command=pay&vnp_CreateDate=20251101215622&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251101215622443&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fduytruong.loca.lt%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251101215622443&vnp_Version=2.1.0&vnp_SecureHash=426156901ff7f8d98964191dccf096f018ebe740bc9584885322aedf0909e6b8a104ae7173af42b7433d081ae93ee8093ec203a86e4fbe2f060c774d313dc020",
+    "hashdata_raw": "vnp_Amount=120000000&vnp_Command=pay&vnp_CreateDate=20251101215622&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh toan don hang - DH20251101215622443&vnp_OrderType=billpayment&vnp_ReturnUrl=https:\/\/duytruong.loca.lt\/appbandienthoai\/vnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251101215622443&vnp_Version=2.1.0",
+    "vnp_SecureHash": "426156901ff7f8d98964191dccf096f018ebe740bc9584885322aedf0909e6b8a104ae7173af42b7433d081ae93ee8093ec203a86e4fbe2f060c774d313dc020"
+}
+------------------------------
+{
+    "timestamp": "2025-11-01 21:58:57",
+    "madonhang": "DH20251101215857644",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "100000000",
+    "hashdata_raw": "vnp_Amount=100000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101215857&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251101215857644&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fduytruong.loca.lt%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251101215857644&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "100000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251101215857",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251101215857644",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/duytruong.loca.lt\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251101215857644",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=100000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101215857&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-01 22:04:31",
+    "madonhang": "DH20251101220431808",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "240000000",
+    "hashdata_raw": "vnp_Amount=240000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101220431&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251101220431808&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fduytruong.loca.lt%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251101220431808&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "240000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251101220431",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251101220431808",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/duytruong.loca.lt\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251101220431808",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=240000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101220431&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-01 22:11:21",
+    "madonhang": "DH20251101221121883",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "120000000",
+    "hashdata_raw": "vnp_Amount=120000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101221121&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251101221121883&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251101221121883&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "120000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251101221121",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251101221121883",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251101221121883",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=120000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101221121&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-01 22:14:18",
+    "madonhang": "DH20251101221418839",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "259000000",
+    "hashdata_raw": "vnp_Amount=259000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101221418&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251101221418839&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251101221418839&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "259000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251101221418",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251101221418839",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251101221418839",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=259000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101221418&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-01 22:19:27",
+    "madonhang": "DH20251101221927625",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "120000000",
+    "hashdata_raw": "vnp_Amount=120000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101221927&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251101221927625&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251101221927625&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "120000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251101221927",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251101221927625",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251101221927625",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=120000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101221927&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-01 22:22:33",
+    "madonhang": "DH20251101222233925",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "100000000",
+    "hashdata_raw": "vnp_Amount=100000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101222233&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251101222233925&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251101222233925&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "100000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251101222233",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251101222233925",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251101222233925",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=100000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101222233&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-01 22:31:20",
+    "madonhang": "DH20251101223120499",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "100000000",
+    "hashdata_raw": "vnp_Amount=100000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101223120&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251101223120499&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251101223120499&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "100000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251101223120",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251101223120499",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251101223120499",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=100000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101223120&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-01 22:34:16",
+    "madonhang": "DH20251101223416412",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "199000000",
+    "hashdata_raw": "vnp_Amount=199000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101223416&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251101223416412&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251101223416412&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "199000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251101223416",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251101223416412",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251101223416412",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=199000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101223416&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-01 22:43:04",
+    "madonhang": "DH20251101224304497",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "200000000",
+    "hashdata_raw": "vnp_Amount=200000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101224304&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251101224304497&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251101224304497&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "200000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251101224304",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251101224304497",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251101224304497",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=200000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101224304&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-01 22:48:46",
+    "madonhang": "DH20251101224846667",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "100000000",
+    "hashdata_raw": "vnp_Amount=100000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101224846&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251101224846667&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251101224846667&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "100000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251101224846",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251101224846667",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251101224846667",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=100000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101224846&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-01 22:55:30",
+    "madonhang": "DH20251101225530515",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "100000000",
+    "hashdata_raw": "vnp_Amount=100000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101225530&vnp_CurrCode=VND&vnp_IpAddr=192.168.1.4&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251101225530515&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251101225530515&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "100000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251101225530",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "192.168.1.4",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251101225530515",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251101225530515",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=100000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101225530&vnp_CurrCode=VND&vnp_IpAddr=192.168.1.4&vnp_Locale=vn&vnp_OrderIn...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-01 22:57:14",
+    "madonhang": "DH20251101225714867",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "100000000",
+    "hashdata_raw": "vnp_Amount=100000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101225714&vnp_CurrCode=VND&vnp_IpAddr=192.168.1.4&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251101225714867&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251101225714867&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "100000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251101225714",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "192.168.1.4",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251101225714867",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251101225714867",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=100000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101225714&vnp_CurrCode=VND&vnp_IpAddr=192.168.1.4&vnp_Locale=vn&vnp_OrderIn...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-01 23:01:21",
+    "madonhang": "DH20251101230121199",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "100000000",
+    "hashdata_raw": "vnp_Amount=100000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101230121&vnp_CurrCode=VND&vnp_IpAddr=192.168.1.4&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251101230121199&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251101230121199&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "100000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251101230121",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "192.168.1.4",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251101230121199",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251101230121199",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=100000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101230121&vnp_CurrCode=VND&vnp_IpAddr=192.168.1.4&vnp_Locale=vn&vnp_OrderIn...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-01 23:05:49",
+    "madonhang": "DH20251101230549544",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "100000000",
+    "hashdata_raw": "vnp_Amount=100000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101230549&vnp_CurrCode=VND&vnp_IpAddr=192.168.1.4&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251101230549544&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251101230549544&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "100000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251101230549",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "192.168.1.4",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251101230549544",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251101230549544",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=100000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101230549&vnp_CurrCode=VND&vnp_IpAddr=192.168.1.4&vnp_Locale=vn&vnp_OrderIn...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-01 23:12:43",
+    "madonhang": "DH20251101231243585",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "1990000000",
+    "hashdata_raw": "vnp_Amount=1990000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101231243&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251101231243585&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251101231243585&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "1990000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251101231243",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251101231243585",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251101231243585",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=1990000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101231243&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInf...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-01 23:44:57",
+    "madonhang": "DH20251101234457796",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "100000000",
+    "hashdata_raw": "vnp_Amount=100000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101234457&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251101234457796&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251101234457796&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "100000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251101234457",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251101234457796",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251101234457796",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=100000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251101234457&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-02 00:28:14",
+    "madonhang": "DH20251102002814484",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "100000000",
+    "hashdata_raw": "vnp_Amount=100000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251102002814&vnp_CurrCode=VND&vnp_IpAddr=%3A%3A1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251102002814484&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251102002814484&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "100000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251102002814",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "::1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251102002814484",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251102002814484",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=100000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251102002814&vnp_CurrCode=VND&vnp_IpAddr=%3A%3A1&vnp_Locale=vn&vnp_OrderInfo=T...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-02 10:00:10",
+    "madonhang": "DH20251102100010955",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "830000000",
+    "hashdata_raw": "vnp_Amount=830000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251102100010&vnp_CurrCode=VND&vnp_IpAddr=%3A%3A1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251102100010955&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251102100010955&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "830000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251102100010",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "::1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251102100010955",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251102100010955",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=830000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251102100010&vnp_CurrCode=VND&vnp_IpAddr=%3A%3A1&vnp_Locale=vn&vnp_OrderInfo=T...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-02 13:32:10",
+    "madonhang": "DH20251102133210960",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "199000000",
+    "hashdata_raw": "vnp_Amount=199000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251102133210&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251102133210960&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251102133210960&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "199000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251102133210",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251102133210960",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251102133210960",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=199000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251102133210&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-02 20:25:37",
+    "madonhang": "DH20251102202537223",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "935000000",
+    "hashdata_raw": "vnp_Amount=935000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251102202537&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251102202537223&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251102202537223&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "935000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251102202537",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251102202537223",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251102202537223",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=935000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251102202537&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-03 11:34:20",
+    "madonhang": "DH20251103113420651",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "790000000",
+    "hashdata_raw": "vnp_Amount=790000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251103113420&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251103113420651&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251103113420651&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "790000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251103113420",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251103113420651",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251103113420651",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=790000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251103113420&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-03 14:50:39",
+    "madonhang": "DH20251103145039115",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "815000000",
+    "hashdata_raw": "vnp_Amount=815000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251103145039&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251103145039115&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251103145039115&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "815000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251103145039",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251103145039115",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251103145039115",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=815000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251103145039&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-03 15:32:51",
+    "madonhang": "DH20251103153251374",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "875000000",
+    "hashdata_raw": "vnp_Amount=875000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251103153251&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251103153251374&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251103153251374&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "875000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251103153251",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251103153251374",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251103153251374",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=875000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251103153251&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-03 23:12:57",
+    "madonhang": "DH20251103231257752",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "875000000",
+    "hashdata_raw": "vnp_Amount=875000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251103231257&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251103231257752&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251103231257752&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "875000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251103231257",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251103231257752",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251103231257752",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=875000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251103231257&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-04 07:22:21",
+    "madonhang": "DH20251104072221188",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "194000000",
+    "hashdata_raw": "vnp_Amount=194000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251104072221&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251104072221188&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251104072221188&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "194000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251104072221",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251104072221188",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251104072221188",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=194000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251104072221&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-04 07:24:49",
+    "madonhang": "DH20251104072449966",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "987000000",
+    "hashdata_raw": "vnp_Amount=987000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251104072449&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251104072449966&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251104072449966&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "987000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251104072449",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251104072449966",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251104072449966",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=987000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251104072449&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-04 09:04:37",
+    "madonhang": "DH20251104090437575",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "390000000",
+    "hashdata_raw": "vnp_Amount=390000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251104090437&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251104090437575&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251104090437575&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "390000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251104090437",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251104090437575",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251104090437575",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=390000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251104090437&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-04 10:46:34",
+    "madonhang": "DH20251104104634757",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "194000000",
+    "hashdata_raw": "vnp_Amount=194000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251104104634&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251104104634757&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251104104634757&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "194000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251104104634",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251104104634757",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251104104634757",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=194000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251104104634&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-04 12:44:19",
+    "madonhang": "DH20251104124419780",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "390000000",
+    "hashdata_raw": "vnp_Amount=390000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251104124419&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251104124419780&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251104124419780&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "390000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251104124419",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251104124419780",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251104124419780",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=390000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251104124419&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-10 13:38:50",
+    "madonhang": "DH20251110133850642",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "803000000",
+    "hashdata_raw": "vnp_Amount=803000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251110133850&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251110133850642&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251110133850642&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "803000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251110133850",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251110133850642",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251110133850642",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=803000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251110133850&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-10 13:46:20",
+    "madonhang": "DH20251110134620621",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "405000000",
+    "hashdata_raw": "vnp_Amount=405000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251110134620&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251110134620621&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251110134620621&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "405000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251110134620",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251110134620621",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251110134620621",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=405000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251110134620&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-10 14:02:46",
+    "madonhang": "DH20251110140246639",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "184000000",
+    "hashdata_raw": "vnp_Amount=184000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251110140246&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251110140246639&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251110140246639&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "184000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251110140246",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251110140246639",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251110140246639",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=184000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251110140246&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-10 14:10:10",
+    "madonhang": "DH20251110141010888",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "189000000",
+    "hashdata_raw": "vnp_Amount=189000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251110141010&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251110141010888&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251110141010888&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "189000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251110141010",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251110141010888",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251110141010888",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=189000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251110141010&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-10 14:19:38",
+    "madonhang": "DH20251110141938684",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "189000000",
+    "hashdata_raw": "vnp_Amount=189000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251110141938&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251110141938684&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251110141938684&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "189000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251110141938",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251110141938684",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251110141938684",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=189000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251110141938&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-11 07:24:30",
+    "madonhang": "DH20251111072430749",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "405000000",
+    "hashdata_raw": "vnp_Amount=405000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251111072430&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251111072430749&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251111072430749&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "405000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251111072430",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251111072430749",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251111072430749",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=405000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251111072430&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-11 07:32:21",
+    "madonhang": "DH20251111073221167",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "199000000",
+    "hashdata_raw": "vnp_Amount=199000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251111073221&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251111073221167&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251111073221167&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "199000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251111073221",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251111073221167",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251111073221167",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=199000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251111073221&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-11 07:34:52",
+    "madonhang": "DH20251111073452880",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "199000000",
+    "hashdata_raw": "vnp_Amount=199000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251111073452&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251111073452880&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251111073452880&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "199000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251111073452",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251111073452880",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251111073452880",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=199000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251111073452&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-11 07:38:42",
+    "madonhang": "DH20251111073842123",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "189000000",
+    "hashdata_raw": "vnp_Amount=189000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251111073842&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251111073842123&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251111073842123&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "189000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251111073842",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251111073842123",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251111073842123",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=189000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251111073842&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-11 08:08:06",
+    "madonhang": "DH20251111080806265",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "813000000",
+    "hashdata_raw": "vnp_Amount=813000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251111080806&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251111080806265&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251111080806265&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "813000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251111080806",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251111080806265",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251111080806265",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=813000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251111080806&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-11 09:57:33",
+    "madonhang": "DH20251111095733356",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "194000000",
+    "hashdata_raw": "vnp_Amount=194000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251111095733&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251111095733356&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251111095733356&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "194000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251111095733",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251111095733356",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251111095733356",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=194000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251111095733&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-11 09:59:00",
+    "madonhang": "DH20251111095900127",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "194000000",
+    "hashdata_raw": "vnp_Amount=194000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251111095900&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251111095900127&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251111095900127&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "194000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251111095900",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251111095900127",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251111095900127",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=194000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251111095900&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-11 10:01:23",
+    "madonhang": "DH20251111100123848",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "194000000",
+    "hashdata_raw": "vnp_Amount=194000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251111100123&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251111100123848&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251111100123848&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "194000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251111100123",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251111100123848",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251111100123848",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=194000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251111100123&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-11 10:04:00",
+    "madonhang": "DH20251111100400272",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "189000000",
+    "hashdata_raw": "vnp_Amount=189000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251111100400&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251111100400272&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251111100400272&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "189000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251111100400",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251111100400272",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251111100400272",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=189000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251111100400&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-11 12:28:56",
+    "madonhang": "DH20251111122856529",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "118000000",
+    "hashdata_raw": "vnp_Amount=118000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251111122856&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251111122856529&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251111122856529&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "118000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251111122856",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251111122856529",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251111122856529",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=118000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251111122856&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-11 12:38:53",
+    "madonhang": "DH20251111123853424",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "2314000000",
+    "hashdata_raw": "vnp_Amount=2314000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251111123853&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251111123853424&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251111123853424&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "2314000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251111123853",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251111123853424",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251111123853424",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=2314000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251111123853&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInf...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-11 12:41:41",
+    "madonhang": "DH20251111124141101",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "194000000",
+    "hashdata_raw": "vnp_Amount=194000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251111124141&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251111124141101&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251111124141101&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "194000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251111124141",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251111124141101",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251111124141101",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=194000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251111124141&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-18 10:39:30",
+    "madonhang": "DH20251118103930537",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "194000000",
+    "hashdata_raw": "vnp_Amount=194000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251118103930&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251118103930537&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251118103930537&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "194000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251118103930",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251118103930537",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251118103930537",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=194000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251118103930&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-18 12:44:47",
+    "madonhang": "DH20251118124447916",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "343000000",
+    "hashdata_raw": "vnp_Amount=343000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251118124447&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251118124447916&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251118124447916&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "343000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251118124447",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251118124447916",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251118124447916",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=343000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251118124447&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-18 14:11:27",
+    "madonhang": "DH20251118141127606",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "194000000",
+    "hashdata_raw": "vnp_Amount=194000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251118141127&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251118141127606&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251118141127606&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "194000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251118141127",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251118141127606",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251118141127606",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=194000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251118141127&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+
+{
+    "timestamp": "2025-11-18 14:13:40",
+    "madonhang": "DH20251118141340156",
+    "VNPAY_TMN_CODE": "1C93XWXU",
+    "VNPAY_HASH_SECRET": "GE4QRFHMNX...",
+    "vnp_Amount": "189000000",
+    "hashdata_raw": "vnp_Amount=189000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251118141340&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=Thanh+toan+don+hang+-+DH20251118141340156&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fdonya-barwise-subversively.ngrok-free.dev%2Fappbandienthoai%2Fvnpay_return.php&vnp_TmnCode=1C93XWXU&vnp_TxnRef=DH20251118141340156&vnp_Version=2.1.0",
+    "inputData": {
+        "vnp_Amount": "189000000",
+        "vnp_BankCode": "NCB",
+        "vnp_Command": "pay",
+        "vnp_CreateDate": "20251118141340",
+        "vnp_CurrCode": "VND",
+        "vnp_IpAddr": "127.0.0.1",
+        "vnp_Locale": "vn",
+        "vnp_OrderInfo": "Thanh toan don hang - DH20251118141340156",
+        "vnp_OrderType": "billpayment",
+        "vnp_ReturnUrl": "https:\/\/donya-barwise-subversively.ngrok-free.dev\/appbandienthoai\/vnpay_return.php",
+        "vnp_TmnCode": "1C93XWXU",
+        "vnp_TxnRef": "DH20251118141340156",
+        "vnp_Version": "2.1.0"
+    }
+}
+
+Payment URL (first 200 chars): https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=189000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20251118141340&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo...
+--------------------------------------------------------------------------------
+

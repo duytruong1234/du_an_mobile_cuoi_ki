@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=select `v`.`id` AS `id`,`v`.`ma_voucher` AS `ma_voucher`,`v`.`ten_voucher` AS `ten_voucher`,`v`.`loai_giam` AS `loai_giam`,`v`.`gia_tri_giam` AS `gia_tri_giam`,`v`.`don_toi_thieu` AS `don_toi_thieu`,`v`.`so_luong` AS `so_luong`,`v`.`da_su_dung` AS `da_su_dung`,case when `v`.`so_luong` is null then \'Không giới hạn\' else concat(`v`.`da_su_dung`,\'/\',`v`.`so_luong`) end AS `ti_le_su_dung`,`v`.`ngay_bat_dau` AS `ngay_bat_dau`,`v`.`ngay_het_han` AS `ngay_het_han`,case when `v`.`trang_thai` = 0 then \'Vô hiệu hóa\' when current_timestamp() < `v`.`ngay_bat_dau` then \'Chưa bắt đầu\' when current_timestamp() > `v`.`ngay_het_han` then \'Hết hạn\' when `v`.`so_luong` is not null and `v`.`da_su_dung` >= `v`.`so_luong` then \'Đã hết\' else \'Đang hoạt động\' end AS `trang_thai_hien_tai`,count(distinct `vu`.`user_id`) AS `so_luong_user_da_dung`,coalesce(sum(`vu`.`gia_tri_giam`),0) AS `tong_tien_da_giam` from (`appbandongho`.`voucher` `v` left join `appbandongho`.`voucher_usage` `vu` on(`v`.`id` = `vu`.`voucher_id`)) group by `v`.`id`
+md5=75737b8c34fc02941b6294b3954154b6
+updatable=0
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=2
+with_check_option=0
+timestamp=0001762140754569946
+create-version=2
+source=SELECT\n    v.id,\n    v.ma_voucher,\n    v.ten_voucher,\n    v.loai_giam,\n    v.gia_tri_giam,\n    v.don_toi_thieu,\n    v.so_luong,\n    v.da_su_dung,\n    CASE\n        WHEN v.so_luong IS NULL THEN \'Không giới hạn\'\n        ELSE CONCAT(v.da_su_dung, \'/\', v.so_luong)\n    END as ti_le_su_dung,\n    v.ngay_bat_dau,\n    v.ngay_het_han,\n    CASE\n        WHEN v.trang_thai = 0 THEN \'Vô hiệu hóa\'\n        WHEN NOW() < v.ngay_bat_dau THEN \'Chưa bắt đầu\'\n        WHEN NOW() > v.ngay_het_han THEN \'Hết hạn\'\n        WHEN v.so_luong IS NOT NULL AND v.da_su_dung >= v.so_luong THEN \'Đã hết\'\n        ELSE \'Đang hoạt động\'\n    END as trang_thai_hien_tai,\n    COUNT(DISTINCT vu.user_id) as so_luong_user_da_dung,\n    COALESCE(SUM(vu.gia_tri_giam), 0) as tong_tien_da_giam\nFROM `voucher` v\nLEFT JOIN `voucher_usage` vu ON v.id = vu.voucher_id\nGROUP BY v.id
+client_cs_name=utf8mb4
+connection_cl_name=utf8mb4_general_ci
+view_body_utf8=select `v`.`id` AS `id`,`v`.`ma_voucher` AS `ma_voucher`,`v`.`ten_voucher` AS `ten_voucher`,`v`.`loai_giam` AS `loai_giam`,`v`.`gia_tri_giam` AS `gia_tri_giam`,`v`.`don_toi_thieu` AS `don_toi_thieu`,`v`.`so_luong` AS `so_luong`,`v`.`da_su_dung` AS `da_su_dung`,case when `v`.`so_luong` is null then \'Không giới hạn\' else concat(`v`.`da_su_dung`,\'/\',`v`.`so_luong`) end AS `ti_le_su_dung`,`v`.`ngay_bat_dau` AS `ngay_bat_dau`,`v`.`ngay_het_han` AS `ngay_het_han`,case when `v`.`trang_thai` = 0 then \'Vô hiệu hóa\' when current_timestamp() < `v`.`ngay_bat_dau` then \'Chưa bắt đầu\' when current_timestamp() > `v`.`ngay_het_han` then \'Hết hạn\' when `v`.`so_luong` is not null and `v`.`da_su_dung` >= `v`.`so_luong` then \'Đã hết\' else \'Đang hoạt động\' end AS `trang_thai_hien_tai`,count(distinct `vu`.`user_id`) AS `so_luong_user_da_dung`,coalesce(sum(`vu`.`gia_tri_giam`),0) AS `tong_tien_da_giam` from (`appbandongho`.`voucher` `v` left join `appbandongho`.`voucher_usage` `vu` on(`v`.`id` = `vu`.`voucher_id`)) group by `v`.`id`
+mariadb-version=100432

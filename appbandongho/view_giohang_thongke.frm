@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=select `g`.`iduser` AS `iduser`,count(`g`.`id`) AS `so_sanpham`,sum(`g`.`soluong`) AS `tong_soluong`,sum(`g`.`giasp` * `g`.`soluong`) AS `tong_giatri` from `appbandongho`.`giohang` `g` group by `g`.`iduser`
+md5=4e9781245c96cc3aa31fd1e92327d253
+updatable=0
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=2
+with_check_option=0
+timestamp=0001762755205053432
+create-version=2
+source=SELECT\n    g.iduser,\n    COUNT(g.id) as so_sanpham,\n    SUM(g.soluong) as tong_soluong,\n    SUM(g.giasp * g.soluong) as tong_giatri\nFROM giohang g\nGROUP BY g.iduser
+client_cs_name=utf8mb4
+connection_cl_name=utf8mb4_general_ci
+view_body_utf8=select `g`.`iduser` AS `iduser`,count(`g`.`id`) AS `so_sanpham`,sum(`g`.`soluong`) AS `tong_soluong`,sum(`g`.`giasp` * `g`.`soluong`) AS `tong_giatri` from `appbandongho`.`giohang` `g` group by `g`.`iduser`
+mariadb-version=100432

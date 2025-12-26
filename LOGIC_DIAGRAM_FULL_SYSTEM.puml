@@ -1,0 +1,390 @@
+@startuml LOGIC_DIAGRAM_FULL_SYSTEM
+' ================================================================
+' SƠ ĐỒ LOGIC TỔNG THỂ - ỨNG DỤNG ANDROID THƯƠNG MẠI ĐIỆN TỬ
+' Ứng dụng: Bán Đồng Hồ E-Commerce
+' Ngày: 01/12/2025
+' ================================================================
+
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam packageStyle rectangle
+skinparam linetype ortho
+
+title **SƠ ĐỒ LOGIC TỔNG THỂ - ỨNG DỤNG ANDROID E-COMMERCE**\n(Ứng dụng Bán Đồng Hồ)
+
+' ================================================================
+' ĐỊNH NGHĨA CÁC TẦNG (LAYERS)
+' ================================================================
+
+package "TẦNG CLIENT (ANDROID APP)" as CLIENT {
+    
+    package "UI Layer - Activities/Fragments" as UI {
+        [SplashActivity] as splash
+        [LoginActivity] as login
+        [RegisterActivity] as register
+        [MainActivity] as main
+        [ProductListFragment] as productList
+        [ProductDetailActivity] as productDetail
+        [CartActivity] as cart
+        [CheckoutActivity] as checkout
+        [PaymentActivity] as payment
+        [OrderHistoryActivity] as orderHistory
+        [OrderDetailActivity] as orderDetail
+        [ProfileActivity] as profile
+        [AdminActivity] as admin
+    }
+    
+    package "Business Logic Layer" as LOGIC {
+        [ViewModel] as viewmodel
+        [Repository] as repository
+        [RetrofitClient] as retrofit
+        [APIService] as apiService
+    }
+    
+    package "Local Storage" as LOCAL {
+        [PaperDB\n(Cart Cache)] as paperdb
+        [SharedPreferences\n(User Session)] as sharedpref
+        [Room Database\n(Offline Data)] as room
+    }
+}
+
+package "TẦNG SERVER (PHP API BACKEND)" as SERVER {
+    
+    package "Authentication APIs" as AUTH_API {
+        [dangnhap.php] as apiLogin
+        [dangki.php] as apiRegister
+        [quenmatkhau.php] as apiResetPwd
+    }
+    
+    package "Product APIs" as PRODUCT_API {
+        [getloaisp.php] as apiCategories
+        [getsanpham.php] as apiProducts
+        [chitiet.php] as apiProductDetail
+        [timkiem.php] as apiSearch
+    }
+    
+    package "Cart APIs" as CART_API {
+        [themGioHang.php] as apiAddCart
+        [getGioHang.php] as apiGetCart
+        [capNhatGioHang.php] as apiUpdateCart
+        [xoaGioHang.php] as apiDeleteCart
+    }
+    
+    package "Order APIs" as ORDER_API {
+        [taoDonHang.php] as apiCreateOrder
+        [getDonHang.php] as apiGetOrders
+        [getChiTietDonHang.php] as apiOrderDetail
+        [capNhatTrangThai.php] as apiUpdateStatus
+    }
+    
+    package "Payment APIs" as PAYMENT_API {
+        [vnpay_create.php] as apiVNPay
+        [vnpay_return.php] as apiVNPayReturn
+        [paypal_create.php] as apiPayPal
+        [paypal_execute.php] as apiPayPalExecute
+    }
+    
+    package "Voucher APIs" as VOUCHER_API {
+        [getAllVouchers.php] as apiVouchers
+        [applyVoucher.php] as apiApplyVoucher
+    }
+    
+    package "Admin APIs" as ADMIN_API {
+        [getAllUsers.php] as apiUsers
+        [updatesp.php] as apiUpdateProduct
+        [capNhatTonKho.php] as apiStock
+    }
+    
+    [connect.php\n(DB Connection)] as dbConnect
+}
+
+package "TẦNG DATABASE (MySQL)" as DATABASE {
+    
+    database "appbandienthoai" as db {
+        [user] as tblUser
+        [sanphammoi] as tblProduct
+        [loaisp] as tblCategory
+        [cart] as tblCart
+        [cart_items] as tblCartItems
+        [donhang] as tblOrder
+        [chitietdonhang] as tblOrderDetail
+        [voucher] as tblVoucher
+        [voucher_usage] as tblVoucherUsage
+    }
+}
+
+package "DỊCH VỤ BÊN NGOÀI" as EXTERNAL {
+    [Google/Firebase Auth] as googleAuth
+    [VNPay Gateway] as vnpayGateway
+    [PayPal Gateway] as paypalGateway
+    [Email Service\n(OTP)] as emailService
+}
+
+' ================================================================
+' LUỒNG LOGIC - KHỞI ĐỘNG ỨNG DỤNG
+' ================================================================
+
+splash --> sharedpref : 1. Kiểm tra\nUser Session
+sharedpref --> splash : 2. Trả về\nlogin status
+splash --> login : 3a. Chưa đăng nhập
+splash --> main : 3b. Đã đăng nhập
+
+' ================================================================
+' LUỒNG LOGIC - ĐĂNG NHẬP / ĐĂNG KÝ
+' ================================================================
+
+login --> viewmodel : 4. Login request
+login --> googleAuth : 4b. Google Sign-In
+register --> viewmodel : Đăng ký mới
+
+viewmodel --> repository : 5. Gọi Repository
+repository --> retrofit : 6. HTTP Request
+retrofit --> apiService : 7. Call API
+
+apiService --> apiLogin : 8. POST /dangnhap.php
+apiService --> apiRegister : 8. POST /dangki.php
+
+apiLogin --> dbConnect : 9. Kết nối DB
+apiRegister --> dbConnect : 9. Kết nối DB
+dbConnect --> tblUser : 10. Query User
+
+tblUser --> dbConnect : 11. Kết quả
+dbConnect --> apiLogin : 12. Response
+apiLogin --> retrofit : 13. JSON Response
+retrofit --> repository : 14. Parse Data
+repository --> viewmodel : 15. User Data
+viewmodel --> sharedpref : 16. Lưu Session
+viewmodel --> login : 17. Login Success
+login --> main : 18. Navigate
+
+' ================================================================
+' LUỒNG LOGIC - XEM SẢN PHẨM
+' ================================================================
+
+main --> productList : 19. Load Products
+productList --> viewmodel : 20. Get Products
+viewmodel --> repository : 21. Fetch Data
+repository --> retrofit : 22. HTTP GET
+
+retrofit --> apiCategories : 23a. GET /getloaisp.php
+retrofit --> apiProducts : 23b. GET /getsanpham.php
+
+apiCategories --> dbConnect : 24. Query
+apiProducts --> dbConnect : 24. Query
+dbConnect --> tblCategory : 25. SELECT loaisp
+dbConnect --> tblProduct : 25. SELECT sanphammoi
+
+tblCategory --> apiCategories : 26. Data
+tblProduct --> apiProducts : 26. Data
+apiCategories --> retrofit : 27. JSON
+apiProducts --> retrofit : 27. JSON
+
+retrofit --> repository : 28. Products List
+repository --> room : 29. Cache locally
+repository --> viewmodel : 30. LiveData
+viewmodel --> productList : 31. Update UI
+
+productList --> productDetail : 32. Click Product
+productDetail --> viewmodel : 33. Get Detail
+viewmodel --> apiProductDetail : 34. GET /chitiet.php
+
+' ================================================================
+' LUỒNG LOGIC - THÊM VÀO GIỎ HÀNG
+' ================================================================
+
+productDetail --> viewmodel : 35. Add to Cart
+viewmodel --> repository : 36. Add Item
+
+repository --> paperdb : 37a. Save Local\n(Offline mode)
+repository --> retrofit : 37b. Sync Server
+
+retrofit --> apiAddCart : 38. POST /themGioHang.php
+apiAddCart --> dbConnect : 39. Insert
+dbConnect --> tblCart : 40. INSERT/UPDATE cart
+dbConnect --> tblCartItems : 41. INSERT cart_items
+
+tblCartItems --> apiAddCart : 42. Success
+apiAddCart --> retrofit : 43. Response
+retrofit --> repository : 44. Confirm
+repository --> viewmodel : 45. Update State
+viewmodel --> productDetail : 46. Show Toast
+
+' ================================================================
+' LUỒNG LOGIC - XEM & QUẢN LÝ GIỎ HÀNG
+' ================================================================
+
+main --> cart : 47. Open Cart
+cart --> viewmodel : 48. Get Cart Items
+viewmodel --> repository : 49. Fetch Cart
+
+repository --> paperdb : 50a. Get Local
+repository --> retrofit : 50b. GET /getGioHang.php
+
+retrofit --> apiGetCart : 51. Request
+apiGetCart --> dbConnect : 52. Query
+dbConnect --> tblCart : 53. SELECT cart
+dbConnect --> tblCartItems : 54. JOIN cart_items
+tblCartItems --> apiGetCart : 55. Cart Data
+apiGetCart --> retrofit : 56. JSON
+retrofit --> repository : 57. Cart Items
+repository --> viewmodel : 58. Update
+viewmodel --> cart : 59. Display Items
+
+cart --> viewmodel : 60. Update Quantity
+viewmodel --> apiUpdateCart : 61. PUT /capNhatGioHang.php
+
+cart --> viewmodel : 62. Remove Item
+viewmodel --> apiDeleteCart : 63. DELETE /xoaGioHang.php
+
+' ================================================================
+' LUỒNG LOGIC - CHECKOUT & TẠO ĐƠN HÀNG
+' ================================================================
+
+cart --> checkout : 64. Proceed Checkout
+checkout --> viewmodel : 65. Load Cart Summary
+checkout --> viewmodel : 66. Apply Voucher
+
+viewmodel --> apiApplyVoucher : 67. POST /applyVoucher.php
+apiApplyVoucher --> dbConnect : 68. Validate
+dbConnect --> tblVoucher : 69. Check Voucher
+tblVoucher --> apiApplyVoucher : 70. Discount
+apiApplyVoucher --> viewmodel : 71. New Total
+viewmodel --> checkout : 72. Update Price
+
+checkout --> payment : 73. Select Payment
+payment --> viewmodel : 74. Create Order
+
+' ================================================================
+' LUỒNG LOGIC - THANH TOÁN
+' ================================================================
+
+' COD Payment
+viewmodel --> apiCreateOrder : 75a. COD Order
+apiCreateOrder --> dbConnect : 76. Transaction Start
+dbConnect --> tblOrder : 77. INSERT donhang
+dbConnect --> tblOrderDetail : 78. INSERT chitietdonhang
+dbConnect --> tblProduct : 79. UPDATE tonkho
+dbConnect --> tblVoucherUsage : 80. INSERT usage
+dbConnect --> tblCartItems : 81. DELETE cart_items
+tblOrder --> apiCreateOrder : 82. Order ID
+apiCreateOrder --> viewmodel : 83. Success
+
+' VNPay Payment
+viewmodel --> apiVNPay : 75b. VNPay Request
+apiVNPay --> vnpayGateway : 84. Create Payment URL
+vnpayGateway --> payment : 85. Redirect WebView
+payment --> vnpayGateway : 86. User Pays
+vnpayGateway --> apiVNPayReturn : 87. Callback
+apiVNPayReturn --> dbConnect : 88. Verify & Save
+dbConnect --> tblOrder : 89. UPDATE payment_status
+apiVNPayReturn --> payment : 90. Result
+
+' PayPal Payment
+viewmodel --> apiPayPal : 75c. PayPal Request
+apiPayPal --> paypalGateway : 91. Create Order
+paypalGateway --> payment : 92. Approval URL
+payment --> paypalGateway : 93. User Approves
+paypalGateway --> apiPayPalExecute : 94. Execute
+apiPayPalExecute --> dbConnect : 95. Capture Payment
+dbConnect --> tblOrder : 96. UPDATE paypal_info
+apiPayPalExecute --> payment : 97. Confirmation
+
+' ================================================================
+' LUỒNG LOGIC - KẾT QUẢ & ĐIỀU HƯỚNG
+' ================================================================
+
+payment --> viewmodel : 98. Payment Result
+viewmodel --> repository : 99. Clear Cart
+repository --> paperdb : 100. Clear Local
+repository --> apiDeleteCart : 101. Clear Server
+
+viewmodel --> payment : 102. Show Result
+payment --> orderDetail : 103. View Order
+payment --> main : 104. Back to Home
+
+' ================================================================
+' LUỒNG LOGIC - XEM LỊCH SỬ ĐƠN HÀNG
+' ================================================================
+
+main --> orderHistory : 105. My Orders
+orderHistory --> viewmodel : 106. Get Orders
+viewmodel --> apiGetOrders : 107. GET /getDonHang.php
+apiGetOrders --> dbConnect : 108. Query
+dbConnect --> tblOrder : 109. SELECT orders
+tblOrder --> apiGetOrders : 110. Order List
+apiGetOrders --> viewmodel : 111. Data
+viewmodel --> orderHistory : 112. Display
+
+orderHistory --> orderDetail : 113. Click Order
+orderDetail --> apiOrderDetail : 114. GET Detail
+apiOrderDetail --> tblOrderDetail : 115. Query
+tblOrderDetail --> orderDetail : 116. Display
+
+' ================================================================
+' LUỒNG LOGIC - ADMIN
+' ================================================================
+
+main --> admin : 117. Admin Panel\n(role=1)
+admin --> apiUsers : 118. Manage Users
+admin --> apiUpdateProduct : 119. Manage Products
+admin --> apiStock : 120. Update Stock
+admin --> apiUpdateStatus : 121. Update Order Status
+
+apiUpdateStatus --> dbConnect : 122. Update
+dbConnect --> tblOrder : 123. SET trangthai
+
+' ================================================================
+' GHI CHÚ
+' ================================================================
+
+note right of CLIENT
+  **ANDROID CLIENT**
+  - Kotlin/Java
+  - MVVM Architecture
+  - Retrofit + OkHttp
+  - LiveData/Flow
+  - Glide (Images)
+end note
+
+note right of SERVER
+  **PHP BACKEND**
+  - RESTful API
+  - JSON Response
+  - Session Management
+  - Input Validation
+end note
+
+note right of DATABASE
+  **MySQL DATABASE**
+  - InnoDB Engine
+  - Foreign Keys
+  - Triggers (tonkho)
+  - Transactions
+end note
+
+note bottom of EXTERNAL
+  **EXTERNAL SERVICES**
+  - Firebase Auth
+  - VNPay Sandbox/Production
+  - PayPal REST API
+  - SMTP Email
+end note
+
+legend right
+|= Số |= Luồng Logic |
+| 1-3 | Khởi động & Kiểm tra session |
+| 4-18 | Đăng nhập / Đăng ký |
+| 19-34 | Xem danh sách & chi tiết sản phẩm |
+| 35-46 | Thêm vào giỏ hàng |
+| 47-63 | Quản lý giỏ hàng |
+| 64-74 | Checkout & Áp dụng voucher |
+| 75-97 | Thanh toán (COD/VNPay/PayPal) |
+| 98-104 | Kết quả & Điều hướng |
+| 105-116 | Xem lịch sử đơn hàng |
+| 117-123 | Quản trị Admin |
+endlegend
+
+footer Sơ đồ Logic Tổng Thể - Ứng dụng Bán Đồng Hồ E-Commerce | Cập nhật: 01/12/2025
+
+@enduml

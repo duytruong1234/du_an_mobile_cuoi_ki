@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:minHeight="100dp">
+
+        <!-- Icon voucher -->
+        <ImageView
+            android:id="@+id/imgVoucherIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_voucher"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:tint="@color/colorAccent" />
+
+        <!-- Thông tin voucher -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp">
+
+            <!-- Mã voucher -->
+            <TextView
+                android:id="@+id/tvMaVoucher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEWUSER20"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:singleLine="true"
+                android:ellipsize="end" />
+
+            <!-- Tên voucher -->
+            <TextView
+                android:id="@+id/tvTenVoucher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giảm 20% cho khách hàng mới"
+                android:textSize="12sp"
+                android:textColor="#333"
+                android:layout_marginTop="2dp"
+                android:maxLines="2"
+                android:ellipsize="end" />
+
+            <!-- Text giảm giá -->
+            <TextView
+                android:id="@+id/tvTextGiam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giảm 20% (tối đa 200,000 ₫)"
+                android:textSize="11sp"
+                android:textColor="#4CAF50"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp"
+                android:singleLine="true"
+                android:ellipsize="end" />
+
+            <!-- Điều kiện -->
+            <TextView
+                android:id="@+id/tvDieuKien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đơn tối thiểu 500,000 ₫"
+                android:textSize="10sp"
+                android:textColor="#666"
+                android:layout_marginTop="2dp"
+                android:singleLine="true"
+                android:ellipsize="end" />
+
+            <!-- Thông tin thêm -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:id="@+id/tvConLai"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Còn 95/100 lượt"
+                    android:textSize="9sp"
+                    android:textColor="#999"
+                    android:singleLine="true"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:id="@+id/tvHetHan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HSD: 31/12/2025"
+                    android:textSize="9sp"
+                    android:textColor="#999"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <!-- Lý do không dùng được (cho voucher not applicable) -->
+            <TextView
+                android:id="@+id/tvLyDoKhongDung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="⚠️ Còn thiếu 500,000 ₫"
+                android:textSize="10sp"
+                android:textColor="#FF5722"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                android:maxLines="2"
+                android:ellipsize="end" />
+        </LinearLayout>
+
+        <!-- Nút chọn -->
+        <Button
+            android:id="@+id/btnChonVoucher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn"
+            android:textColor="@android:color/white"
+            android:background="@color/colorAccent"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textSize="12sp"
+            android:minWidth="60dp" />
+
+        <!-- Badge không dùng được -->
+        <TextView
+            android:id="@+id/tvKhongDung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Không đủ\nđiều kiện"
+            android:textSize="9sp"
+            android:textColor="#999"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:maxWidth="60dp" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

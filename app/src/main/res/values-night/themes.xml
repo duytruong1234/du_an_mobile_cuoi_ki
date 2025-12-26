@@ -1,0 +1,10 @@
+<resources>
+    <!-- Base application theme for night mode. -->
+    <style name="Base.Theme.AppBanDienThoai" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+
+    <style name="Theme.AppBanDienThoai" parent="Base.Theme.AppBanDienThoai" />
+</resources>
+

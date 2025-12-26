@@ -1,0 +1,457 @@
+<mxfile host="app.diagrams.net" modified="2025-12-01T00:00:00.000Z" agent="Draw.io" version="22.0.0">
+  <diagram name="Sequence: Thanh toán tạo đơn hàng" id="seq-thanh-toan">
+    <mxGraphModel dx="2400" dy="1600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="2000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- ==================== TIÊU ĐỀ ==================== -->
+        <mxCell id="title" value="Biểu đồ trình tự: Thanh toán và Tạo đơn hàng (COD / VNPay / PayPal)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;fontColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="600" y="30" width="800" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== ACTORS & OBJECTS ==================== -->
+
+        <!-- Người dùng Actor -->
+        <mxCell id="actor-user" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="80" y="100" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="label-user" value="Người dùng" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;fontSize=14;fontStyle=1;fontColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="45" y="165" width="110" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="line-user" value="" style="endArrow=none;dashed=1;dashPattern=8 4;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="190" as="sourcePoint" />
+            <mxPoint x="100" y="1850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- MànHìnhGiỏHàng -->
+        <mxCell id="obj-cart" value=":MànHìnhGiỏHàng" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="110" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="line-cart" value="" style="endArrow=none;dashed=1;dashPattern=8 4;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="160" as="sourcePoint" />
+            <mxPoint x="370" y="1850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- MànHìnhThanhToán -->
+        <mxCell id="obj-checkout" value=":MànHìnhThanhToán" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="110" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="line-checkout" value="" style="endArrow=none;dashed=1;dashPattern=8 4;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="650" y="160" as="sourcePoint" />
+            <mxPoint x="650" y="1850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ApiĐơnHàng -->
+        <mxCell id="obj-api" value=":ApiĐơnHàng" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="110" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="line-api" value="" style="endArrow=none;dashed=1;dashPattern=8 4;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="920" y="160" as="sourcePoint" />
+            <mxPoint x="920" y="1850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- taoDonHang.php -->
+        <mxCell id="obj-backend" value=":taoDonHang.php" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="110" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="line-backend" value="" style="endArrow=none;dashed=1;dashPattern=8 4;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1180" y="160" as="sourcePoint" />
+            <mxPoint x="1180" y="1850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- CơSởDữLiệu -->
+        <mxCell id="obj-db" value=":CơSởDữLiệu" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="110" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="line-db" value="" style="endArrow=none;dashed=1;dashPattern=8 4;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1440" y="160" as="sourcePoint" />
+            <mxPoint x="1440" y="1850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- VNPay Gateway -->
+        <mxCell id="obj-vnpay" value=":VNPayGateway" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1620" y="110" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="line-vnpay" value="" style="endArrow=none;dashed=1;dashPattern=8 4;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1700" y="160" as="sourcePoint" />
+            <mxPoint x="1700" y="1850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- PayPal Gateway -->
+        <mxCell id="obj-paypal" value=":PayPalGateway" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1880" y="110" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="line-paypal" value="" style="endArrow=none;dashed=1;dashPattern=8 4;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1960" y="160" as="sourcePoint" />
+            <mxPoint x="1960" y="1850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ==================== ACTIVATION BOXES ==================== -->
+        <mxCell id="act-user" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="94" y="210" width="12" height="1600" as="geometry" />
+        </mxCell>
+        <mxCell id="act-cart" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="364" y="230" width="12" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="act-checkout" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="644" y="400" width="12" height="1380" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== PHẦN 1: XEM GIỎ HÀNG VÀ MỞ THANH TOÁN ==================== -->
+
+        <!-- 1: xem giỏ hàng -->
+        <mxCell id="m1" value="1: xemGiỏHàng()" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="106" y="250" as="sourcePoint" />
+            <mxPoint x="364" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 2: hiển thị giỏ hàng -->
+        <mxCell id="m2" value="2: hiểnThịGiỏHàng(danhSáchSảnPhẩm, tổngTiền)" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="364" y="300" as="sourcePoint" />
+            <mxPoint x="106" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 3: nhấn thanh toán -->
+        <mxCell id="m3" value="3: nhấnNútThanhToán()" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="106" y="350" as="sourcePoint" />
+            <mxPoint x="364" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 4: mở màn hình thanh toán -->
+        <mxCell id="m4" value="4: mởMànHìnhThanhToán(giỏHàng)" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="376" y="410" as="sourcePoint" />
+            <mxPoint x="644" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 5: tính tổng tiền (self-call) -->
+        <mxCell id="m5-line" value="" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="656" y="460" as="sourcePoint" />
+            <mxPoint x="700" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m5-self" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="695" y="460" width="12" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="m5-return" value="" style="endArrow=open;endFill=0;dashed=1;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="695" y="495" as="sourcePoint" />
+            <mxPoint x="656" y="495" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m5-label" value="5: tínhTổngTiền()" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;fontColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="660" y="440" width="130" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- 6: hiển thị form thanh toán -->
+        <mxCell id="m6" value="6: hiểnThịFormThanhToán(tổngTiền, phươngThức: COD/VNPay/PayPal)" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="644" y="540" as="sourcePoint" />
+            <mxPoint x="106" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 7: nhập địa chỉ -->
+        <mxCell id="m7" value="7: nhậpĐịaChỉGiaoHàng(địaChỉ, sốĐiệnThoại)" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="106" y="590" as="sourcePoint" />
+            <mxPoint x="644" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 8: chọn phương thức -->
+        <mxCell id="m8" value="8: chọnPhươngThứcThanhToán(phươngThức)" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="106" y="640" as="sourcePoint" />
+            <mxPoint x="644" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 9: xác nhận đặt hàng -->
+        <mxCell id="m9" value="9: xácNhậnĐặtHàng()" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="106" y="690" as="sourcePoint" />
+            <mxPoint x="644" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Activation API -->
+        <mxCell id="act-api" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="914" y="730" width="12" height="950" as="geometry" />
+        </mxCell>
+
+        <!-- 10: gọi API -->
+        <mxCell id="m10" value="10: POST /taoDonHang.php(đơnHàng, phươngThức)" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="656" y="740" as="sourcePoint" />
+            <mxPoint x="914" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Activation Backend -->
+        <mxCell id="act-backend" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="1174" y="780" width="12" height="850" as="geometry" />
+        </mxCell>
+
+        <!-- 11: gửi yêu cầu tạo đơn -->
+        <mxCell id="m11" value="11: gửiYêuCầuTạoĐơn(dữLiệuĐơnHàng)" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="926" y="790" as="sourcePoint" />
+            <mxPoint x="1174" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Activation DB -->
+        <mxCell id="act-db" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="1434" y="830" width="12" height="180" as="geometry" />
+        </mxCell>
+
+        <!-- 12: INSERT đơn hàng -->
+        <mxCell id="m12" value="12: INSERT INTO donhang(userId, địaChỉ, tổngTiền, phươngThức, trạngThái)" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=11;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1186" y="840" as="sourcePoint" />
+            <mxPoint x="1434" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 13: trả về mã đơn hàng -->
+        <mxCell id="m13" value="13: trảVề(mãĐơnHàng)" style="endArrow=open;endFill=0;dashed=1;strokeColor=#000000;strokeWidth=1;fontSize=11;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1434" y="890" as="sourcePoint" />
+            <mxPoint x="1186" y="890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 14: INSERT chi tiết đơn hàng -->
+        <mxCell id="m14" value="14: INSERT INTO chitiet_donhang(mãĐơn, mãSP, sốLượng, giá)" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=11;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1186" y="940" as="sourcePoint" />
+            <mxPoint x="1434" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 15: trả về thành công -->
+        <mxCell id="m15" value="15: trảVề(thànhCông)" style="endArrow=open;endFill=0;dashed=1;strokeColor=#000000;strokeWidth=1;fontSize=11;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1434" y="990" as="sourcePoint" />
+            <mxPoint x="1186" y="990" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ==================== ALT FRAGMENT: CHỌN PHƯƠNG THỨC THANH TOÁN ==================== -->
+        <mxCell id="altPayment" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=2;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="1050" width="950" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="altPaymentLabel" value="alt" style="text;html=1;strokeColor=#000000;fillColor=#FFFFFF;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="1100" y="1050" width="40" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- ========== NHÁNH 1: COD ========== -->
+        <mxCell id="condCOD" value="[phươngThức = COD]" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=13;fontStyle=2;fontColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="1150" y="1080" width="200" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- 16a: xử lý COD -->
+        <mxCell id="m16a-line" value="" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1186" y="1130" as="sourcePoint" />
+            <mxPoint x="1230" y="1130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m16a-self" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="1225" y="1130" width="12" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="m16a-return" value="" style="endArrow=open;endFill=0;dashed=1;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1225" y="1165" as="sourcePoint" />
+            <mxPoint x="1186" y="1165" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m16a-label" value="16a: đặtTrạngThái('Chờ giao hàng')" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;fontColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="1190" y="1110" width="220" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- COD: Cập nhật DB -->
+        <mxCell id="act-db-cod" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="1434" y="1190" width="12" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="m17a" value="17a: UPDATE donhang SET trạngThái='Chờ giao'" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=11;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1186" y="1200" as="sourcePoint" />
+            <mxPoint x="1434" y="1200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m18a" value="18a: trảVề(thànhCông)" style="endArrow=open;endFill=0;dashed=1;strokeColor=#000000;strokeWidth=1;fontSize=11;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1434" y="1225" as="sourcePoint" />
+            <mxPoint x="1186" y="1225" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ========== DIVIDER 1 ========== -->
+        <mxCell id="div1" value="" style="endArrow=none;dashed=1;dashPattern=10 5;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1100" y="1260" as="sourcePoint" />
+            <mxPoint x="2050" y="1260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ========== NHÁNH 2: VNPAY ========== -->
+        <mxCell id="condVNPay" value="[phươngThức = VNPay]" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=13;fontStyle=2;fontColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="1150" y="1280" width="200" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Activation VNPay -->
+        <mxCell id="act-vnpay" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="1694" y="1320" width="12" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- 16b: gọi VNPay -->
+        <mxCell id="m16b" value="16b: tạoURLThanhToán(mãĐơn, sốTiền)" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1186" y="1330" as="sourcePoint" />
+            <mxPoint x="1694" y="1330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 17b: chuyển hướng VNPay -->
+        <mxCell id="m17b" value="17b: chuyểnHướngNgườiDùng(vnpayURL)" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1694" y="1370" as="sourcePoint" />
+            <mxPoint x="106" y="1370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 18b: xác nhận thanh toán -->
+        <mxCell id="m18b" value="18b: xácNhậnThanhToánVNPay()" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="106" y="1410" as="sourcePoint" />
+            <mxPoint x="1694" y="1410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 19b: trả về kết quả VNPay -->
+        <mxCell id="m19b" value="19b: trảVề(vnp_ResponseCode, vnp_TransactionNo)" style="endArrow=open;endFill=0;dashed=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1694" y="1440" as="sourcePoint" />
+            <mxPoint x="1186" y="1440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ========== DIVIDER 2 ========== -->
+        <mxCell id="div2" value="" style="endArrow=none;dashed=1;dashPattern=10 5;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1100" y="1470" as="sourcePoint" />
+            <mxPoint x="2050" y="1470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ========== NHÁNH 3: PAYPAL ========== -->
+        <mxCell id="condPayPal" value="[phươngThức = PayPal]" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=13;fontStyle=2;fontColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="1150" y="1490" width="200" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Activation PayPal -->
+        <mxCell id="act-paypal" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="1954" y="1520" width="12" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- 16c: gọi PayPal -->
+        <mxCell id="m16c" value="16c: createPayPalOrder(mãĐơn, sốTiền, currency)" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1186" y="1530" as="sourcePoint" />
+            <mxPoint x="1954" y="1530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 17c: hiển thị PayPal popup -->
+        <mxCell id="m17c" value="17c: hiểnThịPayPalCheckout(approveURL)" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1954" y="1570" as="sourcePoint" />
+            <mxPoint x="106" y="1570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 18c: approve payment -->
+        <mxCell id="m18c" value="18c: approvePayPalPayment()" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="106" y="1610" as="sourcePoint" />
+            <mxPoint x="1954" y="1610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 19c: trả về kết quả PayPal -->
+        <mxCell id="m19c" value="19c: trảVề(paymentId, payerId, status)" style="endArrow=open;endFill=0;dashed=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1954" y="1640" as="sourcePoint" />
+            <mxPoint x="1186" y="1640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ==================== KẾT THÚC ALT - PHẦN CHUNG ==================== -->
+
+        <!-- 20: trả về JSON -->
+        <mxCell id="m20" value="20: trảVề(JSON{mãĐơn, trạngThái, thanhToán})" style="endArrow=open;endFill=0;dashed=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1174" y="1700" as="sourcePoint" />
+            <mxPoint x="926" y="1700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 21: trả về kết quả -->
+        <mxCell id="m21" value="21: trảVề(kếtQuảĐặtHàng)" style="endArrow=open;endFill=0;dashed=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="914" y="1750" as="sourcePoint" />
+            <mxPoint x="656" y="1750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 22: hiển thị thành công -->
+        <mxCell id="m22" value="22: hiểnThị('Đặt hàng thành công! Mã đơn: #xxx')" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="644" y="1800" as="sourcePoint" />
+            <mxPoint x="106" y="1800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ==================== NOTES ==================== -->
+        <mxCell id="note1" value="📌 Phương thức thanh toán:&#xa;&#xa;• COD: Thanh toán khi nhận hàng&#xa;  → Không cần xác nhận online&#xa;  → Trạng thái: 'Chờ giao hàng'&#xa;&#xa;• VNPay: Cổng thanh toán VN&#xa;  → Chuyển hướng đến VNPay&#xa;  → Xác nhận qua vnp_ResponseCode&#xa;&#xa;• PayPal: Thanh toán quốc tế&#xa;  → Hiển thị PayPal popup&#xa;  → Xác nhận qua paymentId" style="shape=note;whiteSpace=wrap;html=1;size=14;verticalAlign=top;align=left;spacingTop=10;spacingLeft=10;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="2100" y="250" width="240" height="240" as="geometry" />
+        </mxCell>
+
+        <mxCell id="note2" value="📌 Quy trình tạo đơn hàng:&#xa;&#xa;1. Xem giỏ hàng → Thanh toán&#xa;2. Nhập địa chỉ giao hàng&#xa;3. Chọn phương thức thanh toán&#xa;4. Xác nhận đặt hàng&#xa;5. Tạo đơn + chi tiết trong DB&#xa;6. Xử lý thanh toán theo PT&#xa;7. Hiển thị kết quả" style="shape=note;whiteSpace=wrap;html=1;size=14;verticalAlign=top;align=left;spacingTop=10;spacingLeft=10;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="2100" y="520" width="240" height="180" as="geometry" />
+        </mxCell>
+
+        <mxCell id="legend" value="Chú thích:&#xa;━━▶ : Gọi phương thức (đồng bộ)&#xa;- - -▷ : Trả về kết quả&#xa;[điều kiện] : Nhánh thay thế (alt)&#xa;&#xa;COD = Cash On Delivery&#xa;VNPay = Cổng thanh toán VN&#xa;PayPal = Thanh toán quốc tế" style="shape=note;whiteSpace=wrap;html=1;size=14;verticalAlign=top;align=left;spacingTop=10;spacingLeft=10;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="2100" y="730" width="240" height="160" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

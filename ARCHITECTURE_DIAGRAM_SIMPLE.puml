@@ -1,0 +1,168 @@
+@startuml Kien_Truc_He_Thong_Don_Gian
+!theme plain
+skinparam backgroundColor #FFFFFF
+title Sơ Đồ Kiến Trúc Hệ Thống Đơn Giản\nỨng Dụng Bán Đồng Hồ
+
+' Styling
+skinparam rectangle {
+    BackgroundColor #E8F4F8
+    BorderColor #0277BD
+    FontSize 12
+    FontStyle bold
+}
+
+skinparam database {
+    BackgroundColor #C8E6C9
+    BorderColor #2E7D32
+}
+
+skinparam cloud {
+    BackgroundColor #FFF9C4
+    BorderColor #F57C00
+}
+
+' ============================================
+' MAIN ARCHITECTURE
+' ============================================
+
+rectangle "📱 **CLIENT LAYER**\n//Android Application//" as Client #E3F2FD {
+    rectangle "Presentation\n(23 Activities)" as UI
+    rectangle "Business Logic\n(9 Adapters)" as Logic
+    rectangle "Data Layer\n(Retrofit + PaperDB)" as Data
+
+    UI -down-> Logic
+    Logic -down-> Data
+}
+
+cloud "🌐 **INTERNET**\nHTTP/HTTPS\nREST API" as Network #E1F5FE
+
+rectangle "🖥️ **SERVER LAYER**\n//PHP Backend//" as Server #FFF9C4 {
+    rectangle "API Endpoints\n(50+ PHP files)" as API
+    rectangle "Business Logic\n(Validation, Auth, Security)" as ServerLogic
+    rectangle "Database Access\n(MySQLi)" as DBAccess
+
+    API -down-> ServerLogic
+    ServerLogic -down-> DBAccess
+}
+
+database "🗄️ **DATABASE LAYER**\n//MySQL//" as Database #C8E6C9 {
+    rectangle "13 Tables" as Tables
+    rectangle "3 Triggers" as Triggers
+
+    Tables -[hidden]right- Triggers
+}
+
+rectangle "🌍 **EXTERNAL SERVICES**" as External #FFCCBC {
+    rectangle "VNPay\n(✅ Active)" as VNPay
+    rectangle "Firebase\n(✅ Google Auth)" as Firebase
+    rectangle "Gmail SMTP\n(✅ OTP Email)" as Gmail
+
+    VNPay -[hidden]right- Firebase
+    Firebase -[hidden]right- Gmail
+}
+
+' ============================================
+' CONNECTIONS
+' ============================================
+
+Client <-down-> Network : "JSON\nRequests"
+Network <-down-> Server : "API\nCalls"
+Server <-down-> Database : "SQL\nQueries"
+
+Server <.right.> External : "Integration"
+Client <.up.> External : "Callback"
+
+' ============================================
+' NOTES
+' ============================================
+
+note right of Client
+    **User Interface**
+    • 15 màn hình User
+    • 8 màn hình Admin
+    • Material Design
+    • Role-based access
+
+    **Local Storage**
+    • PaperDB (Session)
+    • Image cache (Glide)
+end note
+
+note right of Server
+    **8 Module Groups**
+    1. Authentication (4 APIs)
+    2. Product (7 APIs)
+    3. Order (5 APIs)
+    4. Payment (9 APIs)
+    5. User Mgmt (5 APIs)
+    6. Voucher (3 APIs)
+    7. Statistics (2 APIs)
+    8. Inventory (2 APIs)
+end note
+
+note right of Database
+    **Core Tables:**
+    • user (phân quyền)
+    • sanphammoi (sản phẩm)
+    • donhang (đơn hàng)
+    • voucher (mã giảm giá)
+
+    **Auto Triggers:**
+    • Giảm tồn kho
+    • Hoàn tồn kho
+    • Update voucher
+end note
+
+note right of External
+    **Payment:**
+    ✅ VNPay Sandbox
+    ⚠️ PayPal (inactive)
+
+    **Auth:**
+    ✅ Google Sign-In
+    ✅ OTP Email
+end note
+
+' ============================================
+' DATA FLOW EXAMPLE
+' ============================================
+
+note bottom
+    **🔄 LUỒNG DỮ LIỆU MUA HÀNG:**
+
+    1. User chọn sản phẩm → GioHangActivity
+    2. Checkout → ThanhToanActivity
+    3. Chọn VNPay → API call vnpay_create_payment.php
+    4. Server: Tạo đơn + Payment URL
+    5. App mở WebView VNPay
+    6. User thanh toán
+    7. VNPay callback → Deep link
+    8. App verify → vnpay_check_status.php
+    9. Server update trạng thái → Trigger giảm tồn kho
+    10. App hiển thị đơn hàng thành công
+end note
+
+' ============================================
+' LEGEND
+' ============================================
+
+legend bottom right
+    **THỐNG KÊ DỰ ÁN:**
+    • Activities: 23
+    • API Endpoints: 50+
+    • Database Tables: 13
+    • Features: 50+
+    • Lines of code: ~43,500
+
+    **PHÂN QUYỀN:**
+    • role=0: User thường
+    • role=1: Admin
+
+    **CÔNG NGHỆ:**
+    • Android (Java) + PHP + MySQL
+    • Retrofit + RxJava + PaperDB
+    • VNPay + Firebase + Google Auth
+end legend
+
+@enduml
+

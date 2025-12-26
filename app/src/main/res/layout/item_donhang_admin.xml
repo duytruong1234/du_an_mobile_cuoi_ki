@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvMaDonHang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã: DH20240101000001"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvTrangThai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trạng thái: Chờ xử lý"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            android:layout_marginVertical="8dp"/>
+
+        <TextView
+            android:id="@+id/tvNgayDat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày đặt: 2024-01-01 10:00:00"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvNgayGiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày giao dự kiến: 2024-01-04"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvDiaChi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ: 123 Đường ABC, Quận 1, TP.HCM"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvSoDienThoai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SĐT: 0123456789"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- PREVIEW: image + quantity (added for admin cards) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/imgPreview"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background"
+                android:contentDescription="Ảnh sản phẩm" />
+
+            <TextView
+                android:id="@+id/tvPreviewQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="Số lượng: 0 SP"
+                android:textSize="14sp"
+                android:textColor="#333333" />
+        </LinearLayout>
+
+        <!-- Move total price to bottom so it appears under preview -->
+        <TextView
+            android:id="@+id/tvTongTien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tổng tiền: 10,000,000 ₫"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            android:gravity="end"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

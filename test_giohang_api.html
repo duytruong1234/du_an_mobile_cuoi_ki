@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test API Giỏ Hàng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #4CAF50;
+            margin-top: 0;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        button.delete {
+            background-color: #f44336;
+        }
+        button.delete:hover {
+            background-color: #da190b;
+        }
+        input, select {
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 200px;
+        }
+        .result {
+            background-color: #f9f9f9;
+            border-left: 4px solid #4CAF50;
+            padding: 15px;
+            margin-top: 10px;
+            white-space: pre-wrap;
+            font-family: monospace;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .error {
+            border-left-color: #f44336;
+            background-color: #ffebee;
+        }
+        .success {
+            border-left-color: #4CAF50;
+            background-color: #e8f5e9;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>🛒 Test API Giỏ Hàng</h1>
+
+    <div class="container">
+        <h2>1. Thêm sản phẩm vào giỏ hàng</h2>
+        <div class="form-group">
+            <label>User ID:</label>
+            <input type="number" id="add_iduser" value="1">
+        </div>
+        <div class="form-group">
+            <label>Sản phẩm ID:</label>
+            <input type="number" id="add_idsp" value="1">
+        </div>
+        <div class="form-group">
+            <label>Tên sản phẩm:</label>
+            <input type="text" id="add_tensp" value="Đồng hồ Rolex">
+        </div>
+        <div class="form-group">
+            <label>Giá:</label>
+            <input type="number" id="add_giasp" value="5000000">
+        </div>
+        <div class="form-group">
+            <label>Hình ảnh:</label>
+            <input type="text" id="add_hinhsp" value="dongho1.jpg">
+        </div>
+        <div class="form-group">
+            <label>Số lượng:</label>
+            <input type="number" id="add_soluong" value="2">
+        </div>
+        <button onclick="themGioHang()">Thêm vào giỏ</button>
+        <div id="result_add" class="result" style="display:none;"></div>
+    </div>
+
+    <div class="container">
+        <h2>2. Lấy giỏ hàng</h2>
+        <div class="form-group">
+            <label>User ID:</label>
+            <input type="number" id="get_iduser" value="1">
+        </div>
+        <button onclick="getGioHang()">Lấy giỏ hàng</button>
+        <div id="result_get" class="result" style="display:none;"></div>
+    </div>
+
+    <div class="container">
+        <h2>3. Cập nhật số lượng</h2>
+        <div class="form-group">
+            <label>User ID:</label>
+            <input type="number" id="update_iduser" value="1">
+        </div>
+        <div class="form-group">
+            <label>Sản phẩm ID:</label>
+            <input type="number" id="update_idsp" value="1">
+        </div>
+        <div class="form-group">
+            <label>Số lượng mới:</label>
+            <input type="number" id="update_soluong" value="5">
+        </div>
+        <button onclick="capNhatGioHang()">Cập nhật</button>
+        <div id="result_update" class="result" style="display:none;"></div>
+    </div>
+
+    <div class="container">
+        <h2>4. Xóa sản phẩm</h2>
+        <div class="form-group">
+            <label>User ID:</label>
+            <input type="number" id="delete_iduser" value="1">
+        </div>
+        <div class="form-group">
+            <label>Sản phẩm ID:</label>
+            <input type="number" id="delete_idsp" value="1">
+        </div>
+        <button class="delete" onclick="xoaGioHang()">Xóa sản phẩm</button>
+        <div id="result_delete" class="result" style="display:none;"></div>
+    </div>
+
+    <div class="container">
+        <h2>5. Xóa toàn bộ giỏ hàng</h2>
+        <div class="form-group">
+            <label>User ID:</label>
+            <input type="number" id="clear_iduser" value="1">
+        </div>
+        <button class="delete" onclick="xoaToanBoGioHang()">Xóa tất cả</button>
+        <div id="result_clear" class="result" style="display:none;"></div>
+    </div>
+
+    <script>
+        const BASE_URL = 'http://localhost/appbandienthoai/';
+
+        function showResult(elementId, data, isSuccess) {
+            const resultDiv = document.getElementById(elementId);
+            resultDiv.style.display = 'block';
+            resultDiv.className = 'result ' + (isSuccess ? 'success' : 'error');
+            resultDiv.textContent = JSON.stringify(data, null, 2);
+        }
+
+        async function themGioHang() {
+            const formData = new FormData();
+            formData.append('iduser', document.getElementById('add_iduser').value);
+            formData.append('idsp', document.getElementById('add_idsp').value);
+            formData.append('tensp', document.getElementById('add_tensp').value);
+            formData.append('giasp', document.getElementById('add_giasp').value);
+            formData.append('hinhsp', document.getElementById('add_hinhsp').value);
+            formData.append('soluong', document.getElementById('add_soluong').value);
+
+            try {
+                const response = await fetch(BASE_URL + 'themGioHang.php', {
+                    method: 'POST',
+                    body: formData
+                });
+                const data = await response.json();
+                showResult('result_add', data, data.success);
+            } catch (error) {
+                showResult('result_add', { error: error.message }, false);
+            }
+        }
+
+        async function getGioHang() {
+            const formData = new FormData();
+            formData.append('iduser', document.getElementById('get_iduser').value);
+
+            try {
+                const response = await fetch(BASE_URL + 'getGioHang.php', {
+                    method: 'POST',
+                    body: formData
+                });
+                const data = await response.json();
+                showResult('result_get', data, data.success);
+            } catch (error) {
+                showResult('result_get', { error: error.message }, false);
+            }
+        }
+
+        async function capNhatGioHang() {
+            const formData = new FormData();
+            formData.append('iduser', document.getElementById('update_iduser').value);
+            formData.append('idsp', document.getElementById('update_idsp').value);
+            formData.append('soluong', document.getElementById('update_soluong').value);
+
+            try {
+                const response = await fetch(BASE_URL + 'capNhatGioHang.php', {
+                    method: 'POST',
+                    body: formData
+                });
+                const data = await response.json();
+                showResult('result_update', data, data.success);
+            } catch (error) {
+                showResult('result_update', { error: error.message }, false);
+            }
+        }
+
+        async function xoaGioHang() {
+            const formData = new FormData();
+            formData.append('iduser', document.getElementById('delete_iduser').value);
+            formData.append('idsp', document.getElementById('delete_idsp').value);
+
+            try {
+                const response = await fetch(BASE_URL + 'xoaGioHang.php', {
+                    method: 'POST',
+                    body: formData
+                });
+                const data = await response.json();
+                showResult('result_delete', data, data.success);
+            } catch (error) {
+                showResult('result_delete', { error: error.message }, false);
+            }
+        }
+
+        async function xoaToanBoGioHang() {
+            if (!confirm('Bạn có chắc muốn xóa toàn bộ giỏ hàng?')) return;
+
+            const formData = new FormData();
+            formData.append('iduser', document.getElementById('clear_iduser').value);
+
+            try {
+                const response = await fetch(BASE_URL + 'xoaToanBoGioHang.php', {
+                    method: 'POST',
+                    body: formData
+                });
+                const data = await response.json();
+                showResult('result_clear', data, data.success);
+            } catch (error) {
+                showResult('result_clear', { error: error.message }, false);
+            }
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,488 @@
+@startuml SO_DO_TO_CHUC_HE_THONG
+title Sơ Đồ Tổ Chức Hệ Thống - Ứng Dụng Bán Đồng Hồ
+
+!define RECTANGLE_COLOR #E3F2FD
+!define SERVER_COLOR #FFF9C4
+!define DATABASE_COLOR #C8E6C9
+!define EXTERNAL_COLOR #FFCCBC
+
+' ==================== CLIENT LAYER ====================
+package "CLIENT LAYER\n(Android Application)" as CLIENT <<Rectangle>> RECTANGLE_COLOR {
+
+    package "Presentation Layer" as UI {
+        component "23 Activities" as Activities {
+            [DangNhapActivity]
+            [DangKiActivity]
+            [MainActivity]
+            [ChiTietActivity]
+            [GioHangActivity]
+            [DatHangActivity]
+            [ThanhToanActivity]
+            [DonHangActivity]
+            [XemDonActivity]
+            [QuanLiActivity]
+            [ThemSPActivity]
+            [TonKhoActivity]
+            [ThongKeActivity]
+            [QuanLyNguoiDungActivity]
+            [QuanLyVoucherActivity]
+            note right of Activities
+                User Interface
+                Material Design
+                Role-based visibility
+            end note
+        }
+    }
+
+    package "Business Logic Layer" as Logic {
+        component "9 Adapters" as Adapters {
+            [SanPhamMoiAdapter]
+            [GioHangAdapter]
+            [DonHangAdapter]
+            [VoucherAdapter]
+        }
+
+        component "EventBus" as EventBus
+
+        note right of Adapters
+            RecyclerView Adapters
+            Data Binding
+            Click Listeners
+        end note
+    }
+
+    package "Data Layer" as Data {
+        component "25+ Models" as Models {
+            [User]
+            [SanPhamMoi]
+            [GioHang]
+            [DonHang]
+            [Voucher]
+            [VNPayResponse]
+            [PayPalResponse]
+        }
+
+        database "PaperDB\n(Local Storage)" as Paper {
+            [User Session]
+            [Cached Data]
+        }
+
+        component "Retrofit Client" as Retrofit {
+            interface "ApiBanHang\n(40+ endpoints)" as API
+        }
+
+        note right of Models
+            POJOs
+            Serializable
+            Gson parsing
+        end note
+    }
+
+    Activities --> Adapters : uses
+    Activities --> Models : displays
+    Adapters --> Models : binds
+    Activities --> API : calls
+    Activities --> Paper : read/write
+    EventBus --> Activities : notifies
+}
+
+' ==================== NETWORK ====================
+cloud "Internet\n(HTTP/HTTPS)" as Internet {
+    [JSON over HTTP]
+}
+
+API --> Internet : REST API calls
+
+' ==================== SERVER LAYER ====================
+package "SERVER LAYER\n(PHP Backend)" as SERVER <<Rectangle>> SERVER_COLOR {
+
+    package "API Endpoints" as Endpoints {
+        component "Authentication APIs" as AuthAPI {
+            [dangki.php]
+            [dangnhap.php]
+            [reset_pass.php]
+            [verify_otp_reset_pass.php]
+        }
+
+        component "Product APIs" as ProductAPI {
+            [getspmoi.php]
+            [getloaisp.php]
+            [chitiet.php]
+            [timkiem.php]
+            [insertsp.php]
+            [updatesp.php]
+            [xoa.php]
+        }
+
+        component "Order APIs" as OrderAPI {
+            [taoDonHang.php]
+            [xemdonhang.php]
+            [getChiTietDonHang.php]
+            [huyDonHang.php]
+            [updateorder.php]
+        }
+
+        component "Payment APIs" as PaymentAPI {
+            [vnpay_create_payment.php]
+            [vnpay_check_status.php]
+            [vnpay_return.php]
+            [paypal_create_payment.php]
+            [paypal_execute_payment.php]
+        }
+
+        component "User Management APIs" as UserAPI {
+            [getAllUsers.php]
+            [updateUserRole.php]
+            [deleteUser.php]
+            [updateProfile.php]
+        }
+
+        component "Voucher APIs" as VoucherAPI {
+            [getVouchers.php]
+            [checkVoucher.php]
+            [saveVoucherUsage.php]
+        }
+
+        component "Statistics APIs" as StatsAPI {
+            [thongke.php]
+            [thongke_doanhthu.php]
+        }
+
+        component "Inventory APIs" as InventoryAPI {
+            [kiemTraTonKho.php]
+            [capNhatTonKho.php]
+        }
+    }
+
+    package "Business Logic" as ServerLogic {
+        component "Validation" as Validation
+        component "Authentication" as Auth
+        component "Authorization" as AuthZ
+        component "File Upload" as Upload
+        component "Email Service" as Email
+
+        note right of ServerLogic
+            • Input validation
+            • SQL injection prevention
+            • XSS protection
+            • Role-based access control
+        end note
+    }
+
+    package "Database Access" as DBAccess {
+        component "MySQLi Driver" as MySQLi {
+            [Connection Pool]
+            [Query Builder]
+            [Transaction Manager]
+        }
+
+        file "connect.php" as ConnectPHP
+
+        note right of MySQLi
+            Prepared Statements
+            UTF-8 Support
+            Error Handling
+        end note
+    }
+
+    package "Configuration" as Config {
+        file "vnpay_config.php" as VNPayConfig
+        file "paypal_config.php" as PayPalConfig
+        file "email_config.php" as EmailConfig
+    }
+
+    package "External Libraries" as Libs {
+        component "PHPMailer" as PHPMailer {
+            [SMTP Client]
+            [Email Templates]
+        }
+    }
+
+    AuthAPI --> Auth
+    ProductAPI --> Validation
+    OrderAPI --> Validation
+    OrderAPI --> MySQLi
+    PaymentAPI --> VNPayConfig
+    PaymentAPI --> PayPalConfig
+    UserAPI --> AuthZ
+    VoucherAPI --> MySQLi
+    StatsAPI --> MySQLi
+
+    Auth --> MySQLi
+    Validation --> MySQLi
+    AuthZ --> MySQLi
+    Email --> PHPMailer
+    MySQLi --> ConnectPHP
+}
+
+Internet --> Endpoints : receives requests
+
+' ==================== DATABASE LAYER ====================
+package "DATABASE LAYER\n(MySQL)" as DATABASE <<Rectangle>> DATABASE_COLOR {
+
+    database "appbandienthoai" as DB {
+
+        package "Core Tables" as CoreTables {
+            entity "user" as UserTable {
+                * id : INT <<PK>>
+                --
+                email : VARCHAR(255) <<UNIQUE>>
+                pass : VARCHAR(255)
+                username : VARCHAR(100)
+                mobile : VARCHAR(20)
+                role : INT (0=User, 1=Admin)
+                login_type : ENUM
+                account_status : TINYINT
+                reset_otp : VARCHAR(10)
+                reset_otp_expiry : DATETIME
+                created_at : TIMESTAMP
+            }
+
+            entity "loaisp" as LoaiSPTable {
+                * id : INT <<PK>>
+                --
+                tensanpham : VARCHAR(255)
+                hinhanh : VARCHAR(255)
+            }
+
+            entity "sanphammoi" as SanPhamTable {
+                * id : INT <<PK>>
+                --
+                tensp : VARCHAR(255)
+                giasp : VARCHAR(100)
+                hinhanh : TEXT
+                mota : TEXT
+                loai : INT <<FK>>
+                soluong : INT (đã bán)
+                soluongtonkho : INT
+                created_at : TIMESTAMP
+            }
+        }
+
+        package "Transaction Tables" as TransTables {
+            entity "giohang" as GioHangTable {
+                * id : INT <<PK>>
+                --
+                iduser : INT <<FK>>
+                idsp : INT <<FK>>
+                tensp : VARCHAR(255)
+                giasp : VARCHAR(100)
+                hinhanh : TEXT
+                soluong : INT
+                ngaythem : TIMESTAMP
+            }
+
+            entity "donhang" as DonHangTable {
+                * id : INT <<PK>>
+                --
+                madonhang : VARCHAR(50) <<UNIQUE>>
+                iduser : INT <<FK>>
+                diachi : TEXT
+                sodienthoai : VARCHAR(20)
+                soluong : INT
+                tongtien : VARCHAR(100)
+                ngaydat : DATETIME
+                ngaygiaodukien : VARCHAR(100)
+                trangthai : VARCHAR(50)
+                phuongthucthanhtoan : VARCHAR(50)
+                vnpay_txn_ref : VARCHAR(100)
+                vnpay_transaction_no : VARCHAR(100)
+                paypal_order_id : VARCHAR(100)
+                voucher_id : INT <<FK>>
+                ma_voucher : VARCHAR(50)
+                gia_tri_giam : DECIMAL(10,2)
+                lydo_huy : TEXT
+                created_at : TIMESTAMP
+            }
+
+            entity "chitietdonhang" as ChiTietDHTable {
+                * id : INT <<PK>>
+                --
+                iddonhang : INT <<FK>>
+                idsp : INT <<FK>>
+                soluong : INT
+                gia : VARCHAR(100)
+            }
+        }
+
+        package "Voucher Tables" as VoucherTables {
+            entity "voucher" as VoucherTable {
+                * id : INT <<PK>>
+                --
+                ma_voucher : VARCHAR(50) <<UNIQUE>>
+                ten_voucher : VARCHAR(200)
+                mo_ta : TEXT
+                loai_giam : ENUM
+                gia_tri_giam : DECIMAL(10,2)
+                giam_toi_da : DECIMAL(10,2)
+                don_toi_thieu : DECIMAL(10,2)
+                ap_dung_cho : ENUM
+                so_luong : INT
+                da_su_dung : INT
+                gioi_han_moi_user : INT
+                ngay_bat_dau : DATETIME
+                ngay_het_han : DATETIME
+                trang_thai : TINYINT
+                created_at : TIMESTAMP
+            }
+
+            entity "voucher_usage" as VoucherUsageTable {
+                * id : INT <<PK>>
+                --
+                voucher_id : INT <<FK>>
+                user_id : INT <<FK>>
+                donhang_id : INT <<FK>>
+                ma_donhang : VARCHAR(50)
+                gia_tri_don_hang : DECIMAL(10,2)
+                gia_tri_giam : DECIMAL(10,2)
+                ngay_su_dung : TIMESTAMP
+            }
+        }
+
+        package "Database Triggers" as Triggers {
+            component "after_chitietdonhang_insert\n_giam_tonkho" as Trigger1 {
+                note right
+                    Tự động giảm soluongtonkho
+                    khi INSERT chitietdonhang
+                end note
+            }
+
+            component "after_donhang_update\n_hoan_tonkho" as Trigger2 {
+                note right
+                    Hoàn tồn kho khi
+                    trangthai = 'Đã hủy'
+                end note
+            }
+
+            component "after_donhang_insert\n_update_voucher" as Trigger3 {
+                note right
+                    Tăng da_su_dung khi
+                    sử dụng voucher
+                end note
+            }
+        }
+    }
+
+    ' Relationships
+    SanPhamTable }o--|| LoaiSPTable : "belongs to"
+    GioHangTable }o--|| UserTable : "owned by"
+    GioHangTable }o--|| SanPhamTable : "contains"
+    DonHangTable }o--|| UserTable : "placed by"
+    DonHangTable }o--o| VoucherTable : "uses"
+    ChiTietDHTable }o--|| DonHangTable : "details of"
+    ChiTietDHTable }o--|| SanPhamTable : "contains"
+    VoucherUsageTable }o--|| VoucherTable : "tracks"
+    VoucherUsageTable }o--|| UserTable : "used by"
+    VoucherUsageTable }o--o| DonHangTable : "applied to"
+
+    Trigger1 ..> ChiTietDHTable : "on INSERT"
+    Trigger1 ..> SanPhamTable : "updates"
+    Trigger2 ..> DonHangTable : "on UPDATE"
+    Trigger2 ..> SanPhamTable : "updates"
+    Trigger3 ..> DonHangTable : "on INSERT"
+    Trigger3 ..> VoucherTable : "updates"
+}
+
+MySQLi --> DB : queries
+
+' ==================== EXTERNAL SERVICES ====================
+package "EXTERNAL SERVICES" as EXTERNAL <<Rectangle>> EXTERNAL_COLOR {
+
+    component "VNPay Gateway" as VNPay {
+        [Sandbox API]
+        [Payment Processing]
+        [Return URL Handler]
+
+        note right of VNPay
+            Status: ✅ Active
+            Environment: Sandbox
+            Integration: Complete
+        end note
+    }
+
+    component "PayPal API" as PayPal {
+        [REST API]
+        [Order Creation]
+        [Payment Execution]
+
+        note right of PayPal
+            Status: ⚠️ Inactive
+            Files exist but
+            not fully integrated
+        end note
+    }
+
+    component "Firebase Services" as Firebase {
+        [Cloud Messaging (FCM)]
+        [Authentication]
+        [Google Sign-In]
+
+        note right of Firebase
+            FCM: Setup but unused
+            Auth: ✅ Active
+            Google Login: ✅ Active
+        end note
+    }
+
+    component "Gmail SMTP" as Gmail {
+        [SMTP Server]
+        [TLS Port 587]
+
+        note right of Gmail
+            Used for:
+            • OTP reset password
+            • Email notifications
+        end note
+    }
+
+    component "Google OAuth 2.0" as GoogleAuth {
+        [Identity Provider]
+        [Token Validation]
+
+        note right of GoogleAuth
+            Social login
+            Automatic account creation
+        end note
+    }
+}
+
+' Connections to External Services
+PaymentAPI --> VNPay : "creates payment"
+VNPay --> PaymentAPI : "callback"
+PaymentAPI --> PayPal : "creates order"
+PayPal --> PaymentAPI : "callback"
+
+Firebase --> Activities : "push notifications"
+AuthAPI --> Firebase : "verifies token"
+AuthAPI --> GoogleAuth : "authenticates"
+
+PHPMailer --> Gmail : "sends email via SMTP"
+
+' ==================== DATA FLOW ====================
+note as DataFlow
+    **DATA FLOW EXAMPLE - Đặt hàng COD:**
+    1. GioHangActivity → chọn sản phẩm
+    2. DatHangActivity → nhập địa chỉ
+    3. ThanhToanActivity → chọn COD
+    4. API call → taoDonHang.php
+    5. Server validates → checks tồn kho
+    6. BEGIN TRANSACTION
+    7. INSERT donhang
+    8. INSERT chitietdonhang → TRIGGER giảm tồn kho
+    9. COMMIT
+    10. Response → {success, madonhang}
+    11. XemDonActivity → hiển thị đơn hàng
+end note
+
+note as SecurityFlow
+    **SECURITY & AUTHORIZATION:**
+    • User login → role stored in PaperDB
+    • Every API call → check session
+    • Admin APIs → validate role=1
+    • SQL → Prepared statements
+    • Passwords → Hashed (recommended)
+    • HTTPS → Production required
+end note
+
+@enduml
+

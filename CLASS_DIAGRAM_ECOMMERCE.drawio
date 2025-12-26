@@ -1,0 +1,369 @@
+<mxfile host="app.diagrams.net" modified="2025-12-01T00:00:00.000Z" agent="Mozilla/5.0" etag="class-diagram-ecommerce" version="21.0.0" type="device">
+  <diagram name="Class Diagram E-Commerce" id="class-diagram-ecommerce">
+    <mxGraphModel dx="1434" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- TITLE -->
+        <mxCell id="title" value="&lt;b&gt;SƠ ĐỒ CLASS UML - ỨNG DỤNG BÁN ĐỒNG HỒ E-COMMERCE&lt;/b&gt;&lt;br&gt;Cập nhật: 01/12/2025" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="500" y="20" width="600" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== CLASS USER ==================== -->
+        <mxCell id="user-class" value="&lt;b&gt;User&lt;/b&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="80" y="100" width="220" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="user-attr" value="- id: int&#xa;- email: string&#xa;- pass: string&#xa;- username: string&#xa;- mobile: string&#xa;- role: int&#xa;- loginType: string&#xa;- resetOtp: string&#xa;- status: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="user-class">
+          <mxGeometry y="26" width="220" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="user-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="user-class">
+          <mxGeometry y="170" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="user-methods" value="+ login(): boolean&#xa;+ register(): boolean&#xa;+ resetPassword(): boolean&#xa;+ updateProfile(): boolean&#xa;+ getOrders(): List&#xa;+ getCart(): Cart" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="user-class">
+          <mxGeometry y="178" width="220" height="102" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== CLASS CART ==================== -->
+        <mxCell id="cart-class" value="&lt;b&gt;Cart&lt;/b&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="380" y="100" width="220" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="cart-attr" value="- id: int&#xa;- idUser: int&#xa;- createdAt: datetime&#xa;- updatedAt: datetime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="cart-class">
+          <mxGeometry y="26" width="220" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="cart-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="cart-class">
+          <mxGeometry y="90" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="cart-methods" value="+ getItems(): List&lt;CartItem&gt;&#xa;+ getTotal(): decimal&#xa;+ clear(): void&#xa;+ addItem(product, qty): boolean&#xa;+ removeItem(itemId): boolean&#xa;+ updateItem(itemId, qty): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="cart-class">
+          <mxGeometry y="98" width="220" height="102" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== CLASS CARTITEM ==================== -->
+        <mxCell id="cartitem-class" value="&lt;b&gt;CartItem&lt;/b&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="680" y="100" width="220" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="cartitem-attr" value="- id: int&#xa;- idCart: int&#xa;- idSanPham: int&#xa;- soLuong: int&#xa;- giaTaiThoiDiem: decimal" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="cartitem-class">
+          <mxGeometry y="26" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cartitem-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="cartitem-class">
+          <mxGeometry y="106" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="cartitem-methods" value="+ increaseQty(qty: int): void&#xa;+ decreaseQty(qty: int): void&#xa;+ getSubtotal(): decimal&#xa;+ getProduct(): SanPhamMoi" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="cartitem-class">
+          <mxGeometry y="114" width="220" height="66" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== CLASS SANPHAMMOI ==================== -->
+        <mxCell id="sanpham-class" value="&lt;b&gt;SanPhamMoi&lt;/b&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="980" y="100" width="220" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="sanpham-attr" value="- id: int&#xa;- tenSanPham: string&#xa;- hinhAnh: string&#xa;- moTa: string&#xa;- giaSanPham: decimal&#xa;- loai: int&#xa;- tonKho: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sanpham-class">
+          <mxGeometry y="26" width="220" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="sanpham-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="sanpham-class">
+          <mxGeometry y="138" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="sanpham-methods" value="+ getDetails(): SanPhamMoiVe&#xa;+ updatePrice(newPrice): boolean&#xa;+ updateStock(quantity): boolean&#xa;+ isAvailable(): boolean&#xa;+ getByCategory(id): List&#xa;+ searchProducts(keyword): List" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sanpham-class">
+          <mxGeometry y="146" width="220" height="94" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== CLASS LOAISANPHAM ==================== -->
+        <mxCell id="loaisp-class" value="&lt;b&gt;LoaiSanPham&lt;/b&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="100" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="loaisp-attr" value="- id: int&#xa;- tenLoai: string&#xa;- moTa: string&#xa;- hinhAnh: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="loaisp-class">
+          <mxGeometry y="26" width="200" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="loaisp-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="loaisp-class">
+          <mxGeometry y="90" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="loaisp-methods" value="+ getProducts(): List&lt;SanPhamMoi&gt;&#xa;+ create(): boolean&#xa;+ update(): boolean&#xa;+ delete(): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="loaisp-class">
+          <mxGeometry y="98" width="200" height="62" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== CLASS DONHANG ==================== -->
+        <mxCell id="donhang-class" value="&lt;b&gt;DonHang&lt;/b&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="80" y="440" width="220" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="donhang-attr" value="- id: int&#xa;- idUser: int&#xa;- voucherId: int&#xa;- maVoucher: string&#xa;- giaTriGiam: decimal&#xa;- tongTruocGiam: decimal&#xa;- diaChi: string&#xa;- soDienThoai: string&#xa;- soLuong: int&#xa;- tongTien: string&#xa;- thoiGian: datetime&#xa;- maDonHang: string&#xa;- ngayDat: datetime&#xa;- ngayGiaoDuKien: date&#xa;- trangThai: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="donhang-class">
+          <mxGeometry y="26" width="220" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="donhang-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="donhang-class">
+          <mxGeometry y="226" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="donhang-methods" value="+ createOrder(): boolean&#xa;+ calculateTotal(): decimal&#xa;+ applyVoucher(voucher): boolean&#xa;+ updateStatus(status): boolean&#xa;+ getOrderDetails(): List&#xa;+ cancelOrder(): boolean&#xa;+ confirmOrder(): boolean&#xa;+ getTrackingInfo(): string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="donhang-class">
+          <mxGeometry y="234" width="220" height="106" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== CLASS CHITIETDONHANG ==================== -->
+        <mxCell id="ctdh-class" value="&lt;b&gt;ChiTietDonHang&lt;/b&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="380" y="440" width="220" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="ctdh-attr" value="- id: int&#xa;- idDonHang: int&#xa;- idSanPham: int&#xa;- soLuong: int&#xa;- giaTaiThoiDiem: decimal" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ctdh-class">
+          <mxGeometry y="26" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ctdh-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="ctdh-class">
+          <mxGeometry y="106" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="ctdh-methods" value="+ calculateSubtotal(): decimal&#xa;+ getProduct(): SanPhamMoi&#xa;+ updateQuantity(qty): boolean&#xa;+ removeItem(): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ctdh-class">
+          <mxGeometry y="114" width="220" height="66" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== CLASS VOUCHER ==================== -->
+        <mxCell id="voucher-class" value="&lt;b&gt;Voucher&lt;/b&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="680" y="440" width="220" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="voucher-attr" value="- id: int&#xa;- maVoucher: string&#xa;- tenVoucher: string&#xa;- moTa: string&#xa;- loaiGiam: enum&#xa;- giaTriGiam: decimal&#xa;- giamToiDa: decimal&#xa;- donToiThieu: decimal&#xa;- apDungCho: enum&#xa;- soLuong: int&#xa;- daSuDung: int&#xa;- gioiHanMoiUser: int&#xa;- ngayBatDau: datetime&#xa;- ngayHetHan: datetime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="voucher-class">
+          <mxGeometry y="26" width="220" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="voucher-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="voucher-class">
+          <mxGeometry y="206" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="voucher-methods" value="+ isValid(): boolean&#xa;+ canUserUse(userId): boolean&#xa;+ calculateDiscount(amount): decimal&#xa;+ applyVoucher(): boolean&#xa;+ getUsageCount(): int&#xa;+ getRemainingQuantity(): int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="voucher-class">
+          <mxGeometry y="214" width="220" height="86" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== CLASS VOUCHERUSAGE ==================== -->
+        <mxCell id="vusage-class" value="&lt;b&gt;VoucherUsage&lt;/b&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="980" y="440" width="220" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="vusage-attr" value="- id: int&#xa;- voucherId: int&#xa;- userId: int&#xa;- donHangId: int&#xa;- maDonHang: string&#xa;- ngaySuDung: timestamp" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="vusage-class">
+          <mxGeometry y="26" width="220" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="vusage-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="vusage-class">
+          <mxGeometry y="122" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="vusage-methods" value="+ recordUsage(): boolean&#xa;+ getUsageHistory(userId): List&#xa;+ validateUsage(): boolean&#xa;+ getUsageCount(voucherId): int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="vusage-class">
+          <mxGeometry y="130" width="220" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== RELATIONSHIPS ==================== -->
+        
+        <!-- User 1 -- 1 Cart -->
+        <mxCell id="rel-user-cart" value="1" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="user-attr" target="cart-attr">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-user-cart-label1" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="178" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-user-cart-label2" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="178" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-user-cart-text" value="owns" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="320" y="158" width="50" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Cart 1 -- * CartItem -->
+        <mxCell id="rel-cart-cartitem" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="cart-attr" target="cartitem-attr">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-cart-cartitem-label1" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="178" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-cart-cartitem-label2" value="*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="670" y="178" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-cart-cartitem-text" value="contains" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="620" y="158" width="60" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- CartItem -- SanPhamMoi -->
+        <mxCell id="rel-cartitem-sanpham" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="cartitem-attr" target="sanpham-attr">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-cartitem-sanpham-label1" value="*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="910" y="178" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-cartitem-sanpham-label2" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="178" width="20" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- SanPhamMoi -- LoaiSanPham -->
+        <mxCell id="rel-sanpham-loai" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="sanpham-attr" target="loaisp-attr">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-sanpham-loai-label1" value="*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="178" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-sanpham-loai-label2" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="178" width="20" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- User -- DonHang -->
+        <mxCell id="rel-user-donhang" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="user-class" target="donhang-class">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-user-donhang-label1" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="385" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-user-donhang-label2" value="*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="200" y="415" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-user-donhang-text" value="places" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="140" y="400" width="50" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- DonHang 1 -- * ChiTietDonHang -->
+        <mxCell id="rel-donhang-ctdh" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="donhang-attr" target="ctdh-attr">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-donhang-ctdh-label1" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="546" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-donhang-ctdh-label2" value="*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="370" y="546" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-donhang-ctdh-text" value="contains" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="320" y="526" width="60" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- ChiTietDonHang -- SanPhamMoi -->
+        <mxCell id="rel-ctdh-sanpham" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="ctdh-class" target="sanpham-class">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="370" />
+              <mxPoint x="1090" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-ctdh-sanpham-label1" value="*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="500" y="410" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-ctdh-sanpham-label2" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="345" width="20" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- DonHang * -- 0..1 Voucher -->
+        <mxCell id="rel-donhang-voucher" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="ctdh-attr" target="voucher-attr">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="506" />
+              <mxPoint x="640" y="556" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-donhang-voucher-label1" value="*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="240" y="714" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-donhang-voucher-label2" value="0..1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="536" width="30" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- DonHang -- Voucher (direct) -->
+        <mxCell id="rel-donhang-voucher-direct" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=2;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="610" as="sourcePoint" />
+            <mxPoint x="680" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-donhang-voucher-direct-label1" value="*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="310" y="590" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-donhang-voucher-direct-label2" value="0..1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="590" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-donhang-voucher-text" value="uses" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="470" y="590" width="40" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Voucher 1 -- * VoucherUsage -->
+        <mxCell id="rel-voucher-usage" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="voucher-attr" target="vusage-attr">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-voucher-usage-label1" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="910" y="556" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-voucher-usage-label2" value="*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="970" y="556" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-voucher-usage-text" value="tracked by" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="910" y="536" width="70" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- User -- VoucherUsage -->
+        <mxCell id="rel-user-vusage" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=2;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="380" as="sourcePoint" />
+            <mxPoint x="1090" y="440" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="190" y="400" />
+              <mxPoint x="60" y="400" />
+              <mxPoint x="60" y="820" />
+              <mxPoint x="1090" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-user-vusage-label1" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="400" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-user-vusage-label2" value="*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="650" width="20" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== LEGEND ==================== -->
+        <mxCell id="legend-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="340" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-title" value="&lt;b&gt;CHÚ THÍCH&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="350" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-1-1" value="1 — 1 : Quan hệ 1-1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="380" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-1-n" value="1 — * : Quan hệ 1-N" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="410" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-n-01" value="* — 0..1 : Quan hệ N với 0 hoặc 1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="440" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-private" value="- : Thuộc tính private" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="470" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-public" value="+ : Phương thức public" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="500" width="180" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== COLOR LEGEND ==================== -->
+        <mxCell id="color-legend-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="560" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="color-legend-title" value="&lt;b&gt;MÀU SẮC&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="570" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="color-blue" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="600" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="color-blue-text" value="User (Người dùng)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1315" y="595" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="color-green" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="625" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="color-green-text" value="Cart (Giỏ hàng)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1315" y="620" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="color-yellow" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="650" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="color-yellow-text" value="SanPham (Sản phẩm)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1315" y="645" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="color-red" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="675" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="color-red-text" value="DonHang (Đơn hàng)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1315" y="670" width="160" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== NOTES ==================== -->
+        <mxCell id="note-cart" value="&lt;b&gt;Cart (Giỏ hàng)&lt;/b&gt;&#xa;- Mỗi User có 1 Cart duy nhất&#xa;- Cart chứa nhiều CartItem&#xa;- Được tạo tự động khi User đăng ký" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;spacingLeft=5;spacingTop=5;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="380" y="320" width="200" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="note-cartitem" value="&lt;b&gt;CartItem (Mục trong giỏ)&lt;/b&gt;&#xa;- Lưu giá tại thời điểm thêm vào giỏ&#xa;- Số lượng có thể tăng/giảm&#xa;- Liên kết với SanPhamMoi" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;spacingLeft=5;spacingTop=5;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="680" y="300" width="200" height="80" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

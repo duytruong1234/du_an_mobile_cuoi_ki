@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_ton_kho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00C853"
+        android:title="Tồn kho"
+        android:titleTextColor="#ffffff" />
+
+    <!-- Fallback layout: no SwipeRefreshLayout to avoid class-not-found crashes -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewTonKho"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp" />
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "123992685047",
+    "project_id": "appbandongho",
+    "storage_bucket": "appbandongho.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123992685047:android:bff133751fadf2b64b96f2",
+        "android_client_info": {
+          "package_name": "vn.duytruong.appbandienthoai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "123992685047-v3717pfku35qua1i6iiktd3at0b669s9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.duytruong.appbandienthoai",
+            "certificate_hash": "487764f73957f2f81c951aa55c024c10bfbf512e"
+          }
+        },
+        {
+          "client_id": "123992685047-9ih70tan9l5a1d6t7dad52grqcibm7nk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXD0Bc30w0FieFDRKfmOCSmL3z0ztfx4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "123992685047-9ih70tan9l5a1d6t7dad52grqcibm7nk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

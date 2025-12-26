@@ -1,0 +1,308 @@
+@startuml CLASS_DIAGRAM_STANDARD_UML
+' ================================================================
+' SƠ ĐỒ CLASS CHUẨN UML - ỨNG DỤNG BÁN ĐỒNG HỒ E-COMMERCE
+' Màu: Đen Trắng | Chuẩn: UML 2.0 | Ngày: 01/12/2025
+' ================================================================
+
+' Cấu hình giao diện đen trắng chuẩn UML
+skinparam monochrome true
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam defaultFontName Arial
+skinparam linetype ortho
+
+skinparam class {
+    BackgroundColor White
+    BorderColor Black
+    ArrowColor Black
+}
+
+skinparam note {
+    BackgroundColor White
+    BorderColor Black
+}
+
+' ================================================================
+' ĐỊNH NGHĨA CÁC LỚP THỰC THỂ (ENTITY CLASSES)
+' ================================================================
+
+class User <<Entity>> {
+    - id : INT <<PK>>
+    - email : VARCHAR(250)
+    - pass : VARCHAR(250)
+    - username : VARCHAR(100)
+    - mobile : VARCHAR(15)
+    - role : INT
+    - login_type : VARCHAR(20)
+    - reset_otp : VARCHAR(6)
+    - reset_otp_expiry : DATETIME
+    - status : INT
+    __
+    + login() : boolean
+    + register() : boolean
+    + logout() : void
+    + resetPassword(otp: String) : boolean
+    + updateProfile() : boolean
+    + getCart() : Cart
+    + getOrders() : List<DonHang>
+    + isAdmin() : boolean
+}
+
+class Voucher <<Entity>> {
+    - id : INT <<PK>>
+    - ma_voucher : VARCHAR(50) <<Unique>>
+    - ten_voucher : VARCHAR(200)
+    - mo_ta : TEXT
+    - loai_giam : ENUM{'percent','fixed','freeship'}
+    - gia_tri_giam : DECIMAL(10,2)
+    - giam_toi_da : DECIMAL(10,2)
+    - don_toi_thieu : DECIMAL(10,2)
+    - ap_dung_cho : ENUM{'all','new_user','old_user','first_order'}
+    - so_luong : INT
+    - da_su_dung : INT
+    - gioi_han_moi_user : INT
+    - ngay_bat_dau : DATETIME
+    - ngay_het_han : DATETIME
+    - trang_thai : TINYINT
+    - created_at : TIMESTAMP
+    - updated_at : TIMESTAMP
+    __
+    + isValid() : boolean
+    + canUserUse(userId: INT) : boolean
+    + calculateDiscount(amount: DECIMAL) : DECIMAL
+    + applyVoucher() : boolean
+    + getUsageCount() : INT
+    + getRemainingQuantity() : INT
+    + isExpired() : boolean
+}
+
+class VoucherUsage <<Entity>> {
+    - id : INT <<PK>>
+    - voucher_id : INT <<FK>>
+    - user_id : INT <<FK>>
+    - donhang_id : INT <<FK>>
+    - ma_donhang : VARCHAR(50)
+    - gia_tri_don_hang : DECIMAL(10,2)
+    - gia_tri_giam : DECIMAL(10,2)
+    - ngay_su_dung : TIMESTAMP
+    __
+    + recordUsage() : boolean
+    + getUsageHistory(userId: INT) : List<VoucherUsage>
+    + validateUsage() : boolean
+}
+
+class DonHang <<Entity>> {
+    - id : INT <<PK>>
+    - iduser : INT <<FK>>
+    - voucher_id : INT <<FK>>
+    - ma_voucher : VARCHAR(50)
+    - gia_tri_giam : DECIMAL(10,2)
+    - tong_truoc_giam : DECIMAL(10,2)
+    - diachi : TEXT
+    - sodienthoai : VARCHAR(255)
+    - soluong : INT
+    - tongtien : VARCHAR(255)
+    - thoigian : DATETIME
+    - madonhang : VARCHAR(50)
+    - ngaydat : DATE
+    - ngaygiaodukien : DATE
+    - trangthai : VARCHAR(50)
+    - vnpay_transaction_no : VARCHAR(50)
+    - vnpay_bank_code : VARCHAR(20)
+    - vnpay_pay_date : VARCHAR(20)
+    - paypal_order_id : VARCHAR(100)
+    - paypal_payer_id : VARCHAR(100)
+    - paypal_payment_date : DATETIME
+    __
+    + createOrder() : boolean
+    + calculateTotal() : DECIMAL
+    + applyVoucher(voucher: Voucher) : boolean
+    + updateStatus(status: String) : boolean
+    + getOrderDetails() : List<ChiTietDonHang>
+    + cancelOrder() : boolean
+    + confirmOrder() : boolean
+    + getPaymentInfo() : String
+}
+
+class ChiTietDonHang <<Entity>> {
+    - id : INT <<PK>>
+    - iddonhang : INT <<FK>>
+    - idsp : INT <<FK>>
+    - soluong : INT
+    - gia : DECIMAL(10,2)
+    __
+    + calculateSubtotal() : DECIMAL
+    + getProduct() : SanPhamMoi
+    + updateQuantity(qty: INT) : boolean
+}
+
+class SanPhamMoi <<Entity>> {
+    - id : INT <<PK>>
+    - tensp : VARCHAR(100)
+    - hinhanh : TEXT
+    - mota : TEXT
+    - giasp : DECIMAL(10,2)
+    - loai : INT <<FK>>
+    - soluongtonkho : INT
+    __
+    + getDetails() : SanPhamMoi
+    + updatePrice(price: DECIMAL) : boolean
+    + updateStock(quantity: INT) : boolean
+    + isAvailable() : boolean
+    + getByCategory(loai: INT) : List<SanPhamMoi>
+    + searchProducts(keyword: String) : List<SanPhamMoi>
+    + decreaseStock(qty: INT) : boolean
+}
+
+class Cart <<Entity>> {
+    - id : INT <<PK>>
+    - iduser : INT <<FK>>
+    - created_at : TIMESTAMP
+    - updated_at : TIMESTAMP
+    __
+    + getItems() : List<CartItem>
+    + getTotal() : DECIMAL
+    + getItemCount() : INT
+    + clear() : void
+    + addItem(product: SanPhamMoi, qty: INT) : boolean
+    + removeItem(itemId: INT) : boolean
+    + updateItemQuantity(itemId: INT, qty: INT) : boolean
+    + checkout() : DonHang
+}
+
+class CartItem <<Entity>> {
+    - id : INT <<PK>>
+    - idcart : INT <<FK>>
+    - idsp : INT <<FK>>
+    - soluong : INT
+    - giasp : DECIMAL(10,2)
+    - created_at : TIMESTAMP
+    __
+    + increaseQty(qty: INT) : void
+    + decreaseQty(qty: INT) : void
+    + getSubtotal() : DECIMAL
+    + getProduct() : SanPhamMoi
+    + updateQuantity(qty: INT) : boolean
+}
+
+class LoaiSanPham <<Entity>> {
+    - id : INT <<PK>>
+    - tenloai : VARCHAR(100)
+    - mota : TEXT
+    - hinhanh : TEXT
+    __
+    + getProducts() : List<SanPhamMoi>
+    + create() : boolean
+    + update() : boolean
+    + delete() : boolean
+    + getAll() : List<LoaiSanPham>
+}
+
+' ================================================================
+' QUAN HỆ GIỮA CÁC LỚP (ASSOCIATIONS)
+' ================================================================
+
+' User sở hữu một Cart (1:1)
+User "1" -- "0..1" Cart : owns >
+
+' User đặt nhiều DonHang (1:N)
+User "1" -- "*" DonHang : places >
+
+' User có nhiều VoucherUsage (1:N)
+User "1" -- "*" VoucherUsage : has >
+
+' Cart chứa nhiều CartItem (1:N - Composition)
+Cart "1" *-- "*" CartItem : contains >
+
+' CartItem tham chiếu đến SanPhamMoi (N:1)
+CartItem "*" -- "1" SanPhamMoi : references >
+
+' DonHang chứa nhiều ChiTietDonHang (1:N - Composition)
+DonHang "1" *-- "*" ChiTietDonHang : contains >
+
+' ChiTietDonHang tham chiếu đến SanPhamMoi (N:1)
+ChiTietDonHang "*" -- "1" SanPhamMoi : includes >
+
+' DonHang có thể sử dụng một Voucher (N:0..1)
+DonHang "*" -- "0..1" Voucher : uses >
+
+' Voucher được theo dõi bởi nhiều VoucherUsage (1:N)
+Voucher "1" -- "*" VoucherUsage : tracked by >
+
+' VoucherUsage liên kết với DonHang (N:1)
+VoucherUsage "*" -- "0..1" DonHang : applied to >
+
+' LoaiSanPham phân loại nhiều SanPhamMoi (1:N)
+LoaiSanPham "1" -- "*" SanPhamMoi : categorizes >
+
+' ================================================================
+' CHÚ THÍCH (NOTES)
+' ================================================================
+
+note top of User
+  <b>User</b>
+  - Người dùng hệ thống
+  - role: 0=User, 1=Admin
+  - login_type: normal/google
+  - status: 0=inactive, 1=active
+end note
+
+note top of Voucher
+  <b>Voucher</b>
+  - Mã giảm giá
+  - loai_giam: percent/fixed/freeship
+  - ap_dung_cho: all/new_user/old_user/first_order
+  - trang_thai: 0=inactive, 1=active
+end note
+
+note right of DonHang
+  <b>DonHang</b>
+  - Hỗ trợ thanh toán:
+    + COD
+    + VNPay
+    + PayPal
+  - trangthai: Chờ xác nhận/
+    Đang xử lý/Đang giao/
+    Đã giao/Đã hủy
+end note
+
+note bottom of Cart
+  <b>Cart</b>
+  - Mỗi User có 1 Cart
+  - Cart được tạo tự động
+    khi User đăng ký
+  - CartItem lưu giá tại
+    thời điểm thêm vào giỏ
+end note
+
+note bottom of SanPhamMoi
+  <b>SanPhamMoi</b>
+  - Sản phẩm đồng hồ
+  - soluongtonkho: Quản lý
+    tồn kho tự động
+  - Có thể ở nhiều giỏ hàng
+    và đơn hàng
+end note
+
+' ================================================================
+' CHÚ GIẢI (LEGEND)
+' ================================================================
+
+legend right
+  |= Ký hiệu |= Ý nghĩa |
+  | <<PK>> | Primary Key |
+  | <<FK>> | Foreign Key |
+  | <<Entity>> | Entity Class |
+  | 1 -- 1 | Association 1:1 |
+  | 1 -- * | Association 1:N |
+  | * -- 0..1 | Association N:0..1 |
+  | *-- | Composition |
+  | - | Private attribute |
+  | + | Public method |
+endlegend
+
+title Sơ đồ Class UML - Ứng dụng Bán Đồng Hồ E-Commerce\n(Chuẩn UML - Đen Trắng)
+footer Cập nhật: 01/12/2025 | Database: appbandienthoai | Chuẩn UML 2.0
+
+@enduml

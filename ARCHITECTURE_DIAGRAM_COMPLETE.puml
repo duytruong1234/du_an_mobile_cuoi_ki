@@ -1,0 +1,612 @@
+@startuml Kien_Truc_He_Thong_Ung_Dung_Ban_Dong_Ho
+!theme plain
+skinparam backgroundColor #FEFEFE
+skinparam defaultFontName Arial
+skinparam defaultFontSize 11
+
+title Sơ Đồ Kiến Trúc Hệ Thống - Ứng Dụng Bán Đồng Hồ\n(E-commerce Mobile Application)
+
+' ============================================
+' LEGEND & STYLING
+' ============================================
+skinparam component {
+    BackgroundColor<<android>> #E3F2FD
+    BorderColor<<android>> #1976D2
+    BackgroundColor<<php>> #FFF9C4
+    BorderColor<<php>> #F57C00
+    BackgroundColor<<database>> #C8E6C9
+    BorderColor<<database>> #388E3C
+    BackgroundColor<<external>> #FFCCBC
+    BorderColor<<external>> #D84315
+}
+
+skinparam package {
+    BackgroundColor #F5F5F5
+    BorderColor #616161
+    FontStyle bold
+}
+
+skinparam database {
+    BackgroundColor #C8E6C9
+    BorderColor #2E7D32
+}
+
+skinparam cloud {
+    BackgroundColor #E1F5FE
+    BorderColor #0277BD
+}
+
+' ============================================
+' ACTORS
+' ============================================
+actor "👤 User\n(Người dùng)\nrole=0" as User #90CAF9
+actor "👨‍💼 Admin\n(Quản trị viên)\nrole=1" as Admin #FFB74D
+
+' ============================================
+' CLIENT LAYER - ANDROID APPLICATION
+' ============================================
+package "📱 CLIENT LAYER\n(Android Application)" as ClientLayer {
+
+    package "Presentation Layer (UI)" as PresentationLayer {
+        component "DangNhapActivity\nDangKiActivity\nResetPassActivity" as AuthUI <<android>>
+        component "MainActivity\nChiTietActivity\nDienThoaiActivity\nSearchActivity" as ProductUI <<android>>
+        component "GioHangActivity\nDatHangActivity\nThanhToanActivity" as CartUI <<android>>
+        component "DonHangActivity\nXemDonActivity\nChiTietDonHangActivity" as OrderUI <<android>>
+        component "UpdateProfileActivity\nChonVoucherActivity" as UserUI <<android>>
+        component "QuanLiActivity\nThemSPActivity\nTonKhoActivity\nThongKeActivity\nQuanLyNguoiDungActivity\nQuanLyVoucherActivity" as AdminUI <<android>>
+
+        note right of AdminUI
+            Chỉ hiển thị khi
+            user.role == 1
+        end note
+    }
+
+    package "Business Logic Layer" as LogicLayer {
+        component "SanPhamMoiAdapter\nGioHangAdapter\nDonHangAdapter\nVoucherAdapter\nNguoiDungAdapter\nTonKhoAdapter" as Adapters <<android>>
+        component "EventBus\n(Real-time Updates)" as EventBus <<android>>
+    }
+
+    package "Data Layer" as DataLayer {
+        component "User\nSanPhamMoi\nGioHang\nDonHang\nVoucher\nChiTietDonHang\nThongKe" as Models <<android>>
+
+        database "PaperDB\n(Local Storage)" as PaperDB {
+            folder "user_current" as UserSession
+            folder "cached_data" as CacheData
+        }
+
+        component "ApiBanHang\n(Retrofit Interface)\n\n40+ API Endpoints" as RetrofitAPI <<android>>
+    }
+}
+
+' ============================================
+' NETWORK LAYER
+' ============================================
+cloud "🌐 Internet\n(HTTP/HTTPS)" as Internet {
+    [JSON REST API]
+    [Deep Links]
+}
+
+' ============================================
+' SERVER LAYER - PHP BACKEND
+' ============================================
+package "🖥️ SERVER LAYER\n(PHP Backend)" as ServerLayer {
+
+    package "API Endpoints (REST)" as APILayer {
+
+        component "🔐 Authentication APIs" as AuthAPI <<php>> {
+            [dangki.php]
+            [dangnhap.php]
+            [reset_pass.php]
+            [verify_otp_reset_pass.php]
+        }
+
+        component "📦 Product APIs" as ProductAPI <<php>> {
+            [getspmoi.php]
+            [getloaisp.php]
+            [chitiet.php]
+            [timkiem.php]
+            [insertsp.php]
+            [updatesp.php]
+            [xoa.php]
+        }
+
+        component "🛒 Order APIs" as OrderAPI <<php>> {
+            [taoDonHang.php]
+            [xemdonhang.php]
+            [getChiTietDonHang.php]
+            [huyDonHang.php]
+            [updateorder.php]
+        }
+
+        component "💳 Payment APIs" as PaymentAPI <<php>> {
+            [vnpay_create_payment.php]
+            [vnpay_check_status.php]
+            [vnpay_return.php]
+            [vnpay_continue_payment.php]
+            [paypal_create_payment.php]
+            [paypal_execute_payment.php]
+        }
+
+        component "👥 User Management APIs" as UserAPI <<php>> {
+            [getAllUsers.php]
+            [updateUserRole.php]
+            [deleteUser.php]
+            [updateProfile.php]
+        }
+
+        component "🎟️ Voucher APIs" as VoucherAPI <<php>> {
+            [getVouchers.php]
+            [checkVoucher.php]
+            [saveVoucherUsage.php]
+        }
+
+        component "📊 Statistics APIs" as StatsAPI <<php>> {
+            [thongke.php]
+            [thongke_doanhthu.php]
+        }
+
+        component "📦 Inventory APIs" as InventoryAPI <<php>> {
+            [kiemTraTonKho.php]
+            [capNhatTonKho.php]
+        }
+    }
+
+    package "Business Logic & Security" as BusinessLogic {
+        component "Validation\n• Input sanitization\n• Data validation" as Validation <<php>>
+        component "Authentication\n• Session check\n• Token verify" as Authentication <<php>>
+        component "Authorization\n• Role check\n• Permission verify" as Authorization <<php>>
+        component "Security\n• SQL injection prevent\n• XSS protection" as Security <<php>>
+    }
+
+    package "External Libraries" as Libraries {
+        component "PHPMailer\n(SMTP Email)" as PHPMailer <<php>>
+    }
+
+    package "Database Access Layer" as DBAccess {
+        component "MySQLi Driver\n• Connection pool\n• Prepared statements\n• Transaction mgmt" as MySQLi <<php>>
+        file "connect.php" as ConnectFile
+    }
+
+    package "Configuration Files" as ConfigFiles {
+        file "vnpay_config.php" as VNPayConfig
+        file "paypal_config.php" as PayPalConfig
+        file "email_config.php" as EmailConfig
+    }
+}
+
+' ============================================
+' DATABASE LAYER - MYSQL
+' ============================================
+package "🗄️ DATABASE LAYER\n(MySQL Database)" as DatabaseLayer {
+
+    database "appbandienthoai" as MainDB <<database>> {
+
+        package "Core Tables" as CoreTables {
+            entity "user" as UserTable <<database>> {
+                * id : INT <<PK>>
+                --
+                email : VARCHAR(255) <<UNIQUE>>
+                pass : VARCHAR(255)
+                username : VARCHAR(100)
+                mobile : VARCHAR(20)
+                **role : INT (0=User, 1=Admin)**
+                login_type : ENUM('normal','google')
+                account_status : TINYINT
+                reset_otp : VARCHAR(10)
+                reset_otp_expiry : DATETIME
+                created_at : TIMESTAMP
+            }
+
+            entity "loaisp" as CategoryTable <<database>> {
+                * id : INT <<PK>>
+                --
+                tensanpham : VARCHAR(255)
+                hinhanh : VARCHAR(255)
+            }
+
+            entity "sanphammoi" as ProductTable <<database>> {
+                * id : INT <<PK>>
+                --
+                tensp : VARCHAR(255)
+                giasp : VARCHAR(100)
+                hinhanh : TEXT
+                mota : TEXT
+                loai : INT <<FK>>
+                soluong : INT (đã bán)
+                **soluongtonkho : INT**
+                created_at : TIMESTAMP
+            }
+        }
+
+        package "Transaction Tables" as TransactionTables {
+            entity "giohang" as CartTable <<database>> {
+                * id : INT <<PK>>
+                --
+                iduser : INT <<FK>>
+                idsp : INT <<FK>>
+                tensp : VARCHAR(255)
+                giasp : VARCHAR(100)
+                hinhanh : TEXT
+                soluong : INT
+                ngaythem : TIMESTAMP
+            }
+
+            entity "donhang" as OrderTable <<database>> {
+                * id : INT <<PK>>
+                --
+                madonhang : VARCHAR(50) <<UNIQUE>>
+                iduser : INT <<FK>>
+                diachi : TEXT
+                sodienthoai : VARCHAR(20)
+                soluong : INT
+                tongtien : VARCHAR(100)
+                ngaydat : DATETIME
+                ngaygiaodukien : VARCHAR(100)
+                **trangthai : VARCHAR(50)**
+                phuongthucthanhtoan : VARCHAR(50)
+                vnpay_txn_ref : VARCHAR(100)
+                paypal_order_id : VARCHAR(100)
+                voucher_id : INT <<FK>>
+                ma_voucher : VARCHAR(50)
+                gia_tri_giam : DECIMAL(10,2)
+                tong_truoc_giam : DECIMAL(10,2)
+                lydo_huy : TEXT
+            }
+
+            entity "chitietdonhang" as OrderDetailTable <<database>> {
+                * id : INT <<PK>>
+                --
+                iddonhang : INT <<FK>>
+                idsp : INT <<FK>>
+                soluong : INT
+                gia : VARCHAR(100)
+            }
+        }
+
+        package "Voucher Tables" as VoucherTables {
+            entity "voucher" as VoucherTable <<database>> {
+                * id : INT <<PK>>
+                --
+                ma_voucher : VARCHAR(50) <<UNIQUE>>
+                ten_voucher : VARCHAR(200)
+                mo_ta : TEXT
+                loai_giam : ENUM
+                gia_tri_giam : DECIMAL(10,2)
+                giam_toi_da : DECIMAL(10,2)
+                don_toi_thieu : DECIMAL(10,2)
+                ap_dung_cho : ENUM
+                so_luong : INT
+                **da_su_dung : INT**
+                gioi_han_moi_user : INT
+                ngay_bat_dau : DATETIME
+                ngay_het_han : DATETIME
+                trang_thai : TINYINT
+            }
+
+            entity "voucher_usage" as VoucherUsageTable <<database>> {
+                * id : INT <<PK>>
+                --
+                voucher_id : INT <<FK>>
+                user_id : INT <<FK>>
+                donhang_id : INT <<FK>>
+                ma_donhang : VARCHAR(50)
+                gia_tri_don_hang : DECIMAL(10,2)
+                gia_tri_giam : DECIMAL(10,2)
+                ngay_su_dung : TIMESTAMP
+            }
+        }
+
+        package "Database Triggers" as Triggers {
+            component "🔄 TRIGGER 1\nafter_chitietdonhang_insert\n_giam_tonkho" as Trigger1 <<database>> {
+                note right
+                    Tự động giảm soluongtonkho
+                    khi INSERT chitietdonhang
+
+                    UPDATE sanphammoi
+                    SET soluongtonkho =
+                        soluongtonkho - NEW.soluong
+                end note
+            }
+
+            component "🔄 TRIGGER 2\nafter_donhang_update\n_hoan_tonkho" as Trigger2 <<database>> {
+                note right
+                    Hoàn tồn kho khi hủy đơn
+                    IF NEW.trangthai = 'Đã hủy'
+
+                    UPDATE sanphammoi
+                    SET soluongtonkho =
+                        soluongtonkho + soluong
+                end note
+            }
+
+            component "🔄 TRIGGER 3\nafter_donhang_insert\n_update_voucher" as Trigger3 <<database>> {
+                note right
+                    Tăng voucher đã sử dụng
+                    IF NEW.voucher_id IS NOT NULL
+
+                    UPDATE voucher
+                    SET da_su_dung =
+                        da_su_dung + 1
+                end note
+            }
+        }
+    }
+}
+
+' ============================================
+' EXTERNAL SERVICES
+' ============================================
+package "🌍 EXTERNAL SERVICES" as ExternalServices {
+
+    component "VNPay Gateway\n(Sandbox)" as VNPay <<external>> {
+        [Payment API]
+        [Return URL Handler]
+        note bottom
+            ✅ Status: ACTIVE
+            Deep link:
+            appbandienthoai://
+            payment_return
+        end note
+    }
+
+    component "PayPal API\n(REST)" as PayPal <<external>> {
+        [Order Creation]
+        [Payment Execution]
+        note bottom
+            ⚠️ Status: INACTIVE
+            Code exists but
+            not integrated
+        end note
+    }
+
+    component "Firebase Services" as Firebase <<external>> {
+        [Cloud Messaging (FCM)]
+        [Authentication]
+        [Google Sign-In]
+        note bottom
+            ✅ Google Auth: Active
+            ⚠️ FCM: Setup unused
+        end note
+    }
+
+    component "Gmail SMTP" as Gmail <<external>> {
+        [Email Server]
+        [TLS Port 587]
+        note bottom
+            ✅ OTP Email
+            PHPMailer
+        end note
+    }
+
+    component "Google OAuth 2.0" as GoogleOAuth <<external>> {
+        [Identity Provider]
+        [Token Validation]
+        note bottom
+            ✅ Social Login
+            Auto create user
+            with role=0
+        end note
+    }
+}
+
+' ============================================
+' RELATIONSHIPS & DATA FLOW
+' ============================================
+
+' User interactions
+User --> AuthUI : Đăng nhập/Đăng ký
+User --> ProductUI : Xem sản phẩm
+User --> CartUI : Mua hàng
+User --> OrderUI : Quản lý đơn
+User --> UserUI : Cập nhật thông tin
+
+Admin --> AdminUI : Quản lý hệ thống
+Admin --> ProductUI : Xem sản phẩm
+Admin --> OrderUI : Xem tất cả đơn
+
+' UI to Logic
+AuthUI --> Adapters
+ProductUI --> Adapters
+CartUI --> Adapters
+OrderUI --> Adapters
+AdminUI --> Adapters
+
+Adapters --> EventBus : Notify changes
+EventBus --> AuthUI : Update UI
+EventBus --> OrderUI : Update UI
+
+' Logic to Data
+Adapters --> Models : Bind data
+AuthUI --> RetrofitAPI : API calls
+ProductUI --> RetrofitAPI : API calls
+CartUI --> RetrofitAPI : API calls
+OrderUI --> RetrofitAPI : API calls
+AdminUI --> RetrofitAPI : API calls
+UserUI --> RetrofitAPI : API calls
+
+Models --> PaperDB : Store locally
+RetrofitAPI --> PaperDB : Cache response
+
+' Client to Network
+RetrofitAPI --> Internet : HTTP requests
+Internet --> RetrofitAPI : JSON response
+
+' Network to Server
+Internet --> AuthAPI
+Internet --> ProductAPI
+Internet --> OrderAPI
+Internet --> PaymentAPI
+Internet --> UserAPI
+Internet --> VoucherAPI
+Internet --> StatsAPI
+Internet --> InventoryAPI
+
+' API to Business Logic
+AuthAPI --> Validation
+ProductAPI --> Validation
+OrderAPI --> Validation
+PaymentAPI --> Validation
+UserAPI --> Authorization
+VoucherAPI --> Validation
+StatsAPI --> Authorization
+InventoryAPI --> Authorization
+
+Validation --> Security
+Authentication --> Security
+Authorization --> Authentication
+
+' Business Logic to DB Access
+AuthAPI --> MySQLi
+ProductAPI --> MySQLi
+OrderAPI --> MySQLi
+PaymentAPI --> MySQLi
+UserAPI --> MySQLi
+VoucherAPI --> MySQLi
+StatsAPI --> MySQLi
+InventoryAPI --> MySQLi
+
+MySQLi --> ConnectFile : Uses
+
+' DB Access to Database
+MySQLi --> UserTable : CRUD
+MySQLi --> CategoryTable : CRUD
+MySQLi --> ProductTable : CRUD
+MySQLi --> CartTable : CRUD
+MySQLi --> OrderTable : CRUD
+MySQLi --> OrderDetailTable : CRUD
+MySQLi --> VoucherTable : CRUD
+MySQLi --> VoucherUsageTable : CRUD
+
+' Database Relationships
+ProductTable }o--|| CategoryTable : "belongs to"
+CartTable }o--|| UserTable : "owned by"
+CartTable }o--|| ProductTable : "contains"
+OrderTable }o--|| UserTable : "placed by"
+OrderTable }o--o| VoucherTable : "uses"
+OrderDetailTable }o--|| OrderTable : "details of"
+OrderDetailTable }o--|| ProductTable : "contains"
+VoucherUsageTable }o--|| VoucherTable : "tracks"
+VoucherUsageTable }o--|| UserTable : "used by"
+VoucherUsageTable }o--o| OrderTable : "applied to"
+
+' Triggers
+Trigger1 .down.> OrderDetailTable : "ON INSERT"
+Trigger1 .down.> ProductTable : "UPDATE\nsoluongtonkho"
+Trigger2 .down.> OrderTable : "ON UPDATE"
+Trigger2 .down.> ProductTable : "UPDATE\nsoluongtonkho"
+Trigger3 .down.> OrderTable : "ON INSERT"
+Trigger3 .down.> VoucherTable : "UPDATE\nda_su_dung"
+
+' External Services
+PaymentAPI --> VNPayConfig : Uses
+PaymentAPI --> PayPalConfig : Uses
+AuthAPI --> EmailConfig : Uses
+
+PaymentAPI <--> VNPay : Create payment\n& Callback
+PaymentAPI <--> PayPal : Create order\n& Execute
+AuthAPI --> PHPMailer : Send email
+PHPMailer --> Gmail : SMTP
+AuthAPI <--> Firebase : Verify token
+AuthAPI <--> GoogleOAuth : Authenticate
+Firebase -up-> AdminUI : Push notification\n(unused)
+
+' Deep links
+VNPay -up-> OrderUI : Deep link\nappbandienthoai://
+PayPal -up-> CartUI : Deep link\nappbandienthoai://
+
+' ============================================
+' NOTES & ANNOTATIONS
+' ============================================
+note top of ClientLayer
+    **ANDROID APPLICATION**
+    • Language: Java
+    • Min SDK: API 24 (Android 7.0)
+    • Target SDK: API 34 (Android 14)
+    • Architecture: MVC Pattern
+
+    **Libraries:**
+    • Retrofit 2.9.0 (HTTP Client)
+    • RxJava 2.2.21 (Reactive)
+    • Glide 4.16.0 (Image loading)
+    • PaperDB 2.7.2 (Local storage)
+    • EventBus 3.3.1 (Event-driven)
+    • MPAndroidChart 3.1.0 (Charts)
+    • Firebase (FCM, Auth)
+end note
+
+note top of ServerLayer
+    **PHP BACKEND**
+    • PHP Version: 7.4+
+    • Server: Apache/Nginx
+    • 50+ API endpoints
+    • 8 module groups
+
+    **Security:**
+    • SQL Injection prevention
+    • XSS protection
+    • Role-based access control
+    • Input validation
+    • Session management
+end note
+
+note top of DatabaseLayer
+    **MYSQL DATABASE**
+    • Version: 5.7+
+    • Database: appbandienthoai
+    • 13 tables
+    • 3 triggers (automation)
+    • Foreign key constraints
+    • Unique constraints
+
+    **Total Size:**
+    ~43,500 lines of code
+    200+ files in project
+end note
+
+note bottom of ExternalServices
+    **PAYMENT METHODS:**
+    ✅ COD (Cash On Delivery)
+    ✅ VNPay (Active & Working)
+    ⚠️ PayPal (Code exists, not active)
+
+    **AUTHENTICATION:**
+    ✅ Email/Password
+    ✅ Google Sign-In
+    ✅ OTP Reset Password
+end note
+
+' ============================================
+' LEGEND
+' ============================================
+legend bottom right
+    **LEGEND (Chú giải)**
+    |= Color |= Component |
+    | <back:#E3F2FD></back> | Android Client |
+    | <back:#FFF9C4></back> | PHP Server |
+    | <back:#C8E6C9></back> | MySQL Database |
+    | <back:#FFCCBC></back> | External Services |
+
+    |= Symbol |= Meaning |
+    | —→ | Synchronous call |
+    | ⇢ | Asynchronous call |
+    | }o—|| | Foreign key relationship |
+    | .> | Trigger/Event |
+
+    **STATISTICS (Thống kê)**
+    • Activities: 23
+    • Adapters: 9
+    • Models: 25+
+    • API Endpoints: 50+
+    • Database Tables: 13
+    • Triggers: 3
+    • Features: 50+
+
+    **PROJECT INFO**
+    Name: Ứng Dụng Bán Đồng Hồ
+    Package: vn.duytruong.appbandienthoai
+    Database: appbandienthoai
+    Date: 30/11/2025
+end legend
+
+@enduml
+

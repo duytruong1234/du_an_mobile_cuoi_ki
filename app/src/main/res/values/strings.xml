@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tìm kiếm sản phẩm</string>
+    <string name="title_chi_tiet_don_hang">Chi tiết đơn hàng</string>
+
+    <!-- Labels with placeholders -->
+    <string name="label_ma_donhang">Mã: %1$s</string>
+    <string name="label_ngay_dat">Ngày đặt: %1$s</string>
+    <string name="label_ngay_giao">Ngày giao dự kiến: %1$s</string>
+    <string name="label_dia_chi">Địa chỉ: %1$s</string>
+    <string name="label_sdt">SĐT: %1$s</string>
+    <string name="label_trang_thai">Trạng thái: %1$s</string>
+    <string name="label_tong_tien">Tổng tiền: %1$s ₫</string>
+
+    <!-- Missing strings referenced by layouts -->
+    <string name="anh_san_pham">Ảnh sản phẩm</string>
+    <string name="logo_desc">Logo ứng dụng</string>
+    <string name="signup">Đăng ký</string>
+    <string name="label_username">Tên đăng nhập</string>
+    <string name="hint_username">Nhập tên đăng nhập</string>
+    <string name="label_email">Email</string>
+    <string name="hint_enter_email">Nhập email</string>
+    <string name="label_password">Mật khẩu</string>
+    <string name="hint_password">Nhập mật khẩu</string>
+    <string name="label_repassword">Nhập lại mật khẩu</string>
+    <string name="hint_repassword">Nhập lại mật khẩu</string>
+    <string name="label_phone">Số điện thoại</string>
+    <string name="hint_phone">Nhập số điện thoại</string>
+    <string name="already_have_account">Bạn đã có tài khoản?</string>
+    <string name="action_login">Đăng nhập</string>
+    <string name="welcome_back">Chào mừng trở lại</string>
+    <string name="login_to_continue">Đăng nhập để tiếp tục</string>
+    <string name="hint_email">Nhập email</string>
+    <string name="forgot_password">Quên mật khẩu?</string>
+    <string name="or">Hoặc</string>
+    <string name="no_account">Chưa có tài khoản?</string>
+
+    <!-- Generic UI strings used by app -->
+    <string name="place_holder_search">Tìm kiếm...</string>
+    <string name="btn_dat_hang">Đặt hàng</string>
+    <string name="btn_cancel">Hủy</string>
+
+    <!-- Missing strings -->
+    <string name="search">Tìm kiếm</string>
+    <string name="cart_description">Mô tả giỏ hàng</string>
+    <string name="latest_products">Sản phẩm mới nhất</string>
+    <string name="tinh_trang_don_hang">Tình trạng đơn hàng</string>
+    <string name="dong">Đóng</string>
+    <string name="nhan_new">Mới</string>
+    <string name="ten_san_pham">Tên sản phẩm</string>
+    <string name="gia_san_pham">Giá sản phẩm</string>
+    <string name="label_tong_tien_format">Tổng tiền: %1$s ₫</string>
+    <string name="label_so_luong_format">Số lượng: %1$d sản phẩm</string>
+    <string name="mo_ta_san_pham">Mô tả sản phẩm</string>
+    <string name="no_product_data">Không có dữ liệu sản phẩm</string>
+    <string name="price_format">%1$s ₫</string>
+    <string name="price_na">N/A</string>
+    <string name="ma_don_hang_demo">DH001</string>
+
+    <!-- New strings for toolbar buttons -->
+    <string name="desc_ton_kho">Mở màn hình tồn kho</string>
+    <string name="desc_add_product">Thêm sản phẩm</string>
+
+    <!-- Strings used by ChiTietActivity -->
+    <string name="loading">Đang tải...</string>
+    <string name="out_of_stock">Hết hàng</string>
+    <string name="stock_na">N/A</string>
+
+    <!-- Login screen modern UI -->
+    <string name="email_icon">Biểu tượng email</string>
+    <string name="password_icon">Biểu tượng mật khẩu</string>
+    <string name="google_sign_in">Đăng nhập với Google</string>
+    <string name="signup_now">Đăng ký ngay</string>
+    <string name="username_icon">Biểu tượng người dùng</string>
+    <string name="phone_icon">Biểu tượng điện thoại</string>
+    <string name="create_your_account">Tạo tài khoản của bạn</string>
+    <string name="login_now">Đăng nhập ngay</string>
+
+</resources>

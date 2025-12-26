@@ -1,0 +1,307 @@
+@startuml "Sơ Đồ Use Case - Ứng Dụng Bán Đồng Hồ"
+
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.4.0
+skinparam backgroundColor #FEFEFE
+skinparam handwritten false
+skinparam defaultFontName Arial
+
+' Định nghĩa màu sắc
+skinparam actor {
+    BackgroundColor<<User>> LightBlue
+    BorderColor<<User>> DarkBlue
+    BackgroundColor<<Admin>> LightCoral
+    BorderColor<<Admin>> DarkRed
+    BackgroundColor<<System>> LightGreen
+    BorderColor<<System>> DarkGreen
+}
+
+skinparam usecase {
+    BackgroundColor LightYellow
+    BorderColor DarkOrange
+    ArrowColor Black
+}
+
+skinparam package {
+    BackgroundColor AliceBlue
+    BorderColor Navy
+    FontStyle bold
+}
+
+title Sơ Đồ Use Case - Hệ Thống Bán Đồng Hồ\n(AppBanDongHo - Android App)
+
+' ===== ĐỊNH NGHĨA CÁC TÁC NHÂN =====
+actor "Người dùng\n(User)" as User <<User>>
+actor "Quản trị viên\n(Admin)" as Admin <<Admin>>
+actor "VNPay\nGateway" as VNPay <<System>>
+actor "Firebase\nCloud Messaging" as FCM <<System>>
+actor "Google\nSign-In" as Google <<System>>
+
+' Quan hệ kế thừa
+User <|-- Admin
+
+' ===== CÁC NHÓM CHỨC NĂNG =====
+
+package "A. XÁC THỰC & TÀI KHOẢN" #LightCyan {
+    usecase (UC-A1\n**Đăng ký tài khoản**\n---\nAPI: dangki.php\nActivity: DangKiActivity) as UC_A1
+    usecase (UC-A2\n**Đăng nhập thường**\n---\nAPI: dangnhap.php\nActivity: DangNhapActivity) as UC_A2
+    usecase (UC-A3\n**Đăng nhập Google**\n---\nAPI: dangnhap.php\nService: Google Sign-In) as UC_A3
+    usecase (UC-A4\n**Quên mật khẩu (OTP)**\n---\nAPI: reset_pass.php\nActivity: ResetPassActivity) as UC_A4
+    usecase (UC-A5\n**Đăng xuất**\n---\nActivity: MainActivity) as UC_A5
+    usecase (UC-A6\n**Cập nhật thông tin cá nhân**\n---\nAPI: updateProfile.php\nActivity: UpdateProfileActivity) as UC_A6
+    usecase (UC-A7\n**Đổi mật khẩu**\n---\nAPI: changePassword.php\nActivity: UpdateProfileActivity) as UC_A7
+}
+
+package "B. XEM & TÌM KIẾM SẢN PHẨM" #LightGreen {
+    usecase (UC-B1\n**Xem trang chủ**\n---\nAPI: getspmoi.php, getloaisp.php\nActivity: MainActivity) as UC_B1
+    usecase (UC-B2\n**Xem sản phẩm theo danh mục**\n---\nAPI: chitiet.php\nActivity: DienThoaiActivity) as UC_B2
+    usecase (UC-B3\n**Xem chi tiết sản phẩm**\n---\nAPI: kiemTraTonKho.php\nActivity: ChiTietActivity) as UC_B3
+    usecase (UC-B4\n**Tìm kiếm sản phẩm**\n---\nAPI: timkiem.php\nActivity: SearchActivity) as UC_B4
+    usecase (UC-B5\n**Sắp xếp theo giá**\n---\nLocal sorting) as UC_B5
+}
+
+package "C. GIỎ HÀNG & ĐẶT HÀNG" #LightYellow {
+    usecase (UC-C1\n**Thêm vào giỏ hàng**\n---\nLocal storage\nActivity: ChiTietActivity) as UC_C1
+    usecase (UC-C2\n**Xem giỏ hàng**\n---\nActivity: GioHangActivity) as UC_C2
+    usecase (UC-C3\n**Cập nhật số lượng**\n---\nActivity: GioHangActivity) as UC_C3
+    usecase (UC-C4\n**Xóa khỏi giỏ hàng**\n---\nActivity: GioHangActivity) as UC_C4
+    usecase (UC-C5\n**Chọn sản phẩm mua**\n---\nCheckbox selection) as UC_C5
+    usecase (UC-C6\n**Tính tổng tiền**\n---\nEventBus: TinhTongEvent) as UC_C6
+}
+
+package "D. THANH TOÁN" #LightPink {
+    usecase (UC-D1\n**Nhập thông tin đặt hàng**\n---\nActivity: DatHangActivity) as UC_D1
+    usecase (UC-D2\n**Thanh toán COD**\n---\nAPI: taoDonHang.php\nActivity: ThanhToanActivity) as UC_D2
+    usecase (UC-D3\n**Thanh toán VNPay**\n---\nAPI: vnpay_create_payment.php\nDeep Link: appbandienthoai://) as UC_D3
+    usecase (UC-D4\n**Kiểm tra trạng thái thanh toán**\n---\nAPI: vnpay_check_status.php) as UC_D4
+    usecase (UC-D5\n**Tiếp tục thanh toán**\n---\nAPI: vnpay_continue_payment.php) as UC_D5
+}
+
+package "E. QUẢN LÝ ĐƠN HÀNG (USER)" #Lavender {
+    usecase (UC-E1\n**Xem đơn hàng của tôi**\n---\nAPI: xemdonhang.php\nActivity: XemDonActivity) as UC_E1
+    usecase (UC-E2\n**Xem chi tiết đơn hàng**\n---\nAPI: getChiTietDonHang.php\nActivity: ChiTietDonHangActivity) as UC_E2
+    usecase (UC-E3\n**Hủy đơn hàng**\n---\nAPI: huyDonHang.php\nTrigger: Hoàn tồn kho) as UC_E3
+    usecase (UC-E4\n**Theo dõi trạng thái đơn**\n---\nReal-time update) as UC_E4
+}
+
+package "F. QUẢN LÝ SẢN PHẨM (ADMIN)" #LightSalmon {
+    usecase (UC-F1\n**Vào màn hình quản lý**\n---\nActivity: QuanLiActivity\nCheck: isAdmin()) as UC_F1
+    usecase (UC-F2\n**Thêm sản phẩm mới**\n---\nAPI: insertsp.php\nActivity: ThemSPActivity) as UC_F2
+    usecase (UC-F3\n**Sửa sản phẩm**\n---\nAPI: updatesp.php\nActivity: ThemSPActivity) as UC_F3
+    usecase (UC-F4\n**Xóa sản phẩm**\n---\nAPI: xoa.php) as UC_F4
+    usecase (UC-F5\n**Upload ảnh sản phẩm**\n---\nMultipart upload) as UC_F5
+}
+
+package "G. QUẢN LÝ TỒN KHO (ADMIN)" #LightCyan {
+    usecase (UC-G1\n**Xem tồn kho**\n---\nAPI: getTonKho.php\nActivity: TonKhoActivity) as UC_G1
+    usecase (UC-G2\n**Nhập kho (Tăng tồn)**\n---\nAPI: capNhatTonKho.php) as UC_G2
+    usecase (UC-G3\n**Xuất kho (Giảm tồn)**\n---\nAPI: capNhatTonKho.php) as UC_G3
+    usecase (UC-G4\n**Kiểm tra tồn kho tự động**\n---\nTrigger: after_insert/update) as UC_G4
+}
+
+package "H. QUẢN LÝ ĐƠN HÀNG (ADMIN)" #MistyRose {
+    usecase (UC-H1\n**Xem tất cả đơn hàng**\n---\nAPI: xemdonhang.php?isadmin=1\nActivity: XemDonActivity) as UC_H1
+    usecase (UC-H2\n**Cập nhật trạng thái đơn**\n---\nAPI: capNhatTrangThai.php) as UC_H2
+    usecase (UC-H3\n**Lọc đơn theo trạng thái**\n---\nLocal filter) as UC_H3
+    usecase (UC-H4\n**Xem chi tiết đơn user**\n---\nView all user orders) as UC_H4
+}
+
+package "I. QUẢN LÝ NGƯỜI DÙNG (ADMIN)" #PeachPuff {
+    usecase (UC-I1\n**Xem danh sách người dùng**\n---\nAPI: getAllUsers.php\nActivity: QuanLyNguoiDungActivity) as UC_I1
+    usecase (UC-I2\n**Phân quyền Admin**\n---\nAPI: updateUserRole.php\nSet role=1) as UC_I2
+    usecase (UC-I3\n**Hạ quyền Admin**\n---\nAPI: updateUserRole.php\nSet role=0) as UC_I3
+    usecase (UC-I4\n**Xóa người dùng**\n---\nAPI: deleteUser.php) as UC_I4
+}
+
+package "J. QUẢN LÝ VOUCHER (ADMIN)" #Wheat {
+    usecase (UC-J1\n**Xem danh sách voucher**\n---\nAPI: getAllVouchers.php\nActivity: QuanLyVoucherActivity) as UC_J1
+    usecase (UC-J2\n**Thêm voucher mới**\n---\nAPI: addVoucher.php) as UC_J2
+    usecase (UC-J3\n**Sửa voucher**\n---\nAPI: updateVoucher.php) as UC_J3
+    usecase (UC-J4\n**Xóa voucher**\n---\nAPI: deleteVoucher.php) as UC_J4
+    usecase (UC-J5\n**Bật/Tắt voucher**\n---\nAPI: toggleVoucher.php) as UC_J5
+    usecase (UC-J6\n**Xem thống kê voucher**\n---\nAPI: getVoucherStats.php) as UC_J6
+}
+
+package "K. SỬ DỤNG VOUCHER (USER)" #Honeydew {
+    usecase (UC-K1\n**Xem voucher khả dụng**\n---\nAPI: getVouchers.php\nActivity: ChonVoucherActivity) as UC_K1
+    usecase (UC-K2\n**Áp dụng mã voucher**\n---\nAPI: checkVoucher.php\nActivity: ThanhToanActivity) as UC_K2
+    usecase (UC-K3\n**Kiểm tra điều kiện voucher**\n---\nValidation logic) as UC_K3
+    usecase (UC-K4\n**Tính toán giảm giá**\n---\nModel: VoucherCheckResponse) as UC_K4
+}
+
+package "L. THỐNG KÊ & BÁO CÁO (ADMIN)" #LavenderBlush {
+    usecase (UC-L1\n**Xem thống kê bán hàng**\n---\nAPI: thongke.php\nActivity: ThongKeActivity) as UC_L1
+    usecase (UC-L2\n**Biểu đồ sản phẩm bán chạy**\n---\nLibrary: MPAndroidChart) as UC_L2
+    usecase (UC-L3\n**Thống kê doanh thu**\n---\nBar Chart visualization) as UC_L3
+}
+
+package "M. HỆ THỐNG" #Linen {
+    usecase (UC-M1\n**Gửi thông báo Push**\n---\nService: FirebaseMessagerReceiver) as UC_M1
+    usecase (UC-M2\n**Kiểm tra kết nối Internet**\n---\nUtils: isConnected()) as UC_M2
+    usecase (UC-M3\n**Cache hình ảnh**\n---\nLibrary: Glide 5.0.5) as UC_M3
+    usecase (UC-M4\n**Lưu trữ offline**\n---\nLibrary: PaperDB) as UC_M4
+}
+
+' ===== QUAN HỆ USER =====
+User --> UC_A1
+User --> UC_A2
+User --> UC_A3
+User --> UC_A4
+User --> UC_A5
+User --> UC_A6
+User --> UC_A7
+
+User --> UC_B1
+User --> UC_B2
+User --> UC_B3
+User --> UC_B4
+User --> UC_B5
+
+User --> UC_C1
+User --> UC_C2
+User --> UC_C3
+User --> UC_C4
+User --> UC_C5
+User --> UC_C6
+
+User --> UC_D1
+User --> UC_D2
+User --> UC_D3
+User --> UC_D4
+User --> UC_D5
+
+User --> UC_E1
+User --> UC_E2
+User --> UC_E3
+User --> UC_E4
+
+User --> UC_K1
+User --> UC_K2
+User --> UC_K3
+User --> UC_K4
+
+' ===== QUAN HỆ ADMIN =====
+Admin --> UC_F1
+Admin --> UC_F2
+Admin --> UC_F3
+Admin --> UC_F4
+Admin --> UC_F5
+
+Admin --> UC_G1
+Admin --> UC_G2
+Admin --> UC_G3
+Admin --> UC_G4
+
+Admin --> UC_H1
+Admin --> UC_H2
+Admin --> UC_H3
+Admin --> UC_H4
+
+Admin --> UC_I1
+Admin --> UC_I2
+Admin --> UC_I3
+Admin --> UC_I4
+
+Admin --> UC_J1
+Admin --> UC_J2
+Admin --> UC_J3
+Admin --> UC_J4
+Admin --> UC_J5
+Admin --> UC_J6
+
+Admin --> UC_L1
+Admin --> UC_L2
+Admin --> UC_L3
+
+' ===== QUAN HỆ VỚI HỆ THỐNG BÊN NGOÀI =====
+UC_A3 ..> Google : <<uses>>
+UC_D3 ..> VNPay : <<uses>>
+UC_D4 ..> VNPay : <<uses>>
+UC_D5 ..> VNPay : <<uses>>
+UC_M1 <.. FCM : <<triggers>>
+
+' ===== QUAN HỆ INCLUDE =====
+UC_C1 .> UC_B3 : <<include>>
+UC_C6 .> UC_C5 : <<include>>
+UC_D1 .> UC_C6 : <<include>>
+UC_D2 .> UC_D1 : <<include>>
+UC_D3 .> UC_D1 : <<include>>
+UC_E2 .> UC_E1 : <<include>>
+UC_F3 .> UC_F1 : <<include>>
+UC_F4 .> UC_F1 : <<include>>
+UC_F5 .> UC_F2 : <<include>>
+UC_F5 .> UC_F3 : <<include>>
+UC_H4 .> UC_H1 : <<include>>
+UC_K2 .> UC_K3 : <<include>>
+UC_K4 .> UC_K2 : <<include>>
+UC_L2 .> UC_L1 : <<include>>
+UC_L3 .> UC_L1 : <<include>>
+
+' ===== QUAN HỆ EXTEND =====
+UC_E3 .> UC_E2 : <<extend>>
+UC_D5 .> UC_E1 : <<extend>>
+UC_A7 .> UC_A6 : <<extend>>
+UC_H2 .> UC_H4 : <<extend>>
+UC_J5 .> UC_J1 : <<extend>>
+UC_G4 .> UC_D2 : <<extend>>
+UC_G4 .> UC_E3 : <<extend>>
+
+' ===== QUAN HỆ VỚI HỆ THỐNG =====
+UC_A2 ..> UC_M4 : <<uses>>
+UC_A3 ..> UC_M4 : <<uses>>
+UC_D2 ..> UC_M1 : <<triggers>>
+UC_D3 ..> UC_M1 : <<triggers>>
+UC_H2 ..> UC_M1 : <<triggers>>
+UC_B1 ..> UC_M2 : <<include>>
+UC_B3 ..> UC_M3 : <<uses>>
+
+' ===== GHI CHÚ =====
+note right of User
+  **Người dùng thường (role=0)**
+  - Đã đăng ký/đăng nhập
+  - Mua sản phẩm
+  - Quản lý đơn hàng cá nhân
+  - Sử dụng voucher
+end note
+
+note right of Admin
+  **Quản trị viên (role=1)**
+  - Có TẤT CẢ quyền của User
+  - Quản lý sản phẩm (CRUD)
+  - Quản lý tồn kho
+  - Quản lý đơn hàng tất cả user
+  - Quản lý người dùng
+  - Quản lý voucher
+  - Xem thống kê
+end note
+
+note bottom of VNPay
+  **Cổng thanh toán VNPay**
+  - Xử lý thanh toán online
+  - Deep Link callback
+  - Kiểm tra trạng thái thanh toán
+end note
+
+note bottom of FCM
+  **Firebase Cloud Messaging**
+  - Gửi thông báo đơn hàng mới
+  - Thông báo cập nhật trạng thái
+  - Thông báo khuyến mãi
+end note
+
+legend bottom left
+  |= Ký hiệu |= Ý nghĩa |
+  | <<include>> | Chức năng bắt buộc phải thực hiện |
+  | <<extend>> | Chức năng tùy chọn, mở rộng |
+  | <<uses>> | Sử dụng hệ thống/thư viện bên ngoài |
+  | <<triggers>> | Kích hoạt sự kiện tự động |
+
+  **Tổng số Use Case:** 64
+  **Actors:** 2 người + 3 hệ thống
+  **Activities:** 22
+  **API Endpoints:** 35+
+endlegend
+
+footer Dự án: AppBanDongHo | Nền tảng: Android + PHP + MySQL | Ngày tạo: 03/11/2025
+
+@enduml
+

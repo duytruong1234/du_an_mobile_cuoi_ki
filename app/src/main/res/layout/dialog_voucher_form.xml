@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thông Tin Voucher"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Mã Voucher -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã Voucher *"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/edtMaVoucher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="VD: NEWUSER20"
+            android:inputType="textCapCharacters"
+            android:padding="12dp" />
+
+        <!-- Tên Voucher -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên Voucher *"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/edtTenVoucher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="VD: Giảm 20% cho khách hàng mới"
+            android:padding="12dp" />
+
+        <!-- Mô Tả -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mô Tả"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/edtMoTa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mô tả chi tiết..."
+            android:minLines="3"
+            android:gravity="top"
+            android:padding="12dp" />
+
+        <!-- Loại Giảm -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loại Giảm *"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerLoaiGiam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp" />
+
+        <!-- Giá Trị Giảm -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá Trị Giảm *"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/edtGiaTriGiam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="VD: 20 (cho 20%) hoặc 100000 (cho 100k)"
+            android:inputType="numberDecimal"
+            android:padding="12dp" />
+
+        <!-- Giảm Tối Đa (chỉ cho %) -->
+        <LinearLayout
+            android:id="@+id/layoutGiamToiDa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giảm Tối Đa (cho %)"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/edtGiamToiDa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="VD: 200000"
+                android:inputType="numberDecimal"
+                android:padding="12dp" />
+        </LinearLayout>
+
+        <!-- Đơn Tối Thiểu -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đơn Tối Thiểu *"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/edtDonToiThieu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="VD: 500000"
+            android:inputType="numberDecimal"
+            android:padding="12dp" />
+
+        <!-- Áp Dụng Cho -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Áp Dụng Cho *"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerApDungCho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp" />
+
+        <!-- Số Lượng -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số Lượng (để trống = không giới hạn)"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/edtSoLuong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="VD: 100"
+            android:inputType="number"
+            android:padding="12dp" />
+
+        <!-- Giới Hạn Mỗi User -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giới Hạn / User *"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/edtGioiHanMoiUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="VD: 1"
+            android:inputType="number"
+            android:padding="12dp"
+            android:text="1" />
+
+        <!-- Ngày Bắt Đầu -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày Bắt Đầu *"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/edtNgayBatDau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="YYYY-MM-DD HH:MM:SS"
+            android:focusable="false"
+            android:clickable="true"
+            android:padding="12dp" />
+
+        <!-- Ngày Hết Hạn -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày Hết Hạn *"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/edtNgayHetHan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="YYYY-MM-DD HH:MM:SS"
+            android:focusable="false"
+            android:clickable="true"
+            android:padding="12dp" />
+
+        <!-- Trạng Thái -->
+        <CheckBox
+            android:id="@+id/cbTrangThai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kích hoạt ngay"
+            android:layout_marginTop="16dp"
+            android:checked="true" />
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hủy"
+                android:backgroundTint="#9E9E9E"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💾 Lưu"
+                android:backgroundTint="#4CAF50" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+

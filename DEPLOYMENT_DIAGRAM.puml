@@ -1,0 +1,295 @@
+@startuml Deployment_Diagram
+!theme plain
+title Sơ Đồ Triển Khai Hệ Thống (Deployment Diagram)\nỨng Dụng Bán Đồng Hồ
+
+' Styling
+skinparam node {
+    BackgroundColor #E3F2FD
+    BorderColor #1976D2
+}
+
+skinparam database {
+    BackgroundColor #C8E6C9
+    BorderColor #2E7D32
+}
+
+skinparam cloud {
+    BackgroundColor #FFF9C4
+    BorderColor #F57C00
+}
+
+skinparam artifact {
+    BackgroundColor #FFFFFF
+    BorderColor #424242
+}
+
+' ============================================
+' DEPLOYMENT NODES
+' ============================================
+
+node "📱 **Android Device**" as AndroidDevice {
+    artifact "AppBanDongHo.apk\n(v1.0)" as APK {
+        component "MainActivity" as MainActivity
+        component "23 Activities" as Activities
+        component "Retrofit Client" as Retrofit
+        component "PaperDB" as Paper
+        component "Glide Cache" as Glide
+    }
+
+    note right of APK
+        **Android App**
+        Package: vn.duytruong.appbandienthoai
+        Min SDK: API 24 (Android 7.0)
+        Target SDK: API 34 (Android 14)
+        Size: ~15MB
+
+        **Permissions:**
+        • INTERNET
+        • ACCESS_NETWORK_STATE
+        • POST_NOTIFICATIONS
+    end note
+}
+
+cloud "🌐 **Internet**" as Internet {
+    node "HTTP/HTTPS" as Protocol
+    node "Deep Links" as DeepLink
+}
+
+node "🖥️ **Web Server**\n(Apache/Nginx)" as WebServer {
+    artifact "PHP Application" as PHPApp {
+        component "50+ API Scripts" as APIs
+        component "PHPMailer" as Mailer
+        component "Config Files" as Configs
+    }
+
+    note right of PHPApp
+        **PHP Backend**
+        Version: 7.4+
+        Base URL: http://10.0.2.2/appbandienthoai/Server/
+        (Development: XAMPP localhost)
+
+        **Production:**
+        https://yourdomain.com/api/
+
+        **Security:**
+        • HTTPS (SSL/TLS)
+        • Prepared statements
+        • Input validation
+    end note
+}
+
+database "🗄️ **MySQL Server**\n(5.7+)" as MySQLServer {
+    artifact "Database\nappbandienthoai" as DB {
+        component "13 Tables" as Tables
+        component "3 Triggers" as Triggers
+        component "Indexes" as Indexes
+    }
+
+    note right of DB
+        **Database**
+        Name: appbandienthoai
+        Charset: UTF-8
+        Engine: InnoDB
+
+        **Backup:**
+        • Daily automated backup
+        • Transaction logs
+
+        **Optimization:**
+        • Indexed columns
+        • Foreign key constraints
+    end note
+}
+
+cloud "☁️ **External Services**" as ExternalCloud {
+    node "VNPay Sandbox" as VNPay {
+        component "Payment Gateway" as PaymentGW
+    }
+
+    node "Firebase" as Firebase {
+        component "Cloud Messaging" as FCM
+        component "Authentication" as FirebaseAuth
+    }
+
+    node "Google Services" as Google {
+        component "OAuth 2.0" as OAuth
+        component "Gmail SMTP" as SMTP
+    }
+}
+
+' ============================================
+' DEVELOPMENT ENVIRONMENT
+' ============================================
+
+package "💻 **Development Environment**" as DevEnv {
+    node "Developer PC" as DevPC {
+        component "Android Studio" as IDE
+        component "Android Emulator" as Emulator
+        component "XAMPP" as XAMPP {
+            component "Apache" as ApacheDev
+            component "MySQL" as MySQLDev
+            component "phpMyAdmin" as phpMyAdmin
+        }
+    }
+
+    note bottom of DevPC
+        **Development Setup:**
+        • IDE: Android Studio Koala
+        • Emulator: Pixel 6 API 34
+        • Server: XAMPP (localhost)
+        • Database: MySQL 5.7
+        • Debug: ADB, Logcat
+    end note
+}
+
+' ============================================
+' PRODUCTION ENVIRONMENT (RECOMMENDED)
+' ============================================
+
+package "🚀 **Production Environment**" as ProdEnv {
+    node "Cloud Server\n(AWS/Azure/GCP)" as CloudServer {
+        component "Web Server\n(Nginx)" as NginxProd
+        component "PHP-FPM" as PHPFPM
+        component "SSL Certificate\n(Let's Encrypt)" as SSL
+    }
+
+    node "Database Server\n(MySQL 8.0)" as DBServer {
+        component "Master DB" as MasterDB
+        component "Backup System" as Backup
+    }
+
+    node "CDN\n(Cloudflare)" as CDN {
+        component "Static Assets" as Assets
+        component "Image Cache" as ImgCache
+    }
+
+    node "Monitoring" as Monitor {
+        component "Error Tracking" as ErrorLog
+        component "Performance Monitor" as PerfMon
+    }
+
+    note bottom of CloudServer
+        **Production Specs:**
+        • VPS: 2 vCPU, 4GB RAM
+        • Storage: 50GB SSD
+        • Bandwidth: 2TB/month
+        • SSL: Free (Let's Encrypt)
+        • Domain: https://yourdomain.com
+        • Backup: Daily automated
+    end note
+}
+
+' ============================================
+' CONNECTIONS
+' ============================================
+
+' Development connections
+Emulator -[#blue]-> ApacheDev : "http://10.0.2.2/"
+ApacheDev -[#blue]-> MySQLDev : "mysqli\nconnection"
+IDE -[#blue]-> Emulator : "Deploy\n& Debug"
+
+' Production connections
+APK <-[#red]-> Internet : "HTTPS\nREST API"
+Internet <-[#red]-> WebServer : "API\nRequests"
+WebServer <-[#red]-> MySQLServer : "SQL\nQueries"
+
+' External service connections
+WebServer <.[#orange].> VNPay : "Payment\nAPI calls"
+WebServer <.[#orange].> Firebase : "Auth\nverify"
+WebServer <.[#orange].> Google : "OAuth\n& SMTP"
+APK <.[#orange].> Firebase : "Push\nnotifications"
+VNPay .[#orange].> APK : "Deep link\ncallback"
+
+' Production infrastructure
+CloudServer -[#green]-> DBServer : "Optimized\nconnection"
+CloudServer -[#green]-> CDN : "Static\nassets"
+CloudServer -[#green]-> Monitor : "Logs &\nmetrics"
+
+' ============================================
+' DEPLOYMENT PROTOCOLS
+' ============================================
+
+note as ProtocolNote
+    **COMMUNICATION PROTOCOLS:**
+
+    **Client ↔ Server:**
+    • Protocol: HTTP/HTTPS
+    • Format: JSON
+    • Method: GET, POST
+    • Authentication: Session-based
+
+    **Server ↔ Database:**
+    • Protocol: MySQL Protocol
+    • Driver: MySQLi (PHP)
+    • Connection: Persistent pool
+    • Charset: UTF-8
+
+    **Server ↔ VNPay:**
+    • Protocol: HTTPS
+    • Method: POST
+    • Security: HMACSHA512 signature
+
+    **Server ↔ Firebase:**
+    • Protocol: HTTPS
+    • Auth: Service Account JSON
+    • API: REST API
+end note
+
+' ============================================
+' DEPLOYMENT PROCESS
+' ============================================
+
+note as DeployNote
+    **🚀 DEPLOYMENT PROCESS:**
+
+    **Development → Testing:**
+    1. Code in Android Studio
+    2. Test on Emulator (API 34)
+    3. Test API on XAMPP localhost
+    4. Unit testing
+    5. Integration testing
+
+    **Testing → Production:**
+    1. Build signed APK (Release)
+    2. Upload to Google Play Console
+    3. Deploy PHP to Web Server
+    4. Migrate Database to Production
+    5. Update API Base URL in app
+    6. Configure SSL certificate
+    7. Test payment gateway (VNPay)
+    8. Monitor logs
+
+    **Rollback Plan:**
+    • Keep previous APK version
+    • Database backup before migration
+    • Rollback script ready
+end note
+
+' ============================================
+' ENVIRONMENTS COMPARISON
+' ============================================
+
+legend bottom right
+    **ENVIRONMENTS COMPARISON:**
+
+    |= Environment |= Base URL |= Database |= Status |
+    | Development | http://10.0.2.2/ | localhost | Active |
+    | Production | https://yourdomain.com/ | Cloud DB | Recommended |
+
+    **DEPLOYMENT TARGETS:**
+    • Google Play Store (Android App)
+    • Web Server (PHP Backend)
+    • MySQL Server (Database)
+
+    **SCALABILITY:**
+    • Horizontal: Add more servers
+    • Vertical: Upgrade server specs
+    • CDN: Cache static content
+    • Load Balancer: Distribute traffic
+
+    **Date:** 30/11/2025
+    **Version:** 1.0
+end legend
+
+@enduml
+

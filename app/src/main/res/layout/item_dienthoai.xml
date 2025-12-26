@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="6dp"
+    android:foreground="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <!-- Nhãn HẾT HÀNG -->
+        <TextView
+            android:id="@+id/item_label_out_of_stock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HẾT HÀNG"
+            android:textColor="@android:color/white"
+            android:background="#CC000000"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+        <!-- Nhãn NEW góc phải trên sản phẩm -->
+        <ImageView
+            android:id="@+id/item_label_new"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/iconnew_w24"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="2dp"
+            android:visibility="visible"
+            android:contentDescription="@string/nhan_new" />
+
+        <!-- Hình sản phẩm -->
+        <ImageView
+            android:id="@+id/itemdt_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/anh_san_pham"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_media_24"
+            android:adjustViewBounds="true" />
+
+        <!-- Nội dung thông tin sản phẩm -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/itemdt_image"
+            android:layout_alignTop="@id/itemdt_image"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <!-- Tên sản phẩm -->
+            <TextView
+                android:id="@+id/itemdt_ten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/ten_san_pham"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Giá -->
+            <TextView
+                android:id="@+id/itemdt_gia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gia_san_pham"
+                android:textColor="#E53935"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginTop="3dp" />
+
+            <!-- Mô tả -->
+            <TextView
+                android:id="@+id/itemdt_mota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mo_ta_san_pham"
+                android:textColor="#666"
+                android:textSize="14sp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_marginTop="2dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

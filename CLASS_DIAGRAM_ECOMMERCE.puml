@@ -1,0 +1,245 @@
+@startuml CLASS_DIAGRAM_ECOMMERCE
+!theme plain
+title Sơ đồ Class UML - Ứng dụng Bán Đồng Hồ E-Commerce
+footer Cập nhật: 01/12/2025
+
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+    BackgroundColor #FEFECE
+    BorderColor #A80036
+    ArrowColor #A80036
+}
+
+' ==========================================
+' ĐỊNH NGHĨA CÁC LỚP (CLASS DEFINITIONS)
+' ==========================================
+
+class User {
+    - id: int
+    - email: string
+    - pass: string
+    - username: string
+    - mobile: string
+    - role: int
+    - loginType: string
+    - resetOtp: string
+    - status: int
+    --
+    + login(): boolean
+    + register(): boolean
+    + resetPassword(): boolean
+    + updateProfile(): boolean
+    + getOrders(): List
+    + getCart(): Cart
+}
+
+class Cart {
+    - id: int
+    - idUser: int
+    - createdAt: datetime
+    - updatedAt: datetime
+    --
+    + getItems(): List<CartItem>
+    + getTotal(): decimal
+    + clear(): void
+    + addItem(product: SanPhamMoi, qty: int): boolean
+    + removeItem(itemId: int): boolean
+    + updateItem(itemId: int, qty: int): boolean
+}
+
+class CartItem {
+    - id: int
+    - idCart: int
+    - idSanPham: int
+    - soLuong: int
+    - giaTaiThoiDiem: decimal
+    --
+    + increaseQty(qty: int): void
+    + decreaseQty(qty: int): void
+    + getSubtotal(): decimal
+    + getProduct(): SanPhamMoi
+}
+
+class SanPhamMoi {
+    - id: int
+    - tenSanPham: string
+    - hinhAnh: string
+    - moTa: string
+    - giaSanPham: decimal
+    - loai: int
+    - tonKho: int
+    --
+    + getDetails(): SanPhamMoiVe
+    + updatePrice(newPrice: decimal): boolean
+    + updateStock(quantity: int): boolean
+    + isAvailable(): boolean
+    + getByCategory(categoryId: int): List
+    + searchProducts(keyword: string): List
+}
+
+class Voucher {
+    - id: int
+    - maVoucher: string
+    - tenVoucher: string
+    - moTa: string
+    - loaiGiam: enum
+    - giaTriGiam: decimal
+    - giamToiDa: decimal
+    - donToiThieu: decimal
+    - apDungCho: enum
+    - soLuong: int
+    - daSuDung: int
+    - gioiHanMoiUser: int
+    - ngayBatDau: datetime
+    - ngayHetHan: datetime
+    --
+    + isValid(): boolean
+    + canUserUse(userId: int): boolean
+    + calculateDiscount(amount: decimal): decimal
+    + applyVoucher(): boolean
+    + getUsageCount(): int
+    + getRemainingQuantity(): int
+}
+
+class DonHang {
+    - id: int
+    - idUser: int
+    - voucherId: int
+    - maVoucher: string
+    - giaTriGiam: decimal
+    - tongTruocGiam: decimal
+    - diaChi: string
+    - soDienThoai: string
+    - soLuong: int
+    - tongTien: string
+    - thoiGian: datetime
+    - maDonHang: string
+    - ngayDat: datetime
+    - ngayGiaoDuKien: date
+    - trangThai: string
+    --
+    + createOrder(): boolean
+    + calculateTotal(): decimal
+    + applyVoucher(voucher: Voucher): boolean
+    + updateStatus(status: string): boolean
+    + getOrderDetails(): List
+    + cancelOrder(): boolean
+    + confirmOrder(): boolean
+    + getTrackingInfo(): string
+}
+
+class ChiTietDonHang {
+    - id: int
+    - idDonHang: int
+    - idSanPham: int
+    - soLuong: int
+    - giaTaiThoiDiem: decimal
+    --
+    + calculateSubtotal(): decimal
+    + getProduct(): SanPhamMoi
+    + updateQuantity(qty: int): boolean
+    + removeItem(): boolean
+}
+
+class VoucherUsage {
+    - id: int
+    - voucherId: int
+    - userId: int
+    - donHangId: int
+    - maDonHang: string
+    - ngaySuDung: timestamp
+    --
+    + recordUsage(): boolean
+    + getUsageHistory(userId: int): List
+    + validateUsage(): boolean
+    + getUsageCount(voucherId: int): int
+}
+
+class LoaiSanPham {
+    - id: int
+    - tenLoai: string
+    - moTa: string
+    - hinhAnh: string
+    --
+    + getProducts(): List<SanPhamMoi>
+    + create(): boolean
+    + update(): boolean
+    + delete(): boolean
+}
+
+' ==========================================
+' QUAN HỆ GIỮA CÁC LỚP (RELATIONSHIPS)
+' ==========================================
+
+' User - Cart: 1 User có 1 Cart
+User "1" -- "1" Cart : owns >
+
+' Cart - CartItem: 1 Cart có nhiều CartItem
+Cart "1" -- "*" CartItem : contains >
+
+' SanPhamMoi - CartItem: 1 SanPham có thể ở nhiều CartItem
+SanPhamMoi "1" -- "*" CartItem : referenced by >
+
+' User - DonHang: 1 User có nhiều DonHang
+User "1" -- "*" DonHang : places >
+
+' DonHang - ChiTietDonHang: 1 DonHang có nhiều ChiTietDonHang
+DonHang "1" -- "*" ChiTietDonHang : contains >
+
+' SanPhamMoi - ChiTietDonHang: 1 SanPham có thể ở nhiều ChiTietDonHang
+SanPhamMoi "1" -- "*" ChiTietDonHang : included in >
+
+' DonHang - Voucher: N DonHang có thể dùng 0..1 Voucher
+DonHang "*" -- "0..1" Voucher : uses >
+
+' Voucher - VoucherUsage: 1 Voucher có nhiều VoucherUsage
+Voucher "1" -- "*" VoucherUsage : tracked by >
+
+' User - VoucherUsage: 1 User có nhiều VoucherUsage
+User "1" -- "*" VoucherUsage : has >
+
+' LoaiSanPham - SanPhamMoi: 1 Loai có nhiều SanPham
+LoaiSanPham "1" -- "*" SanPhamMoi : categorizes >
+
+' ==========================================
+' GHI CHÚ (NOTES)
+' ==========================================
+
+note top of Cart
+  <b>Cart (Giỏ hàng)</b>
+  - Mỗi User có 1 Cart duy nhất
+  - Cart chứa nhiều CartItem
+  - Được tạo tự động khi User đăng ký
+end note
+
+note top of CartItem
+  <b>CartItem (Mục trong giỏ)</b>
+  - Lưu giá tại thời điểm thêm vào giỏ
+  - Số lượng có thể tăng/giảm
+  - Liên kết với SanPhamMoi
+end note
+
+note bottom of DonHang
+  <b>DonHang (Đơn hàng)</b>
+  - Tạo từ Cart khi thanh toán
+  - Có thể áp dụng Voucher
+  - Theo dõi trạng thái giao hàng
+end note
+
+note bottom of ChiTietDonHang
+  <b>ChiTietDonHang</b>
+  - Snapshot của CartItem khi đặt hàng
+  - Lưu giá cố định tại thời điểm mua
+end note
+
+legend right
+  |= Ký hiệu |= Ý nghĩa |
+  | 1 -- 1 | Quan hệ 1-1 |
+  | 1 -- * | Quan hệ 1-N |
+  | * -- 0..1 | Quan hệ N với 0 hoặc 1 |
+  | - | Thuộc tính private |
+  | + | Phương thức public |
+endlegend
+
+@enduml

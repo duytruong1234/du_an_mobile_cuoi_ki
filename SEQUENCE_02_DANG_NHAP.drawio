@@ -1,0 +1,399 @@
+<mxfile host="app.diagrams.net" modified="2025-12-01T00:00:00.000Z" agent="Draw.io" version="22.0.0">
+  <diagram name="Sequence: Đăng nhập" id="seq-dang-nhap">
+    <mxGraphModel dx="2200" dy="1400" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Biểu đồ trình tự: Đăng nhập hệ thống (Email/Mật khẩu + Google OAuth)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="500" y="30" width="700" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== ACTORS & OBJECTS ==================== -->
+
+        <!-- Người dùng Actor -->
+        <mxCell id="actor-user" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="80" y="100" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="label-user" value="Người dùng" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;fontSize=14;fontStyle=1;fontColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="45" y="165" width="110" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="line-user" value="" style="endArrow=none;dashed=1;dashPattern=8 4;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="190" as="sourcePoint" />
+            <mxPoint x="100" y="1400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- MànHìnhĐăngNhập -->
+        <mxCell id="obj-ui" value=":MànHìnhĐăngNhập" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="110" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="line-ui" value="" style="endArrow=none;dashed=1;dashPattern=8 4;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="160" as="sourcePoint" />
+            <mxPoint x="370" y="1400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ApiĐăngNhập -->
+        <mxCell id="obj-api" value=":ApiĐăngNhập" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="110" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="line-api" value="" style="endArrow=none;dashed=1;dashPattern=8 4;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="160" as="sourcePoint" />
+            <mxPoint x="640" y="1400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- GoogleAuth -->
+        <mxCell id="obj-google" value=":GoogleAuth" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="110" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="line-google" value="" style="endArrow=none;dashed=1;dashPattern=8 4;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="890" y="160" as="sourcePoint" />
+            <mxPoint x="890" y="1400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- dangnhap.php -->
+        <mxCell id="obj-backend" value=":dangnhap.php" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="110" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="line-backend" value="" style="endArrow=none;dashed=1;dashPattern=8 4;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1160" y="160" as="sourcePoint" />
+            <mxPoint x="1160" y="1400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- CơSởDữLiệu -->
+        <mxCell id="obj-db" value=":CơSởDữLiệu" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="110" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="line-db" value="" style="endArrow=none;dashed=1;dashPattern=8 4;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1420" y="160" as="sourcePoint" />
+            <mxPoint x="1420" y="1400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ==================== ACTIVATION BOXES ==================== -->
+        <mxCell id="act-user" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="95" y="210" width="12" height="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="act-ui" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="364" y="230" width="12" height="1100" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== ALT FRAGMENT ==================== -->
+        <mxCell id="altMain" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=2;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="220" width="1530" height="1100" as="geometry" />
+        </mxCell>
+        <mxCell id="altMainLabel" value="alt" style="text;html=1;strokeColor=#000000;fillColor=#FFFFFF;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="70" y="220" width="40" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- ========== PHƯƠNG THỨC 1: EMAIL/MẬT KHẨU ========== -->
+        <mxCell id="cond1" value="[Đăng nhập bằng Email/Mật khẩu]" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=13;fontStyle=2;fontColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="120" y="250" width="280" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- 1: nhập Email -->
+        <mxCell id="m1" value="1: nhậpEmail()" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry x="0.02" relative="1" as="geometry">
+            <mxPoint x="107" y="300" as="sourcePoint" />
+            <mxPoint x="364" y="300" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 2: nhập Mật khẩu -->
+        <mxCell id="m2" value="2: nhậpMậtKhẩu()" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="107" y="350" as="sourcePoint" />
+            <mxPoint x="364" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 3: kiểm tra dữ liệu (self-call) -->
+        <mxCell id="m3-line" value="" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="376" y="400" as="sourcePoint" />
+            <mxPoint x="420" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m3-self" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="415" y="400" width="12" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="m3-return" value="" style="endArrow=open;endFill=0;dashed=1;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="415" y="435" as="sourcePoint" />
+            <mxPoint x="376" y="435" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m3-label" value="3: kiểmTraDữLiệuNhập()" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;fontColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="380" y="380" width="180" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- 4: nhấn Đăng nhập -->
+        <mxCell id="m4" value="4: nhấnNútĐăngNhập()" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="107" y="480" as="sourcePoint" />
+            <mxPoint x="364" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Activation API -->
+        <mxCell id="act-api1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="634" y="520" width="12" height="200" as="geometry" />
+        </mxCell>
+
+        <!-- 5: gọi API đăng nhập -->
+        <mxCell id="m5" value="5: đăngNhập(email, mậtKhẩu)" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="376" y="530" as="sourcePoint" />
+            <mxPoint x="634" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Activation Backend -->
+        <mxCell id="act-backend1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="1154" y="570" width="12" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- 6: POST backend -->
+        <mxCell id="m6" value="6: POST dangnhap.php(email, mậtKhẩu)" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="646" y="580" as="sourcePoint" />
+            <mxPoint x="1154" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Activation DB -->
+        <mxCell id="act-db1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="1414" y="620" width="12" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 7: Query DB -->
+        <mxCell id="m7" value="7: SELECT * FROM user WHERE email=? AND pass=md5(?)" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=11;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1166" y="630" as="sourcePoint" />
+            <mxPoint x="1414" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 8: Return user -->
+        <mxCell id="m8" value="8: trảVề(thôngTinNgườiDùng)" style="endArrow=open;endFill=0;dashed=1;strokeColor=#000000;strokeWidth=1;fontSize=11;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1414" y="660" as="sourcePoint" />
+            <mxPoint x="1166" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 9: Return to API -->
+        <mxCell id="m9" value="9: trảVề({thànhCông, ngườiDùng, token})" style="endArrow=open;endFill=0;dashed=1;strokeColor=#000000;strokeWidth=1;fontSize=11;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1154" y="700" as="sourcePoint" />
+            <mxPoint x="646" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 10: Return to UI -->
+        <mxCell id="m10" value="10: trảVề(kếtQuảĐăngNhập)" style="endArrow=open;endFill=0;dashed=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="634" y="750" as="sourcePoint" />
+            <mxPoint x="376" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ========== DIVIDER LINE ========== -->
+        <mxCell id="div1" value="" style="endArrow=none;dashed=1;dashPattern=10 5;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="70" y="810" as="sourcePoint" />
+            <mxPoint x="1600" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ========== PHƯƠNG THỨC 2: GOOGLE OAUTH ========== -->
+        <mxCell id="cond2" value="[Đăng nhập bằng Google OAuth]" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=13;fontStyle=2;fontColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="120" y="830" width="280" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- 11: nhấn nút Google -->
+        <mxCell id="m11" value="11: nhấnNútĐăngNhậpGoogle()" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="107" y="880" as="sourcePoint" />
+            <mxPoint x="364" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Activation API Google -->
+        <mxCell id="act-api2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="634" y="920" width="12" height="330" as="geometry" />
+        </mxCell>
+
+        <!-- 12: khởi tạo Google -->
+        <mxCell id="m12" value="12: khởiTạoĐăngNhậpGoogle()" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="376" y="930" as="sourcePoint" />
+            <mxPoint x="634" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Activation Google -->
+        <mxCell id="act-google" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="884" y="970" width="12" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- 13: yêu cầu xác thực -->
+        <mxCell id="m13" value="13: yêuCầuXácThực(clientId, scope)" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="646" y="980" as="sourcePoint" />
+            <mxPoint x="884" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 14: hiển thị cửa sổ chọn tài khoản -->
+        <mxCell id="m14" value="14: hiểnThịCửaSổChọnTàiKhoản()" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="884" y="1020" as="sourcePoint" />
+            <mxPoint x="107" y="1020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 15: chọn tài khoản -->
+        <mxCell id="m15" value="15: chọnTàiKhoảnGoogle()" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="107" y="1060" as="sourcePoint" />
+            <mxPoint x="884" y="1060" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 16: xác thực tài khoản (self-call) -->
+        <mxCell id="m16-line" value="" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="896" y="1090" as="sourcePoint" />
+            <mxPoint x="940" y="1090" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m16-self" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="935" y="1090" width="12" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="m16-return" value="" style="endArrow=open;endFill=0;dashed=1;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="935" y="1125" as="sourcePoint" />
+            <mxPoint x="896" y="1125" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m16-label" value="16: xácThựcTàiKhoản()" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;fontColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="900" y="1070" width="160" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- 17: trả về token -->
+        <mxCell id="m17" value="17: trảVề(accessToken, userInfo)" style="endArrow=open;endFill=0;dashed=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="884" y="1150" as="sourcePoint" />
+            <mxPoint x="646" y="1150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Activation Backend Google -->
+        <mxCell id="act-backend2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="1154" y="1180" width="12" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- 18: POST backend với Google token -->
+        <mxCell id="m18" value="18: POST dangnhap.php(googleToken, userInfo)" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="646" y="1190" as="sourcePoint" />
+            <mxPoint x="1154" y="1190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Activation DB Google -->
+        <mxCell id="act-db2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="1414" y="1215" width="12" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- 19: tạo/cập nhật user -->
+        <mxCell id="m19" value="19: tạoHoặcCậpNhậtNgườiDùng(googleId, email, tên)" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=11;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1166" y="1225" as="sourcePoint" />
+            <mxPoint x="1414" y="1225" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 20: trả về user -->
+        <mxCell id="m20" value="20: trảVề(ngườiDùng)" style="endArrow=open;endFill=0;dashed=1;strokeColor=#000000;strokeWidth=1;fontSize=11;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1414" y="1245" as="sourcePoint" />
+            <mxPoint x="1166" y="1245" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 21: trả về token -->
+        <mxCell id="m21" value="21: trảVề({thànhCông, ngườiDùng, token})" style="endArrow=open;endFill=0;dashed=1;strokeColor=#000000;strokeWidth=1;fontSize=11;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1154" y="1275" as="sourcePoint" />
+            <mxPoint x="646" y="1275" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 22: trả về UI -->
+        <mxCell id="m22" value="22: trảVề(kếtQuảĐăngNhậpGoogle)" style="endArrow=open;endFill=0;dashed=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="634" y="1300" as="sourcePoint" />
+            <mxPoint x="376" y="1300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ==================== KẾT THÚC ALT - PHẦN CHUNG ==================== -->
+
+        <!-- 23: lưu phiên đăng nhập (self-call) -->
+        <mxCell id="m23-line" value="" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="376" y="1340" as="sourcePoint" />
+            <mxPoint x="420" y="1340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m23-self" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="415" y="1340" width="12" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="m23-return" value="" style="endArrow=open;endFill=0;dashed=1;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="415" y="1375" as="sourcePoint" />
+            <mxPoint x="376" y="1375" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m23-label" value="23: lưuPhiênĐăngNhập(token, ngườiDùng)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;fontColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="380" y="1320" width="260" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- 24: hiển thị thành công -->
+        <mxCell id="m24" value="24: hiểnThịThôngBáo('Đăng nhập thành công')" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="364" y="1390" as="sourcePoint" />
+            <mxPoint x="107" y="1390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ==================== NOTES ==================== -->
+        <mxCell id="note1" value="📌 Đăng nhập Email/Mật khẩu&#xa;• Xác thực qua database&#xa;• Mã hóa MD5 mật khẩu&#xa;• Tạo JWT token" style="shape=note;whiteSpace=wrap;html=1;size=14;verticalAlign=top;align=left;spacingTop=8;spacingLeft=8;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1650" y="280" width="200" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="note2" value="📌 Đăng nhập Google OAuth&#xa;• Xác thực qua Google API&#xa;• Nhận accessToken + userInfo&#xa;• Tự động tạo tài khoản&#xa;  mới nếu chưa tồn tại" style="shape=note;whiteSpace=wrap;html=1;size=14;verticalAlign=top;align=left;spacingTop=8;spacingLeft=8;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1650" y="850" width="200" height="120" as="geometry" />
+        </mxCell>
+
+        <mxCell id="legend" value="Chú thích:&#xa;━━▶ : Gọi phương thức (đồng bộ)&#xa;- - -▷ : Trả về kết quả&#xa;[điều kiện] : Nhánh thay thế (alt)" style="shape=note;whiteSpace=wrap;html=1;size=14;verticalAlign=top;align=left;spacingTop=8;spacingLeft=8;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1650" y="1050" width="200" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

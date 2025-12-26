@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Resource helper: added comment to trigger re-index after adding missing drawables/menus/strings -->
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.MainActivity">
+
+    <!-- DrawerLayout tổng -->
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Nội dung chính -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/colorBackground">
+
+            <!-- Toolbar Material -->
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbarmanhinhchinh"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:title="Trang chính"
+                app:titleCentered="true"
+                app:titleTextColor="@android:color/white"
+                app:navigationIcon="@drawable/ic_menu_24">
+
+                <!-- Icons bên phải -->
+                <LinearLayout
+                    android:id="@+id/layout_toolbar_actions"
+                    android:layout_gravity="end"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingEnd="4dp"
+                    android:paddingStart="4dp">
+
+                    <!-- Icon tìm kiếm -->
+                    <FrameLayout
+                        android:id="@+id/imgsearch"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="4dp"
+                        android:background="@drawable/bg_icon_toolbar"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:id="@+id/img_search_icon"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_search"
+                            app:tint="@android:color/white"
+                            android:contentDescription="@string/search" />
+
+                    </FrameLayout>
+
+                    <!-- Giỏ hàng -->
+                    <FrameLayout
+                        android:id="@+id/framegiohang"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="4dp"
+                        android:background="@drawable/bg_cart_icon"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <com.nex3z.notificationbadge.NotificationBadge
+                            android:id="@+id/menu_sl"
+                            android:layout_gravity="top|end"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginEnd="2dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp" />
+
+                        <ImageView
+                            android:id="@+id/ic_cart"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_cart_24"
+                            app:tint="@android:color/white"
+                            android:contentDescription="@string/cart_description" />
+                    </FrameLayout>
+                </LinearLayout>
+            </com.google.android.material.appbar.MaterialToolbar>
+
+            <!-- Banner hiện đại với corner bo -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <ViewFlipper
+                    android:id="@+id/viewFlipper"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToOutline="true"
+                    tools:targetApi="31" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Tiêu đề sản phẩm -->
+            <TextView
+                android:id="@+id/txt_title"
+                android:text="@string/latest_products"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorPrimary"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:paddingBottom="8dp"
+                android:clipToPadding="false" />
+        </LinearLayout>
+
+        <!-- NavigationView menu bên trái -->
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationview"
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:itemIconTint="?attr/colorPrimary"
+            app:itemTextColor="?attr/colorOnSurface">
+
+            <ListView
+                android:id="@+id/listviewmanhinhchinh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="1dp" />
+        </com.google.android.material.navigation.NavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Action item hiển thị số lượng users -->
+    <item
+        android:id="@+id/action_user_count"
+        android:title=""
+        app:showAsAction="always"
+        app:actionLayout="@layout/action_user_count" />
+
+    <!-- Nút làm mới -->
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@android:drawable/ic_popup_sync"
+        android:title="Làm mới"
+        app:showAsAction="always"
+        app:iconTint="@android:color/white" />
+
+</menu>
+

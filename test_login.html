@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test API Đăng Nhập</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #333; }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        button:hover { background: #45a049; }
+        button.admin { background: #2196F3; }
+        button.admin:hover { background: #0b7dda; }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-left: 4px solid #4CAF50;
+            border-radius: 5px;
+            display: none;
+        }
+        .result.error {
+            border-left-color: #f44336;
+            background: #ffebee;
+        }
+        .result.success {
+            border-left-color: #4CAF50;
+            background: #e8f5e9;
+        }
+        pre {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .quick-test {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔐 Test API Đăng Nhập</h1>
+
+        <div class="quick-test">
+            <h3>Test Nhanh:</h3>
+            <button class="admin" onclick="testAdmin()">Test Admin (admin@admin.com)</button>
+            <button onclick="testUser()">Test User Mẫu (user@test.com)</button>
+        </div>
+
+        <div class="form-group">
+            <label>Email:</label>
+            <input type="email" id="email" placeholder="Nhập email" value="admin@admin.com">
+        </div>
+
+        <div class="form-group">
+            <label>Password:</label>
+            <input type="password" id="pass" placeholder="Nhập password" value="admin123">
+        </div>
+
+        <button onclick="testLogin()">Đăng Nhập</button>
+        <button onclick="clearResult()" style="background: #ff9800;">Xóa Kết Quả</button>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script>
+        function testAdmin() {
+            document.getElementById('email').value = 'admin@admin.com';
+            document.getElementById('pass').value = 'admin123';
+            testLogin();
+        }
+
+        function testUser() {
+            document.getElementById('email').value = 'user@test.com';
+            document.getElementById('pass').value = '123456';
+            testLogin();
+        }
+
+        function testLogin() {
+            const email = document.getElementById('email').value;
+            const pass = document.getElementById('pass').value;
+            const resultDiv = document.getElementById('result');
+
+            if (!email || !pass) {
+                showResult('error', 'Vui lòng nhập email và password!');
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('email', email);
+            formData.append('pass', pass);
+
+            resultDiv.style.display = 'block';
+            resultDiv.className = 'result';
+            resultDiv.innerHTML = '<p>Đang kiểm tra...</p>';
+
+            fetch('dangnhap.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Response:', data);
+
+                if (data.success) {
+                    const user = data.result[0];
+                    const roleText = user.role == 1 ? '👑 ADMIN' : '👤 USER THƯỜNG';
+                    const roleColor = user.role == 1 ? '#2196F3' : '#4CAF50';
+
+                    let html = `
+                        <h3 style="color: ${roleColor};">✅ Đăng nhập thành công!</h3>
+                        <p><strong>Email:</strong> ${user.email}</p>
+                        <p><strong>Username:</strong> ${user.username || 'N/A'}</p>
+                        <p><strong>Mobile:</strong> ${user.mobile || 'N/A'}</p>
+                        <p><strong>Role:</strong> ${user.role} - ${roleText}</p>
+                        <p><strong>ID:</strong> ${user.id}</p>
+                        <hr>
+                        <h4>JSON Response:</h4>
+                        <pre>${JSON.stringify(data, null, 2)}</pre>
+                    `;
+
+                    if (user.role == 1) {
+                        html += '<p style="background: #fff3cd; padding: 10px; border-radius: 5px; margin-top: 10px;">⚠️ Tài khoản này có quyền ADMIN - có thể thêm/sửa/xóa sản phẩm</p>';
+                    }
+
+                    showResult('success', html);
+                } else {
+                    showResult('error', `
+                        <h3>❌ Đăng nhập thất bại!</h3>
+                        <p><strong>Lỗi:</strong> ${data.message}</p>
+                        <pre>${JSON.stringify(data, null, 2)}</pre>
+                    `);
+                }
+            })
+            .catch(error => {
+                showResult('error', `
+                    <h3>❌ Lỗi kết nối!</h3>
+                    <p><strong>Chi tiết:</strong> ${error.message}</p>
+                    <p>Kiểm tra xem file dangnhap.php có tồn tại không.</p>
+                `);
+            });
+        }
+
+        function showResult(type, message) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.style.display = 'block';
+            resultDiv.className = 'result ' + type;
+            resultDiv.innerHTML = message;
+        }
+
+        function clearResult() {
+            document.getElementById('result').style.display = 'none';
+        }
+
+        // Test kết nối khi load trang
+        window.onload = function() {
+            console.log('Page loaded. Ready to test API.');
+        };
+    </script>
+</body>
+</html>
+
